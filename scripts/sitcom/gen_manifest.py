@@ -1,0 +1,136 @@
+"""Write lib/sitcom.ts and lib/shorts.ts from common.SEASON + rendered videos in public/videos.
+Usage: /Users/mayankrawat/Downloads/year8-workspace/.tts-env/.venv/bin/python scripts/sitcom/gen_manifest.py
+"""
+import os, json, subprocess, shutil
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+FFPROBE = "/Users/mayankrawat/Downloads/year8-workspace/.tts-env/.venv/bin/ffprobe"
+if not os.path.exists(FFPROBE):
+    FFPROBE = shutil.which("ffprobe") or "ffprobe"
+
+ns = {}
+exec(open(os.path.join(HERE, "common.py")).read(), ns)
+
+STRAND_BY_TOPIC = {
+    "business-activity": "Activity & External",
+    "location-globalisation-external": "Activity & External",
+    "people-communication-recruitment": "People",
+    "motivation-organisation": "People",
+    "sources-cashflow-breakeven": "Finance",
+    "accounts-ratios": "Finance",
+    "marketing-and-operations": "Marketing",
+}
+ICON_BY_TOPIC = {
+    "business-activity": "🏢",
+    "location-globalisation-external": "🌐",
+    "people-communication-recruitment": "🤝",
+    "motivation-organisation": "🏗️",
+    "sources-cashflow-breakeven": "💷",
+    "accounts-ratios": "📊",
+    "marketing-and-operations": "🚀",
+}
+NAME_BY_WHO = {
+    "vani": "Vani",
+    "tara": "Vani",
+    "dad": "Dad",
+    "mum": "Mum",
+    "centi": "Ledger",
+    "teacher": "Examiner Sterling",
+    "uncle": "Uncle Hock",
+    "cashier": "Kai",
+}
+
+rows = []
+shorts = []
+for num, topic, short, title in ns["SEASON"]:
+    mp4 = os.path.join(ROOT, "public", "videos", f"{topic}.mp4")
+    ep_file = os.path.join(HERE, "episodes", f"{topic}.py")
+    if not (os.path.exists(mp4) and os.path.exists(ep_file)):
+        continue
+    dur = float(subprocess.run([FFPROBE, "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", mp4],
+                               capture_output=True, text=True, check=True).stdout.strip())
+    ep_ns = {}
+    exec(open(os.path.join(HERE, "common.py")).read(), ep_ns)
+    exec(open(ep_file).read(), ep_ns)
+    rows.append(dict(num=num, topicId=topic, topicShort=short, title=title,
+                     logline=ep_ns["EP"].get("logline", ""), durationSec=round(dur),
+                     src=f"/videos/{topic}.mp4", poster=f"/videos/posters/{topic}.jpg"))
+
+    # Also build Concept Shorts from out/<topic>/timeline.json if present
+    tl_path = os.path.join(HERE, "out", topic, "timeline.json")
+    if os.path.exists(tl_path):
+        tl = json.load(open(tl_path, "r", encoding="utf-8"))
+        segs = tl.get("segments", [])
+        # Split into ~60-95s chunks at card/title/scene boundaries
+        cuts = [0.0]
+        for sg in segs:
+            if sg["kind"] in ("title", "card", "scene") and sg["t0"] - cuts[-1] >= 55.0 and dur - sg["t0"] >= 35.0:
+                cuts.append(round(sg["t0"], 1))
+        cuts.append(round(dur, 1))
+        ep_shorts = []
+        for idx in range(len(cuts) - 1):
+            s0, s1 = cuts[idx], cuts[idx + 1]
+            caps = []
+            boards = []
+            for sg in segs:
+                if sg["t1"] <= s0 or sg["t0"] >= s1:
+                    continue
+                if sg["kind"] == "line":
+                    who = NAME_BY_WHO.get(sg.get("who", ""), "Speaker")
+                    for sub in sg.get("subs", []):
+                        if s0 - 0.5 <= sub["t"] <= s1:
+                            caps.append(dict(t=round(sub["t"], 2), who=who, text=sub["text"]))
+                    for bd in sg.get("board", []):
+                        if "text" in bd and bd["text"] not in boards:
+                            boards.append(bd["text"])
+            clip_title = f"{title} — Part {idx + 1}" if idx > 0 else f"{title} — Cold Open & Hook"
+            if boards:
+                clip_title = f"{short}: {boards[0][:42]}"
+            summary = " · ".join(boards[:3]) if boards else (caps[0]["text"] if caps else ep_ns["EP"].get("logline", ""))
+            ep_shorts.append((s0, s1, clip_title, summary, caps))
+        total_in = len(ep_shorts)
+        for idx, (s0, s1, clip_title, summary, caps) in enumerate(ep_shorts, 1):
+            shorts.append(dict(
+                id=f"{topic}-s{idx:02d}",
+                topicId=topic,
+                topicTitle=short,
+                topicShort=short,
+                topicIcon=ICON_BY_TOPIC.get(topic, "💼"),
+                strand=STRAND_BY_TOPIC.get(topic, "Activity & External"),
+                episodeTitle=title,
+                index=idx,
+                totalInTopic=total_in,
+                title=clip_title,
+                summary=summary,
+                startSec=s0,
+                endSec=s1,
+                durationSec=round(s1 - s0, 1),
+                src=f"/videos/{topic}.mp4",
+                poster=f"/videos/posters/{topic}.jpg",
+                captions=caps,
+            ))
+
+out = os.path.join(ROOT, "lib", "sitcom.ts")
+with open(out, "w", encoding="utf-8") as f:
+    f.write("// Generated by scripts/sitcom/gen_manifest.py — do not edit by hand.\n")
+    f.write(f"// \"{ns['SHOW']}: {ns['SHOW_TAG']}\" Season {ns['SEASON_NUM']}: one animated sitcom episode per topic (MP4s in public/videos).\n\n")
+    f.write("export interface SitcomEpisode {\n  num: number;\n  topicId: string;\n  topicShort: string;\n  title: string;\n"
+            "  logline: string;\n  durationSec: number;\n  src: string;\n  poster: string;\n}\n\n")
+    f.write("export const SITCOM_EPISODES: SitcomEpisode[] = " + json.dumps(rows, indent=2, ensure_ascii=False) + ";\n\n")
+    f.write("export function sitcomEpisodeFor(topicId: string): SitcomEpisode | undefined {\n"
+            "  return SITCOM_EPISODES.find((e) => e.topicId === topicId);\n}\n")
+print(f"wrote {out}: {len(rows)} episodes")
+
+shorts_out = os.path.join(ROOT, "lib", "shorts.ts")
+with open(shorts_out, "w", encoding="utf-8") as f:
+    f.write("// Auto-generated Edexcel 4BS1 Business Concept Shorts manifest — do not edit by hand.\n")
+    f.write("export interface ShortCaption {\n  t: number;\n  who: string;\n  text: string;\n}\n\n")
+    f.write("export interface ShortPart {\n  src: string;\n  start: number;\n  duration: number;\n}\n\n")
+    f.write("export interface ShortClip {\n  id: string;\n  topicId: string;\n  topicTitle: string;\n  topicShort: string;\n"
+            "  topicIcon: string;\n  strand: string;\n  episodeTitle: string;\n  index: number;\n  totalInTopic: number;\n"
+            "  title: string;\n  summary: string;\n  startSec: number;\n  endSec: number;\n  durationSec: number;\n"
+            "  src?: string;\n  parts?: ShortPart[];\n  poster?: string;\n  embedHref?: string;\n  chapterId?: string;\n"
+            "  captions: ShortCaption[];\n}\n\n")
+    f.write("export const SHORTS: ShortClip[] = " + json.dumps(shorts, indent=2, ensure_ascii=False) + ";\n")
+print(f"wrote {shorts_out}: {len(shorts)} shorts")
