@@ -330,7 +330,7 @@ export const mcqPapers: Paper[] = [
         explanation:
           "Market share = {{(£720000 / £4800000) * 100 = 15.0%}}, which is **1.0 percentage point above** the 14% SMART objective. Dividing upside-down (£4.8m ÷ £0.72m) gives the 6.67 distractor.",
         hints: [
-          "Use {{Market Share (%) = (Firm Sales / Total Market Sales) * 100}}.",
+          'Use {{"Market Share (%)" = ("Firm Sales" / "Total Market Sales") * 100}}.',
           "Compute 720,000 ÷ 4,800,000 × 100 and compare against 14%.",
         ],
       },

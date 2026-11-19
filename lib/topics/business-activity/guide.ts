@@ -83,7 +83,7 @@ Vague wishes such as *"we want to sell more"* fail to guide staff or measure per
           problem:
             "Kopi Craft Ltd, a 32-employee speciality coffee roaster, set a SMART objective to achieve at least **12% market share** in its regional market by December. Its annual sales were **£660,000** inside a total regional market worth **£5,000,000**. Calculate Kopi Craft Ltd's market share and state whether it achieved its SMART objective.",
           steps: [
-            "Write the market share formula: {{Market Share (%) = (Firm Sales / Total Market Sales) * 100}}.",
+            "Write the market share formula: {{\"Market Share (%)\" = (\"Firm Sales\") / (\"Total Market Sales\") * 100}}.",
             "Substitute Kopi Craft Ltd's figures: {{(660000 / 5000000) * 100 = 0.132 * 100}}.",
             "Compute the percentage: **13.2%**, which exceeds the **12%** SMART target by **1.2 percentage points**.",
           ],
@@ -675,32 +675,32 @@ Examiners accept four valid size metrics:
     formulas: [
       {
         name: "Market Share (%)",
-        formula: "{{(Firm Sales / Total Market Sales) * 100}}",
+        formula: '{{"Firm Sales" / "Total Market Sales" * 100}}',
         note: "Give to 1 or 2 d.p. with a % sign; measures competitive position and SMART sales targets.",
       },
       {
         name: "Percentage Sales Growth (%)",
-        formula: "{{((New Sales - Old Sales) / Old Sales) * 100}}",
+        formula: '{{("New Sales" - "Old Sales") / "Old Sales" * 100}}',
         note: "Used to verify whether a SMART sales growth objective was achieved.",
       },
       {
         name: "Total Profit",
-        formula: "{{Total Revenue - Total Costs}}",
+        formula: '{{"Total Revenue" - "Total Costs"}}',
         note: "Primary financial objective for established private-sector firms (once survival is secured).",
       },
       {
         name: "Partnership Profit Share",
-        formula: "{{(Partner Ratio Part / Total Ratio Parts) * Total Profit}}",
+        formula: '{{"Partner Ratio Part" / "Total Ratio Parts" * "Total Profit"}}',
         note: "Governed by a Deed of Partnership; without a Deed, statutory law splits profits equally.",
       },
       {
         name: "Franchisee Royalty Payment",
-        formula: "{{Branch Revenue * (Royalty % / 100)}}",
+        formula: '{{"Branch Revenue" * ("Royalty %" / 100)}}',
         note: "Charged on revenue (turnover), NOT profit — still payable in loss-making months!",
       },
       {
         name: "Sector Share of GDP or Employment (%)",
-        formula: "{{(Sector Output / Total Economy Output) * 100}}",
+        formula: '{{"Sector Output" / "Total Economy Output" * 100}}',
         note: "Tracks industrialisation (rising secondary %) and de-industrialisation (dominant tertiary %).",
       },
       {
@@ -715,7 +715,7 @@ Examiners accept four valid size metrics:
       },
       {
         name: "Majority Voting Control Threshold",
-        formula: "{{Voting Shares Held > 50%}}",
+        formula: '{{"Voting Shares Held" > 50%}}',
         note: "Holding at least 51% prevents a hostile takeover (`Plc`) or being outvoted by outside investors (`Ltd`).",
       },
       {

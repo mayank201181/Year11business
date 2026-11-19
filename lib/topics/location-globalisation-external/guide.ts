@@ -603,37 +603,37 @@ Suppose the exchange rate is quoted as **£1 = $1.25** (1 unit of Home Currency 
     formulas: [
       {
         name: "Home Currency (£) → Foreign Currency ($)",
-        formula: "{{Foreign Value = Home Value * Exchange Rate}}",
+        formula: '{{"Foreign Value" = "Home Value" * "Exchange Rate"}}',
         note: "When £1 = $1.25, multiply £ amount by 1.25 to get $ export price.",
       },
       {
         name: "Foreign Currency ($) → Home Currency (£)",
-        formula: "{{Home Value = Foreign Value / Exchange Rate}}",
+        formula: '{{"Home Value" = "Foreign Value" / "Exchange Rate"}}',
         note: "When £1 = $1.25, divide $ invoice by 1.25 to get £ import cost.",
       },
       {
         name: "Landed Import Cost Including Tariff",
-        formula: "{{Pre-Tariff Import Cost * (1 + Tariff % / 100)}}",
+        formula: '{{"Pre-Tariff Import Cost" * (1 + "Tariff %" / 100)}}',
         note: "Tariffs are customs taxes added as a percentage of imported goods' value.",
       },
       {
         name: "Annual Loan Interest Expense",
-        formula: "{{Loan Principal * (Annual Interest Rate % / 100)}}",
+        formula: '{{"Loan Principal" * ("Annual Interest Rate %" / 100)}}',
         note: "Rises immediately on overdrafts and variable-rate loans when central bank base rates increase.",
       },
       {
         name: "Disposable Income",
-        formula: "{{Gross Household Income - Direct Income Taxes}}",
+        formula: '{{"Gross Household Income" - "Direct Income Taxes"}}',
         note: "Discretionary spending left further drops when variable mortgage interest repayments rise.",
       },
       {
         name: "After-Tax Corporate Profit",
-        formula: "{{Profit Before Tax * (1 - Corporation Tax % / 100)}}",
+        formula: '{{"Profit Before Tax" * (1 - "Corporation Tax %" / 100)}}',
         note: "Determines maximum retained profit available for business reinvestment and dividends.",
       },
       {
         name: "MNC Profit Repatriation",
-        formula: "{{Host Subsidiary After-Tax Profit * (Repatriation % / 100)}}",
+        formula: '{{"Subsidiary After-Tax Profit" * ("Repatriation %" / 100)}}',
         note: "Outflow of profits from the host country back to the MNC's home-country headquarters.",
       },
       {

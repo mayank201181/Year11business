@@ -57,7 +57,7 @@ export const practice: TopicPractice = {
         "Velvet Tea Ltd generates annual sales of **£450,000** in a speciality loose-leaf tea market worth **£3,000,000** in total. Calculate Velvet Tea Ltd's **market share** as a percentage.",
       answer: { type: "number", value: 15, display: "15%" },
       solution: [
-        "Market Share (%) = {{(Firm Sales / Total Market Sales) * 100}}.",
+        'Market Share (%) = {{"Firm Sales" / "Total Market Sales" * 100}}.',
         "Substitute: (£450,000 ÷ £3,000,000) × 100 = 0.15 × 100 = **15%**.",
       ],
       commonError: "Dividing 450,000 by 3,000,000 to get 0.15 and forgetting to multiply by 100 for a percentage.",

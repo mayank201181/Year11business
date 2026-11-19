@@ -150,7 +150,7 @@ export default function FormulasPage() {
       </section>
 
       {/* Command words & AJIM */}
-      <section className="card p-4 sm:p-5 print:p-3" aria-labelledby="vault-cmd-h">
+      <section className="card overflow-hidden p-4 sm:p-5 print:p-3" aria-labelledby="vault-cmd-h">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h2 id="vault-cmd-h" className="text-lg font-extrabold">
             🎯 Edexcel 4BS1 Command-Word Marks Blueprint &amp; AJIM Conclusion
@@ -235,11 +235,11 @@ export default function FormulasPage() {
                 {g.topics.map((t) => (
                   <article
                     key={`${g.strand}-${t.id}`}
-                    className={`card mb-4 break-inside-avoid border-l-4 p-4 print:mb-3 print:rounded-lg print:p-2.5 print:text-[10pt] print:shadow-none ${st.border}`}
+                    className={`card mb-4 break-inside-avoid overflow-hidden border-l-4 p-4 print:mb-3 print:rounded-lg print:p-2.5 print:text-[10pt] print:shadow-none ${st.border}`}
                     aria-labelledby={`f-${g.strand}-${t.id}`}
                   >
                     <div className="flex items-start justify-between gap-2">
-                      <h3 id={`f-${g.strand}-${t.id}`} className="font-extrabold leading-snug">
+                      <h3 id={`f-${g.strand}-${t.id}`} className="min-w-0 font-extrabold leading-snug">
                         <span aria-hidden>{t.icon} </span>
                         {t.title}
                       </h3>
@@ -249,11 +249,11 @@ export default function FormulasPage() {
                     </div>
                     <dl className="mt-2 divide-y divide-line">
                       {formulasOf(t).map((f, i) => (
-                        <div key={`${t.id}-${i}`} className="py-2 first:pt-0 last:pb-0 print:py-1.5">
+                        <div key={`${t.id}-${i}`} className="min-w-0 py-2 first:pt-0 last:pb-0 print:py-1.5">
                           <dt className="text-xs font-extrabold uppercase tracking-wide text-ink-2 print:text-[8pt]">
                             <RichInline text={f.name} />
                           </dt>
-                          <dd className="mt-0.5">
+                          <dd className="mt-0.5 overflow-x-auto">
                             <Rich text={f.formula} className="text-[1.05rem] font-semibold text-ink print:text-[10.5pt]" />
                             {f.note ? <Rich text={f.note} className="mt-0.5 text-sm text-ink-2 print:text-[8.5pt]" /> : null}
                           </dd>

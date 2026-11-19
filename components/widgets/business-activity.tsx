@@ -101,6 +101,9 @@ function OwnershipLiabilityExplorer() {
           ) : (
             <>
               Because there is <strong>no separate legal identity</strong>, creditors claim <strong>£{personalAssetsLostK}k</strong> directly from personal savings, cars or house equity on top of the initial <strong>£{investedK}k</strong> stake!
+              {structure === "partnership" && debtShortfallK > personalAssetsLostK ? (
+                <> (Under <strong>joint and several unlimited liability</strong>, creditors can even pursue one partner for the full <strong>£{debtShortfallK}k</strong> if co-partners cannot pay!)</>
+              ) : null}
             </>
           )}{" "}
           {hostileTakeoverPossible

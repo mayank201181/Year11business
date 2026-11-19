@@ -532,37 +532,37 @@ Governments pass **employment legislation** to protect workers from exploitation
     formulas: [
       {
         name: "Labour Turnover (%)",
-        formula: "{{(Number of Staff Leaving / Average Number of Staff) * 100}}",
+        formula: '{{"Number of Staff Leaving" / "Average Number of Staff" * 100}}',
         note: "High % signals poor communication, weak induction, low pay or zero-hours insecurity, inflating recruitment bills.",
       },
       {
         name: "Staff Retention Rate (%)",
-        formula: "{{(Staff Staying Whole Year / Staff at Start of Year) * 100}}",
+        formula: '{{"Staff Staying Whole Year" / "Staff at Start of Year" * 100}}',
         note: "Strong induction, training and career promotion paths lift retention.",
       },
       {
         name: "Recruitment Agency Fee",
-        formula: "{{First-Year Annual Salary * (Agency Fee % / 100)}}",
+        formula: '{{"First-Year Annual Salary" * ("Agency Fee %" / 100)}}',
         note: "Major direct cost of external specialist recruitment.",
       },
       {
         name: "Total Off-the-Job Training Cost",
-        formula: "{{Course Fees + Travel + (Training Days * Daily Lost Output Value)}}",
+        formula: '{{"Course Fees" + "Travel" + ("Training Days" * "Daily Lost Output")}}',
         note: "Includes both direct tuition invoices AND opportunity cost of lost workplace output.",
       },
       {
         name: "Net First-Year Training Benefit",
-        formula: "{{Annual Productivity Gain + Error Savings - Total Training Cost}}",
+        formula: '{{"Annual Productivity Gain" + "Error Savings" - "Total Training Cost"}}',
         note: "Positive figure proves training investment increases operating profit.",
       },
       {
         name: "Minimum Wage Hike Annual Cost",
-        formula: "{{Affected Workers * Weekly Hours * Weeks Worked * Hourly Pay Rise}}",
+        formula: '{{"Affected Workers" * "Weekly Hours" * "Weeks Worked" * "Hourly Pay Rise"}}',
         note: "Hits labour-intensive retail, care and hospitality businesses hardest.",
       },
       {
         name: "Full-Time Equivalent (FTE) Headcount",
-        formula: "{{Total Weekly Part-Time Hours / Standard Full-Time Weekly Hours}}",
+        formula: '{{"Total Weekly Part-Time Hours" / "Standard Full-Time Hours"}}',
         note: "Converts flexible part-time schedules into equivalent full-time posts (e.g. two 20-hr job-sharers = 1.0 FTE at 40 hrs).",
       },
       {
@@ -572,7 +572,7 @@ Governments pass **employment legislation** to protect workers from exploitation
       },
       {
         name: "Chain-of-Command Retention",
-        formula: "{{Accuracy Retained = Per-Layer Retention ^ Handoffs}}",
+        formula: '{{"Accuracy Retained" = ("Per-Layer Retention") ^ "Handoffs"}}',
         note: "Shows mathematically why delayering tall hierarchies improves vertical communication clarity.",
       },
     ],

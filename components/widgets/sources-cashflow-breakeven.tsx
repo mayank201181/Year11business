@@ -133,6 +133,9 @@ function BreakEvenChartWidget() {
           aria-label="Interactive Break-Even Chart with Fixed Cost, Total Cost, Total Revenue, Break-Even intersection and Margin of Safety"
         >
           <PlaneGrid plane={plane} step={yMax > 30000 ? 10000 : 5000} labels={false} />
+          {[200, 400, 600, 800, 1000].map((x) => (
+            <line key={`vg-${x}`} x1={px(x)} x2={px(x)} y1={py(0)} y2={py(yMax)} className="stroke-line" strokeWidth={1} opacity={0.7} />
+          ))}
 
           {/* X-axis tick labels */}
           {[0, 200, 400, 600, 800, 1000].map((x) => (
@@ -147,7 +150,7 @@ function BreakEvenChartWidget() {
             </text>
           ))}
 
-          {/* Loss & Profit shaded wedges when BEP lies inside chart */}
+          {/* Loss & Profit shaded wedges */}
           {bepInChart ? (
             <>
               <polygon
@@ -161,7 +164,19 @@ function BreakEvenChartWidget() {
                 opacity={0.16}
               />
             </>
-          ) : null}
+          ) : (
+            <g>
+              <polygon
+                points={`${px(0)},${py(fc)} ${px(xMax)},${py(fc + vc * xMax)} ${px(xMax)},${py(sp * xMax)} ${px(0)},${py(0)}`}
+                fill="var(--bad)"
+                opacity={0.14}
+              />
+              <rect x={px(180)} y={14} width={280} height={24} rx={6} fill="var(--bad-soft)" stroke="var(--bad)" strokeWidth={1.2} />
+              <text x={px(180) + 140} y={30} fontSize={10.5} fontWeight={800} textAnchor="middle" fill="var(--bad)">
+                {viable ? `Loss Zone: BEP (${wholeBep.toLocaleString("en-GB")}u) > 1,000u` : "Loss at All Outputs (SP ≤ VC: Impossible BEP!)"}
+              </text>
+            </g>
+          )}
 
           {/* Fixed Cost line */}
           <line
@@ -251,7 +266,7 @@ function BreakEvenChartWidget() {
               >
                 BEP ({wholeBep}u)
               </text>
-              {forecastQ > rawBep ? (
+              {forecastQ > wholeBep ? (
                 <g>
                   <line
                     x1={px(rawBep)}

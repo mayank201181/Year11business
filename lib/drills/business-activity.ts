@@ -166,7 +166,7 @@ export const drills: Drill[] = [
           prompt: `**${firm} Ltd** records annual revenue of **£${big(sales)}** in a regional market with total annual sales of **£${big(market)}**. Calculate **${firm} Ltd**'s market share as a percentage.`,
           answer: { type: "number", value: pct, display: `${pct}%` },
           solution: [
-            `Formula: {{Market Share (%) = (Firm Sales / Total Market Sales) * 100}}.`,
+            `Formula: {{"Market Share (%)" = ("Firm Sales" / "Total Market Sales") * 100}}.`,
             `Substitute: (£${big(sales)} ÷ £${big(market)}) × 100 = **${pct}%**.`,
           ],
           hint: "Divide the firm's sales by total market sales, then multiply by 100.",

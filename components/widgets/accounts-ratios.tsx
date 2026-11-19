@@ -17,8 +17,8 @@ function IncomeProfitabilityAnalyser() {
   const markup = costOfSales > 0 ? (gp / costOfSales) * 100 : 0;
   const roce = capEmployed > 0 ? (op / capEmployed) * 100 : 0;
 
-  const maxScale = Math.max(revenue, costOfSales + expenses, 100);
-  const barH = (v: number) => Math.max(4, (Math.abs(v) / maxScale) * 145);
+  const maxScale = Math.max(revenue, costOfSales, expenses, Math.abs(gp), Math.abs(op), 100);
+  const barH = (v: number) => Math.max(4, (Math.abs(v) / maxScale) * 142);
   const baseY = 188;
 
   const revH = barH(revenue);
@@ -26,6 +26,13 @@ function IncomeProfitabilityAnalyser() {
   const gpH = barH(gp);
   const expH = barH(expenses);
   const opH = barH(op);
+
+  // Keep waterfall bars cleanly above baseY even when Cost of Sales > Revenue or Expenses > Gross Profit
+  const cosTop = Math.max(28, baseY - Math.max(revH, cosH));
+  const cosBarHeight = Math.min(cosH, baseY - cosTop);
+  const expTop = Math.max(28, baseY - Math.max(gp >= 0 ? gpH : 0, expH));
+  const expBarHeight = Math.min(expH, baseY - expTop);
+  const fmtK = (v: number) => (v < 0 ? `−£${Math.abs(v)}k` : `£${v}k`);
 
   return (
     <WidgetFrame
@@ -125,8 +132,8 @@ function IncomeProfitabilityAnalyser() {
             </text>
 
             {/* Cost of Sales */}
-            <rect x={108} y={Math.max(28, baseY - revH)} width={54} height={Math.min(cosH, baseY - 28)} rx={5} fill="#ef4444" />
-            <text x={135} y={Math.max(24, baseY - revH - 5)} textAnchor="middle" fontSize={10} fontWeight={700} fill="#dc2626">
+            <rect x={108} y={cosTop} width={54} height={cosBarHeight} rx={5} fill="#ef4444" />
+            <text x={135} y={Math.max(24, cosTop - 5)} textAnchor="middle" fontSize={10} fontWeight={700} fill="#dc2626">
               −£{costOfSales}k
             </text>
             <text x={135} y={205} textAnchor="middle" fontSize={10} fontWeight={600} className="fill-ink-2">
@@ -136,22 +143,22 @@ function IncomeProfitabilityAnalyser() {
             {/* Gross Profit */}
             <rect
               x={180}
-              y={gp >= 0 ? baseY - gpH : baseY - 10}
+              y={gp >= 0 ? baseY - gpH : baseY - 12}
               width={54}
-              height={gp >= 0 ? gpH : 10}
+              height={gp >= 0 ? gpH : 12}
               rx={5}
               fill={gp >= 0 ? "#0ea5e9" : "#b91c1c"}
             />
-            <text x={207} y={(gp >= 0 ? baseY - gpH : baseY - 10) - 5} textAnchor="middle" fontSize={10} fontWeight={700} fill="#0284c7">
-              £{gp}k
+            <text x={207} y={(gp >= 0 ? baseY - gpH : baseY - 12) - 5} textAnchor="middle" fontSize={10} fontWeight={700} fill={gp >= 0 ? "#0284c7" : "#b91c1c"}>
+              {fmtK(gp)}
             </text>
             <text x={207} y={205} textAnchor="middle" fontSize={10} fontWeight={600} className="fill-ink-2">
               Gross P.
             </text>
 
             {/* Expenses */}
-            <rect x={252} y={Math.max(28, baseY - Math.max(gpH, expH))} width={54} height={Math.min(expH, baseY - 28)} rx={5} fill="#f97316" />
-            <text x={279} y={Math.max(24, baseY - Math.max(gpH, expH) - 5)} textAnchor="middle" fontSize={10} fontWeight={700} fill="#ea580c">
+            <rect x={252} y={expTop} width={54} height={expBarHeight} rx={5} fill="#f97316" />
+            <text x={279} y={Math.max(24, expTop - 5)} textAnchor="middle" fontSize={10} fontWeight={700} fill="#ea580c">
               −£{expenses}k
             </text>
             <text x={279} y={205} textAnchor="middle" fontSize={10} fontWeight={600} className="fill-ink-2">
@@ -175,7 +182,7 @@ function IncomeProfitabilityAnalyser() {
               fontWeight={700}
               fill={op >= 0 ? "#15803d" : "#dc2626"}
             >
-              £{op}k
+              {fmtK(op)}
             </text>
             <text x={351} y={205} textAnchor="middle" fontSize={10} fontWeight={700} className="fill-ink">
               Op. Profit
@@ -184,17 +191,17 @@ function IncomeProfitabilityAnalyser() {
 
           <div className="grid grid-cols-2 gap-2">
             <Readout
-              label={<>GPM (<M>{"GP / Rev"}</M>)</>}
+              label={<>GPM (<M>{'"GP" / "Rev"'}</M>)</>}
               value={`${gpm.toFixed(2)}%`}
               tone={gpm >= 30 ? "good" : gpm > 0 ? "brand" : "bad"}
             />
             <Readout
-              label={<>Markup (<M>{"GP / CoS"}</M>)</>}
+              label={<>Markup (<M>{'"GP" / "CoS"'}</M>)</>}
               value={`${markup.toFixed(2)}%`}
               tone={markup > 0 ? "brand" : "bad"}
             />
             <Readout
-              label={<>OPM (<M>{"OP / Rev"}</M>)</>}
+              label={<>OPM (<M>{'"OP" / "Rev"'}</M>)</>}
               value={`${opm.toFixed(2)}%`}
               tone={opm >= 12 ? "good" : opm > 0 ? "ink" : "bad"}
             />
@@ -315,8 +322,17 @@ function LiquidityStressTester() {
             <text x={18} y={24} fontSize={11} fontWeight={700} className="fill-ink">
               Current Assets (£{currentAssets}k)
             </text>
-            <rect x={18} y={32} width={wScale(liquidAssets)} height={26} rx={4} fill="#0ea5e9" />
-            <rect x={18 + wScale(liquidAssets)} y={32} width={wScale(inventory)} height={26} rx={4} fill="#f59e0b" />
+            {liquidAssets > 0 ? <rect x={18} y={32} width={wScale(liquidAssets)} height={26} rx={4} fill="#0ea5e9" /> : null}
+            {inventory > 0 ? (
+              <rect
+                x={18 + (liquidAssets > 0 ? wScale(liquidAssets) : 0)}
+                y={32}
+                width={wScale(inventory)}
+                height={26}
+                rx={4}
+                fill="#f59e0b"
+              />
+            ) : null}
             <text x={18} y={72} fontSize={10} className="fill-ink-2">
               Blue = Liquid Cash &amp; Receivables (£{liquidAssets}k) · Amber = Inventory (£{inventory}k)
             </text>

@@ -409,11 +409,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     [loadProfile],
   );
 
-  // Starts in "loading" (initial state, or set by the caller) so the mount effect never sets state synchronously.
+  // Zero-login: boot loadGuest() immediately so the learner is never held on a spinner, then check optional cloud session with a 2.5 s timeout.
   const bootstrap = useCallback(async () => {
+    loadGuest();
     const r = await callJson("/api/auth/me", "GET", undefined, 2500);
     if (!r.ok || typeof r.data.accounts !== "boolean") {
-      loadGuest();
       return;
     }
     const cloud = r.data.accounts;
@@ -428,10 +428,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       const prof = acc.profiles.find((p) => p.id === lastId) ?? (acc.profiles.length === 1 ? acc.profiles[0] : undefined);
       if (prof) await safeLoadProfile(acc, prof);
       else setStatus("no-profile");
-      return;
     }
-    // Open straight into local device storage — no login/password required.
-    loadGuest();
   }, [loadGuest, safeLoadProfile]);
 
   useEffect(() => {

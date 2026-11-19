@@ -157,19 +157,21 @@ function HierarchyBuilderWidget() {
           {layerCounts.map((count, lIdx) => {
             const capped = Math.min(count, 16);
             const y = layerY(lIdx);
-            const spacing = (svgW - 90) / Math.max(1, capped);
+            const chartLeft = 152;
+            const chartWidth = svgW - chartLeft - 18;
+            const spacing = chartWidth / Math.max(1, capped);
             const xs = Array.from({ length: capped }, (_, i) =>
-              capped === 1 ? svgW / 2 : 45 + spacing * (i + 0.5),
+              capped === 1 ? chartLeft + chartWidth / 2 : chartLeft + spacing * (i + 0.5),
             );
 
             // Parent layer positions for connecting lines
             const lines: { x1: number; y1: number; x2: number; y2: number }[] = [];
             if (lIdx > 0) {
               const pCount = Math.min(layerCounts[lIdx - 1], 16);
-              const pSpacing = (svgW - 90) / Math.max(1, pCount);
+              const pSpacing = chartWidth / Math.max(1, pCount);
               const pY = layerY(lIdx - 1);
               const pXs = Array.from({ length: pCount }, (_, i) =>
-                pCount === 1 ? svgW / 2 : 45 + pSpacing * (i + 0.5),
+                pCount === 1 ? chartLeft + chartWidth / 2 : chartLeft + pSpacing * (i + 0.5),
               );
               xs.forEach((cx, ci) => {
                 const parentIdx = Math.min(pXs.length - 1, Math.floor((ci * pXs.length) / xs.length));

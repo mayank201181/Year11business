@@ -187,7 +187,7 @@ export const drills: Drill[] = [
           prompt: `**${firm} Ltd** employed an average of **${avgStaff} staff** this year, during which **${leavers} employees** left the business. Calculate **labour turnover** as a percentage (to up to 2 d.p. if needed).`,
           answer: { type: "number", value: turnoverPct, tolerance: 0.01, display: `${turnoverPct}%` },
           solution: [
-            `Formula: {{Labour Turnover (%) = (Leavers / Average Staff) * 100}}.`,
+            `Formula: {{"Labour Turnover (%)" = ("Leavers" / "Average Staff") * 100}}.`,
             `(${leavers} ÷ ${avgStaff}) × 100 = **${turnoverPct}%**.`,
           ],
           hint: "Divide the number of leavers by average staff employed, then multiply by 100.",

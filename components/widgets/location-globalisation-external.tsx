@@ -119,7 +119,7 @@ function ExchangeRateTariffExplorer() {
           />
           <Readout
             label="Unit Contribution (£)"
-            value={`£${gbpMarginPerUnit.toFixed(2)}`}
+            value={`${gbpMarginPerUnit < 0 ? "−" : ""}£${Math.abs(gbpMarginPerUnit).toFixed(2)}`}
             tone={gbpMarginPerUnit >= 50 ? "good" : gbpMarginPerUnit <= 35 ? "bad" : "ink"}
           />
           <Readout
@@ -176,7 +176,8 @@ function InterestTaxPolicySimulator() {
             {sector === "luxury" ? "credit-funded luxuries" : sector === "essential" ? "everyday essentials" : "value discounters"}
           </strong>{" "}
           is <strong>{(demandMultiplier * 100).toFixed(0)}%</strong> of baseline, yielding{" "}
-          <strong>£{profitBeforeTaxK}k</strong> profit before tax and <strong>£{retainedAfterTaxK}k</strong> after{" "}
+          <strong>{profitBeforeTaxK < 0 ? `−£${Math.abs(profitBeforeTaxK)}k` : `£${profitBeforeTaxK}k`}</strong> profit before tax and{" "}
+          <strong>{retainedAfterTaxK < 0 ? `−£${Math.abs(retainedAfterTaxK)}k` : `£${retainedAfterTaxK}k`}</strong> after{" "}
           <strong>{corpTaxPct}%</strong> direct corporation tax.
         </>
       }

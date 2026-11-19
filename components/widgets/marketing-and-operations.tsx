@@ -183,9 +183,10 @@ function ScaleAndJitSimulator() {
   const inDiseconomies = scaleK > mes + 4;
   const nearOptimal = Math.abs(scaleK - mes) <= 4;
 
-  // Build SVG polyline across q = 5..100
+  // Build SVG polyline across q = 5..100 with dynamic y-scale so both modes keep a smooth U-curve
+  const maxCost = Math.max(58, Math.ceil(Math.max(unitCostAt(5), unitCostAt(100)) / 5) * 5 + 4);
   const xPx = (q: number) => 45 + ((q - 5) / 95) * 345;
-  const yPx = (c: number) => 162 - Math.min(130, Math.max(5, ((c - 10) / 48) * 130));
+  const yPx = (c: number) => 162 - Math.min(130, Math.max(5, ((c - 10) / (maxCost - 10)) * 130));
 
   const pts: string[] = [];
   for (let q = 5; q <= 100; q += 5) {

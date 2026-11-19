@@ -10,6 +10,7 @@ import { addDaysISO, todayISO } from "@/lib/dates";
 const NAV = [
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/topics", label: "Topics", icon: "📚" },
+  { href: "/cram", label: "Cram", icon: "🚨" },
   { href: "/watch", label: "Watch", icon: "🎬" },
   { href: "/episodes", label: "Sitcom", icon: "📺" },
   { href: "/daily", label: "Daily 5", icon: "🎯" },
@@ -67,25 +68,25 @@ export function SiteHeader() {
           <span className="hidden sm:inline">IGCSE Business 4BS1</span>
         </Link>
 
-        <nav className="ml-2 hidden items-center gap-1 md:flex" aria-label="Main">
+        <nav className="ml-2 hidden items-center gap-1 lg:flex" aria-label="Main">
           {DESKTOP_NAV.map((n) => (
-            <Link key={n.href} href={n.href} className={`rounded-lg px-3 py-1.5 text-sm font-bold ${active(path, n.href) ? "bg-brand-soft text-brand" : "text-ink-2 hover:bg-surface-2"}`}>
+            <Link key={n.href} href={n.href} className={`rounded-lg px-2.5 py-1.5 text-sm font-bold ${active(path, n.href) ? "bg-brand-soft text-brand" : "text-ink-2 hover:bg-surface-2"}`}>
               {n.label}
             </Link>
           ))}
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          <Link href="/cram" className="chip border-bad/30 bg-bad-soft text-bad text-sm md:hidden" title="Custom 1–4 Topic Exam Cram & Mark-Savers Sheet">
+          <Link href="/cram" className="chip border-bad/30 bg-bad-soft text-bad text-sm lg:hidden" title="Custom 1–4 Topic Exam Cram & Mark-Savers Sheet">
             🚨 <span className="hidden sm:inline">Cram</span>
           </Link>
-          <Link href="/formulas" className="chip border-brand/30 bg-brand-soft text-brand text-sm md:hidden" title="Edexcel 4BS1 Finance Formulas & Exam Technique Vault">
+          <Link href="/formulas" className="chip border-brand/30 bg-brand-soft text-brand text-sm lg:hidden" title="Edexcel 4BS1 Finance Formulas & Exam Technique Vault">
             🎯 <span className="hidden sm:inline">Vault</span>
           </Link>
-          <Link href="/episodes" className="chip border-brand/30 bg-brand-soft text-brand text-sm md:hidden" title="All 7 Boardroom Bananas Sitcom Episodes">
+          <Link href="/episodes" className="chip border-brand/30 bg-brand-soft text-brand text-sm lg:hidden" title="All 7 Boardroom Bananas Sitcom Episodes">
             📺 <span className="hidden sm:inline">Sitcom</span>
           </Link>
-          <Link href="/watch" className="chip border-brand/30 bg-brand-soft text-brand text-sm md:hidden" title="Boardroom Bananas TV & Interactive Studios">
+          <Link href="/watch" className="chip border-brand/30 bg-brand-soft text-brand text-sm lg:hidden" title="Boardroom Bananas TV & Interactive Studios">
             🎬 <span className="hidden sm:inline">Watch</span>
           </Link>
 
@@ -168,13 +169,13 @@ export function MobileNav() {
 
   return (
     <nav className="no-print fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur" aria-label="Bottom navigation">
-      <div className="mx-auto grid max-w-3xl grid-cols-7 px-1">
+      <div className="mx-auto grid max-w-3xl grid-cols-8 px-1">
         {NAV.map((n) => (
-          <Link key={n.href} href={n.href} className={`flex flex-col items-center gap-0.5 py-2 text-[0.65rem] font-bold transition-colors sm:text-xs ${active(path, n.href) ? "text-brand" : "text-ink-2 hover:text-ink"}`} aria-current={active(path, n.href) ? "page" : undefined}>
+          <Link key={n.href} href={n.href} className={`flex min-w-0 flex-col items-center gap-0.5 py-2 text-[0.625rem] font-bold leading-tight whitespace-nowrap transition-colors sm:text-xs ${active(path, n.href) ? "text-brand" : "text-ink-2 hover:text-ink"}`} aria-current={active(path, n.href) ? "page" : undefined}>
             <span className="text-lg sm:text-xl" aria-hidden>
               {n.icon}
             </span>
-            {n.label}
+            <span className="truncate">{n.label}</span>
           </Link>
         ))}
       </div>

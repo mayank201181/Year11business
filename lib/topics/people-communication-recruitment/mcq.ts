@@ -336,9 +336,9 @@ export const mcqPapers: Paper[] = [
         options: ["18.0%", "22.5%", "62.0%", "77.5%"],
         answerIndex: 1,
         explanation:
-          "Labour Turnover (%) = {{(Leavers / Average Staff) * 100 = (18 / 80) * 100 = 22.5%}}. (18.0% forgets to divide by 80; 77.5% is the retention complement!)",
+          'Labour Turnover (%) = {{"Leavers" / "Average Staff" * 100 = (18 / 80) * 100 = 22.5%}}. (18.0% forgets to divide by 80; 77.5% is the retention complement!)',
         hints: [
-          "Use {{(Number of Staff Leaving / Average Staff Employed) * 100}}.",
+          'Use {{"Number of Staff Leaving" / "Average Staff Employed" * 100}}.',
           "Compute (18 ÷ 80) × 100.",
         ],
       },
