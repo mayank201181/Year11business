@@ -10,10 +10,10 @@ export const practice: TopicPractice = {
       question:
         "Which of the following is the clearest example of a **SMART** business objective for a 22-employee craft bakery?",
       options: [
-        "Sell lots more sourdough bread to local cafés soon",
-        "Become the most loved bakery in the country one day",
+        "Sell lots more sourdough bread to local independent cafés very soon",
+        "Become the most loved artisan craft bakery in the entire country one day",
         "Increase monthly wholesale sourdough revenue by 12% across Bristol cafés within 6 months",
-        "Try to keep costs down whenever possible",
+        "Try to keep daily ingredient and oven costs down whenever possible",
       ],
       answerIndex: 2,
       explanation:
@@ -1271,10 +1271,10 @@ export const practice: TopicPractice = {
       question:
         "Partners Kwame and Sian have a Deed of Partnership giving Kwame an annual partner salary of **£20,000** first, with remaining profits split **3 : 2** (Kwame : Sian). In a tough year, total partnership profit before partner salaries is only **£15,000**. Following standard partnership accounting under this Deed, how is the £15,000 allocated?",
         options: [
-          "Kwame receives £20,000 salary and the resulting −£5,000 residual deficit is split 3 : 2 (−£3,000 Kwame, −£2,000 Sian), leaving Kwame on +£17,000 and Sian on −£2,000",
-          "Kwame and Sian receive £7,500 each because the Deed cancels whenever profit drops below £20,000",
-          "Kwame receives £9,000 and Sian receives £6,000, ignoring the salary clause",
-          "Neither partner receives anything and HMRC confiscates the £15,000",
+          "Kwame gets £20,000 salary and the −£5,000 deficit splits 3 : 2 (−£3,000 / −£2,000), netting +£17,000 and −£2,000",
+          "Kwame and Sian receive £7,500 each because the Deed automatically cancels whenever profit drops below £20,000",
+          "Kwame receives £9,000 and Sian receives £6,000 because the salary clause only applies when profit exceeds £20,000",
+          "Neither partner receives anything and the full £15,000 must stay retained as statutory partnership reserves",
         ],
         answerIndex: 0,
         explanation:

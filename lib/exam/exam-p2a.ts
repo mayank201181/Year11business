@@ -18,10 +18,10 @@ export const paper: ExamPaper = {
       question:
         "**StrideCore Sportswear Plc** employs 14,000 staff worldwide and its shares are traded daily on the London Stock Exchange. Millions of shares are owned by pension funds, while day-to-day strategic decisions are taken by a salaried Board of Directors.\n\nWhich structural feature of a large public limited company does this illustrate?",
       options: [
-        "Unlimited personal liability of institutional pension-fund shareholders",
-        "Divorce between ownership and control, which can create tension if directors prioritise empire-building over short-term dividends",
-        "Inability to maintain a separate legal identity from the Chief Executive Officer",
-        "Legal prohibition on publishing audited annual financial statements",
+        "Unlimited personal financial liability of institutional pension-fund shareholders for company debt",
+        "Divorce between ownership and control, risking tension if directors favour growth over dividends",
+        "Legal inability to maintain a separate corporate legal identity from the Chief Executive Officer",
+        "Statutory prohibition preventing listed PLCs from publishing audited annual financial statements",
       ],
       answerIndex: 1,
       hints: [
@@ -40,10 +40,10 @@ export const paper: ExamPaper = {
       question:
         "**VoltDrive Motors Plc** (3,200 employees) achieved steady UK profits between 2021 and 2024, then announced a new 2026 corporate objective: *'Capture 15% of the European electric commercial-van market while cutting factory carbon emissions per vehicle by 40% before 2029.'*\n\nWhy do large PLCs like VoltDrive evolve their objectives as they grow and markets change?",
       options: [
-        "Once a firm exceeds 250 employees, profit becomes illegal under company law",
-        "Large PLCs face zero external competition and never need SMART targets",
-        "Start-up survival remains the sole objective of mature FTSE-listed multinationals",
-        "Established PLCs move beyond survival toward market-share growth and ESG sustainability to satisfy institutional investors, regulators and ethical fleet buyers",
+        "Once an incorporated company exceeds 250 staff, pursuing profit becomes illegal under company law",
+        "Large stock-listed PLCs face zero external rival competition and never require measurable SMART targets",
+        "Short-term start-up survival remains the sole corporate objective of mature FTSE-listed multinationals",
+        "Established PLCs move beyond survival toward market share and ESG goals for investors, regulators and fleets",
       ],
       answerIndex: 3,
       hints: [
@@ -263,10 +263,10 @@ export const paper: ExamPaper = {
       question:
         "**SkyBridge Airlines Plc** (6,800 employees) is selecting 24 trainee airline pilots from 4,200 applicants. Alongside interviews and medicals, shortlisted candidates complete simulated cockpit emergencies and spatial-reasoning assessments.\n\nWhat is the main purpose of using **aptitude and psychometric testing** in large-scale PLC selection?",
       options: [
-        "Replacing employment contracts so pilots work unpaid",
-        "Objectively measuring technical potential and calmness under pressure to reduce costly pilot-training drop-outs",
-        "Guaranteeing zero recruitment advertising expenditure",
-        "Allowing passengers to vote on cockpit crew salaries",
+        "Replacing written employment contracts so newly hired trainee pilots work completely unpaid",
+        "Objectively testing technical aptitude and stress resilience to cut costly training drop-outs",
+        "Guaranteeing zero external recruitment advertising or job-board expenditure for the airline",
+        "Allowing airline passengers to vote directly on annual cockpit crew salaries and shift rotas",
       ],
       answerIndex: 1,
       hints: [
@@ -501,10 +501,10 @@ export const paper: ExamPaper = {
       question:
         "**VoltDrive Motors Plc** (3,200 employees) spends £145 million installing automated laser-welding robots in its Sunderland plant, alongside £2.8 million on monthly electricity and lubricants.\n\nHow are these two outlays classified in business finance?",
       options: [
-        "Both are revenue expenditure because factories use robots every day",
-        "Both are internal sources of finance",
-        "Robots are revenue expenditure; electricity is capital expenditure",
-        "Robots are capital expenditure (non-current assets lasting > 1 year); electricity and lubricants are revenue expenditure (day-to-day running costs)",
+        "Both items are revenue expenditure because car factories operate welding robots every single day",
+        "Both items are classified as internal sources of finance generated inside the factory",
+        "Laser-welding robots are revenue expenditure; monthly electricity bills are capital expenditure",
+        "Robots are capital expenditure (assets lasting > 1 year); electricity and oil are revenue expenditure",
       ],
       answerIndex: 3,
       hints: [

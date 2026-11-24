@@ -33,7 +33,7 @@ function active(path: string, href: string) {
 }
 
 export function SiteHeader() {
-  const { data, activeProfile, mode, account, switchProfile, logout, leaveGuest } = useStore();
+  const { data, activeProfile, mode, account, accountsAvailable, switchProfile, logout, leaveGuest } = useStore();
   const path = usePathname() ?? "/";
   const [openAt, setOpenAt] = useState<string | null>(null);
   const open = openAt === path;
@@ -101,7 +101,14 @@ export function SiteHeader() {
           ) : null}
 
           <div className="relative" ref={menuRef}>
-            <button type="button" onClick={() => setOpenAt(open ? null : path)} aria-expanded={open} aria-haspopup="menu" className="flex h-10 items-center gap-1 rounded-xl px-2 hover:bg-surface-2">
+            <button
+              type="button"
+              onClick={() => setOpenAt(open ? null : path)}
+              aria-expanded={open}
+              aria-haspopup="menu"
+              aria-label={`${activeProfile?.name ?? "Vanishree"} menu`}
+              className="flex h-10 items-center gap-1 rounded-xl px-2 hover:bg-surface-2"
+            >
               <span className="text-2xl" aria-hidden>
                 {activeProfile?.avatar ?? "💼"}
               </span>
@@ -135,9 +142,9 @@ export function SiteHeader() {
                 <Link role="menuitem" href="/exam" className="block rounded-lg px-3 py-2 hover:bg-surface-2">
                   📝 4BS1 Paper 1 &amp; Paper 2 Mocks
                 </Link>
-                <hr className="my-1 border-line" />
                 {mode === "cloud" ? (
                   <>
+                    <hr className="my-1 border-line" />
                     <Link role="menuitem" href="/parent" className="block rounded-lg px-3 py-2 hover:bg-surface-2">
                       👨‍👩‍👧 Parent dashboard
                     </Link>
@@ -150,11 +157,14 @@ export function SiteHeader() {
                       🚪 Sign out
                     </button>
                   </>
-                ) : (
-                  <button role="menuitem" type="button" className="block w-full rounded-lg px-3 py-2 text-left hover:bg-surface-2" onClick={leaveGuest}>
-                    ☁️ Sign in / create account
-                  </button>
-                )}
+                ) : accountsAvailable ? (
+                  <>
+                    <hr className="my-1 border-line" />
+                    <button role="menuitem" type="button" className="block w-full rounded-lg px-3 py-2 text-left hover:bg-surface-2" onClick={leaveGuest}>
+                      ☁️ Sign in / create account
+                    </button>
+                  </>
+                ) : null}
               </div>
             ) : null}
           </div>

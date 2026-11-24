@@ -172,7 +172,11 @@ interface StoreValue {
   status: Status;
   mode: Mode;
   /** Accounts/cloud sync available on this deployment. */
+  accountsAvailable: boolean;
+  /** Alias for accountsAvailable. */
   cloudAvailable: boolean;
+  /** Live AI tutor available on this deployment. */
+  aiAvailable: boolean;
   account: Account | null;
   activeProfile: Profile | null;
   data: ProgressDoc;
@@ -220,7 +224,8 @@ const StoreContext = createContext<StoreValue | null>(null);
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [status, setStatus] = useState<Status>("loading");
   const [mode, setMode] = useState<Mode>("guest");
-  const [cloudAvailable, setCloudAvailable] = useState(false);
+  const [accountsAvailable, setAccountsAvailable] = useState(false);
+  const [aiAvailable, setAiAvailable] = useState(false);
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [account, setAccount] = useState<Account | null>(null);
   const [activeProfile, setActiveProfile] = useState<Profile | null>(null);
@@ -413,11 +418,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const bootstrap = useCallback(async () => {
     loadGuest();
     const r = await callJson("/api/auth/me", "GET", undefined, 2500);
-    if (!r.ok || typeof r.data.accounts !== "boolean") {
+    if (!r.ok) {
+      return;
+    }
+    if (typeof r.data.ai === "boolean") setAiAvailable(r.data.ai);
+    if (typeof r.data.accounts !== "boolean") {
       return;
     }
     const cloud = r.data.accounts;
-    setCloudAvailable(cloud);
+    setAccountsAvailable(cloud);
     const acc = r.data.account && typeof r.data.account === "object" ? (r.data.account as Account) : null;
     if (acc) {
       acc.profiles = Array.isArray(acc.profiles) ? acc.profiles : [];
@@ -685,10 +694,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const refreshAccount = useCallback(async () => {
     const r = await callJson("/api/auth/me", "GET");
-    if (r.ok && r.data.account) {
-      const acc = r.data.account as Account;
-      setAccount(acc);
-      setActiveProfile((p) => (p ? acc.profiles.find((x) => x.id === p.id) ?? p : p));
+    if (r.ok) {
+      if (typeof r.data.accounts === "boolean") setAccountsAvailable(r.data.accounts);
+      if (typeof r.data.ai === "boolean") setAiAvailable(r.data.ai);
+      if (r.data.account) {
+        const acc = r.data.account as Account;
+        setAccount(acc);
+        setActiveProfile((p) => (p ? acc.profiles.find((x) => x.id === p.id) ?? p : p));
+      }
     }
   }, []);
 
@@ -936,7 +949,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     () => ({
       status,
       mode,
-      cloudAvailable,
+      accountsAvailable,
+      cloudAvailable: accountsAvailable,
+      aiAvailable,
       account,
       activeProfile,
       data,
@@ -972,7 +987,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       flagQuestion,
       resetAll,
     }),
-    [status, mode, cloudAvailable, account, activeProfile, data, focusTopics, authModalOpen, closeAuthModal, signup, login, logout, startGuest, leaveGuest, createProfile, importGuest, updateProfile, deleteProfile, selectProfile, switchProfile, retryLoad, refreshAccount, guestHasProgress, recordAnswer, recordSkill, award, saveAttempt, clearAttempt, markSectionRead, finishDaily, setBest, setGoalMinutes, setWeeklyDays, setFocusTopics, setLast, flagQuestion, resetAll],
+    [status, mode, accountsAvailable, aiAvailable, account, activeProfile, data, focusTopics, authModalOpen, closeAuthModal, signup, login, logout, startGuest, leaveGuest, createProfile, importGuest, updateProfile, deleteProfile, selectProfile, switchProfile, retryLoad, refreshAccount, guestHasProgress, recordAnswer, recordSkill, award, saveAttempt, clearAttempt, markSectionRead, finishDaily, setBest, setGoalMinutes, setWeeklyDays, setFocusTopics, setLast, flagQuestion, resetAll],
   );
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;

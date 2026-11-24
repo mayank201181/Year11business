@@ -946,10 +946,10 @@ export const paper: ExamPaper = {
       question:
         "At **29-employee Loom & Thistle Knitwear Ltd**, every knitter and linker checks garment tension and seams at **their own stage** of production before passing a cardigan forward, rather than relying solely on one inspector at the packing bench.\n\nWhat is this approach to quality called, and what is its key advantage over end-of-line **Quality Control**?",
       options: [
-        "Mass flow inspection — defective cardigans are deliberately shipped to discount outlets",
-        "Diseconomies of scale — hiring five extra supervisors slows down knitting",
-        "Quality Assurance — defects are caught early at source, slashing wasted merino yarn and empowering workers to take pride in zero-defect craftsmanship",
-        "Desk sampling — checking only one cardigan per month to eliminate all training costs",
+        "Mass flow inspection — defective cardigans are deliberately shipped out to discount outlet stores",
+        "Diseconomies of scale — hiring five extra workshop supervisors deliberately slows down daily knitting",
+        "Quality Assurance — defects are caught at source, cutting wasted merino yarn and boosting staff pride",
+        "Desk sampling — checking only one cardigan per month to eliminate all staff quality-training costs",
       ],
       answerIndex: 2,
       hints: [

@@ -69,7 +69,7 @@ async def main():
                 await browser.close()
                 return
 
-            fps = tl["fps"]
+            fps = int(tl.get("fps", 24))
             total_frames = int(math.ceil(tl["duration"] * fps))
             workers = min(2, max(1, int(opt("--workers", "1"))))
             # Align worker split to even frame boundary for 2s animation cadence
@@ -89,8 +89,9 @@ async def main():
                         [
                             FFMPEG, "-y", "-loglevel", "error",
                             "-f", "image2pipe", "-framerate", str(fps), "-c:v", "mjpeg", "-i", "-",
+                            "-vf", "scale=in_range=full:out_range=tv,format=yuv420p",
                             "-c:v", "libx264", "-preset", "ultrafast", "-threads", "2", "-crf", "26",
-                            "-pix_fmt", "yuv420p", "-tune", "animation", seg,
+                            "-pix_fmt", "yuv420p", "-color_range", "tv", "-tune", "animation", seg,
                         ],
                         stdin=subprocess.PIPE,
                     )

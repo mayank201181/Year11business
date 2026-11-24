@@ -1,6 +1,7 @@
 "use client";
 // "Ask Advisor Sterling" — AoPS-style Edexcel 4BS1 AI tutor panel. Gives hints & exam-technique coaching, not instant spoilers.
 import { useEffect, useRef, useState } from "react";
+import { useStore } from "@/lib/store";
 import { Rich } from "./Rich";
 
 interface Turn {
@@ -16,6 +17,7 @@ const PRESETS: { label: string; prompt: string }[] = [
 ];
 
 export function AskAI({ context, compact }: { context: string; compact?: boolean }) {
+  const { aiAvailable } = useStore();
   const [open, setOpen] = useState(false);
   const [turns, setTurns] = useState<Turn[]>([]);
   const [draft, setDraft] = useState("");
@@ -26,6 +28,8 @@ export function AskAI({ context, compact }: { context: string; compact?: boolean
   useEffect(() => {
     endRef.current?.scrollIntoView({ block: "nearest" });
   }, [turns, busy]);
+
+  if (!aiAvailable) return null;
 
   async function send(text: string) {
     const q = text.trim();

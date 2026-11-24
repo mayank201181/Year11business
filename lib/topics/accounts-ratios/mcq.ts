@@ -415,10 +415,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A tile wholesaler holds Current Assets of £360,000 and Current Liabilities of £80,000, giving a **Current Ratio of 4.5 : 1**. What is the strongest Grade 9 criticism of this ratio?",
         options: [
-          "The wholesaler cannot afford to pay next month's trade payables",
-          "Current Liabilities exceed Current Assets by £280,000",
-          "Too much capital is tied up unproductively in idle cash or excess stock instead of earning higher ROCE",
-          "HMRC fines companies whose Current Ratio exceeds 2.5 : 1",
+          "The wholesaler lacks sufficient short-term assets to pay next month's trade payables",
+          "Current Liabilities currently exceed Current Assets by a shortfall of £280,000",
+          "Too much capital sits unproductively in idle cash or excess stock instead of lifting ROCE",
+          "HMRC imposes automatic liquidity fines on companies whose Current Ratio exceeds 2.5 : 1",
         ],
         answerIndex: 2,
         hints: [
@@ -520,10 +520,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which critical business strength is **completely omitted** from numerical ratio analysis of published accounts?",
         options: [
-          "Short-term liquidity coverage of Current Liabilities",
-          "Percentage of revenue absorbed by Cost of Sales",
-          "Qualitative factors such as employee motivation, brand loyalty and innovative R&D pipeline",
-          "Long-term debt relative to Total Equity",
+          "Short-term liquidity coverage of Current Liabilities by cash and receivables",
+          "Percentage of total sales revenue absorbed directly by variable Cost of Sales",
+          "Qualitative strengths such as staff motivation, brand loyalty and R&D pipeline",
+          "Long-term bank debt and debentures measured relative to Total Equity reserves",
         ],
         answerIndex: 2,
         hints: [
@@ -753,10 +753,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In November 2025, a solar-panel manufacturer takes out a **£2 million 10-year bank loan** to build a second factory that will not open until late 2026. What is the most likely effect on its **2025 year-end ROCE**?",
         options: [
-          "ROCE jumps higher in 2025 because the £2m loan counts as Revenue",
-          "ROCE dips in 2025 because Capital Employed increases immediately by £2m before the new factory generates Operating Profit",
-          "ROCE is unaffected because bank loans are Current Liabilities",
-          "ROCE doubles because Finance Costs are added to Operating Profit",
+          "ROCE jumps higher in 2025 because the £2m long-term bank loan is recorded as Revenue",
+          "ROCE dips in 2025 as Capital Employed rises by £2m before the new factory earns Operating Profit",
+          "ROCE stays completely unaffected because 10-year bank loans are classified as Current Liabilities",
+          "ROCE doubles in 2025 because annual loan Finance Costs are added directly onto Operating Profit",
         ],
         answerIndex: 1,
         hints: [
@@ -795,10 +795,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why might employees and trade unions examine a large Plc's **Statement of Comprehensive Income** before annual pay negotiations?",
         options: [
-          "To verify that high Operating Profit and rising OPM make a real-terms wage rise affordable for the company",
-          "To calculate the exact VAT refund owed on personal shopping",
-          "To check whether Trade Receivables exceed Non-Current Assets",
-          "To set the central bank's national base interest rate",
+          "To verify that strong Operating Profit and rising OPM make a real-terms wage rise affordable",
+          "To calculate the exact personal VAT refund owed to employees on household shopping",
+          "To check whether Trade Receivables currently exceed Non-Current Assets on the balance sheet",
+          "To set the central bank's national base interest rate for upcoming commercial mortgages",
         ],
         answerIndex: 0,
         hints: [
@@ -875,9 +875,9 @@ export const mcqPapers: Paper[] = [
           "In an Edexcel 4BS1 **12-mark 'Evaluate'** question comparing two acquisition targets using two years of financial extracts, what separates a **Level 3 Grade 9** response from a mid-band answer?",
         options: [
           "Defining Revenue, Assets and Liabilities at length in the opening paragraph without calculating any ratios",
-          "Computing profitability, ROCE and liquidity ratios for both targets, linking them to each target's market context, and weighing non-financial/window-dressing limitations before reaching a justified verdict",
-          "Listing six generic bullet-point formulas without mentioning either target business by name",
-          "Selecting whichever company has the higher Revenue in pounds and ignoring liabilities completely",
+          "Computing ROCE, profitability and liquidity ratios in market context and weighing non-financial/window-dressing limits before judging",
+          "Listing six generic textbook ratio formulas in bullet points without mentioning either target business by name",
+          "Selecting whichever target reports the highest total Revenue in pounds while ignoring debt and liabilities completely",
         ],
         answerIndex: 1,
         hints: [

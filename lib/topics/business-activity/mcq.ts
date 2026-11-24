@@ -231,10 +231,10 @@ export const mcqPapers: Paper[] = [
         guideRef: "franchises-social-public",
         question: "How does a **social enterprise** differ from a traditional charity?",
         options: [
-          "A social enterprise earns most of its income through commercial trading of goods/services while reinvesting surpluses into a social or environmental mission",
-          "A social enterprise aims to maximise dividend payouts to stock-exchange shareholders",
-          "A social enterprise is owned and funded entirely by central government",
-          "A social enterprise is legally forbidden from employing paid staff",
+          "A social enterprise earns most income by trading commercially and reinvests surpluses into a social or environmental mission",
+          "A social enterprise aims to maximise quarterly dividend payouts to external stock-exchange shareholders",
+          "A social enterprise is owned, managed and funded exclusively by central government departments",
+          "A social enterprise relies purely on charitable donations and is legally barred from employing paid staff",
         ],
         answerIndex: 0,
         explanation:
@@ -550,10 +550,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is a **public corporation** (such as a state-owned rail operator) sometimes able to keep rural train routes open even when ticket revenue on those routes is lower than operating costs?",
         options: [
-          "Because public corporations are exempt from paying employee wages",
-          "Because its primary objective is social welfare and universal public access, funded or subsidised by government tax revenue",
-          "Because stock-exchange speculators buy rural route shares for capital gains",
-          "Because rural routes are operated by unpaid sole traders",
+          "Because public corporations are legally exempt from paying employee wages or track maintenance costs",
+          "Because its primary objective is social welfare and universal public access, funded or subsidised by tax revenue",
+          "Because stock-exchange speculators buy rural route shares purely for short-term capital gains",
+          "Because rural branch routes are legally operated by unpaid local volunteers and sole traders",
         ],
         answerIndex: 1,
         explanation:
@@ -743,10 +743,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Between 2015 and 2025 in Economy K, manufacturing output rose in money terms from **$80 billion to $100 billion**, while total GDP rose from **$250 billion to $500 billion**. Which statement accurately interprets these figures?",
         options: [
-          "Manufacturing shrank in absolute dollar output between 2015 and 2025",
-          "Manufacturing's share of GDP increased from 20% to 32%",
-          "Economy K shifted from a tertiary economy back into a primary agricultural economy",
-          "Manufacturing grew in absolute output (+25%), yet Economy K still experienced relative de-industrialisation as manufacturing's GDP share fell from 32% to 20%",
+          "Manufacturing shrank in absolute dollar output between 2015 and 2025 as factories closed across Economy K",
+          "Manufacturing's percentage share of Economy K's total GDP expanded sharply from 20% to 32% over the decade",
+          "Economy K shifted backwards from a tertiary service economy into a primary agricultural extraction economy",
+          "Manufacturing grew by 25% in dollar output, yet Economy K experienced relative de-industrialisation as its GDP share fell from 32% to 20%",
         ],
         answerIndex: 3,
         explanation:
@@ -765,10 +765,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why might institutional pension funds buy millions of shares in `SolarGrid Plc` on Tuesday, yet its board of directors still faces a **hostile takeover** bid on Friday?",
         options: [
-          "Because PLC shares are freely tradable on a public stock exchange, allowing a rival firm to buy over 50% of voting shares directly from existing shareholders",
-          "Because PLC shareholders have unlimited liability and must sell when ordered by the government",
-          "Because PLCs are prohibited from holding Annual General Meetings",
-          "Because any company with fewer than 50 employees automatically becomes a rival's subsidiary",
+          "PLC shares trade freely on a public exchange, so a rival can buy over 50% of voting shares without board approval",
+          "PLC shareholders carry unlimited personal liability and must sell shares whenever directed by central government",
+          "PLCs are legally prohibited from holding Annual General Meetings or letting founders vote on strategic mergers",
+          "Any incorporated company employing fewer than 50 staff automatically becomes a listed rival's subsidiary",
         ],
         answerIndex: 0,
         explanation:
@@ -807,10 +807,10 @@ export const mcqPapers: Paper[] = [
         question:
           "AeroJet Plc announces £120m of investment into quieter, fuel-efficient aircraft engines that cut aviation fuel burn by 18% per flight. How does this capital investment reshape stakeholder trade-offs over time?",
         options: [
-          "Short-run dividends may dip due to the £120m outlay, but long-run shareholder profits, airport communities (lower noise/emissions) and government carbon targets all align positively",
-          "Local communities suffer louder noise while long-run fuel expenses increase by 18%",
-          "Suppliers of new aircraft engines lose orders while short-run cash balances immediately increase by £120m",
-          "Employees lose limited liability while passengers pay higher airport noise fines",
+          "Short-run dividends may dip from the £120m outlay, but long-run profits, quieter communities and carbon targets align",
+          "Local airport communities suffer louder engine noise while AeroJet's long-run aviation fuel expenses rise by 18%",
+          "Engine suppliers lose commercial orders while AeroJet's short-run cash balances immediately increase by £120m",
+          "Airline employees lose limited liability protection while passengers must pay higher statutory airport noise fines",
         ],
         answerIndex: 0,
         explanation:
@@ -892,10 +892,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In an Edexcel 4BS1 **12-mark 'Evaluate...'** conclusion using the **AJIM** structure, what makes the *'It depends on'* (`I`) step reach Level 3 (Grade 8–9) evaluation?",
         options: [
-          "Repeating the exact wording of the two advantages already written in Paragraph 1",
-          "Identifying the decisive case-study condition (such as cash reserves, founder desire for >50% control, or short-run vs long-run horizon) that determines whether the chosen option succeeds",
-          "Writing 'There are both pros and cons so it is 50/50 and impossible to decide'",
-          "Listing five unrelated definitions from other syllabus strands",
+          "Repeating the exact wording of the two advantages already written in Paragraph 1 without adding new reasoning",
+          "Specifying the decisive case-study condition (e.g. cash reserves, >50% control or time horizon) that governs success",
+          "Writing 'There are valid pros and cons on both sides, so it is 50/50 and impossible to choose one option'",
+          "Listing five textbook definitions from unrelated syllabus strands to show broad subject knowledge",
         ],
         answerIndex: 1,
         explanation:

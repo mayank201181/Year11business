@@ -440,10 +440,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does organising factory operatives into **autonomous workgroups (cell production)** help satisfy Maslow's **social** and **esteem** needs?",
         options: [
-          "Workers work in silent isolation with no quality targets",
-          "Teammates collaborate closely as a cohesive unit (belonging) and take shared pride in signing off defect-free modules (recognition)",
-          "Cell production guarantees every operative becomes a PLC shareholder",
-          "Autonomous teams abolish health and safety regulations",
+          "Operatives work in silent individual isolation with zero shared production or quality targets",
+          "Teammates collaborate in a cohesive unit (belonging) and take shared pride in defect-free modules (recognition)",
+          "Cell production legally guarantees every factory operative receives voting PLC shares immediately",
+          "Autonomous manufacturing teams remove the employer's legal duty to follow health and safety rules",
         ],
         answerIndex: 1,
         hints: [
@@ -581,10 +581,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why might a busy hospital director **delegate** rota scheduling to ward sisters?",
         options: [
-          "So the director is legally immune if wards are dangerously understaffed",
-          "To free the director's time for hospital-wide strategy while empowering ward sisters who know their nurses' availability best",
-          "To lengthen the chain of command and slow down shift swaps",
-          "Because delegation eliminates the need for any communication between tiers",
+          "So the hospital director becomes legally immune from responsibility if wards are dangerously understaffed",
+          "To free the director's time for hospital strategy while empowering ward sisters who know nurses' availability best",
+          "To lengthen the hospital's chain of command and deliberately slow down routine shift swaps",
+          "Because delegating rota duties removes the need for upward or downward communication between tiers",
         ],
         answerIndex: 1,
         hints: [
@@ -774,10 +774,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A small startup café (Paper 1, 6 staff) has tight cash flow during its first winter, so it cannot afford a 10% wage rise. Which low-cost **Herzberg motivator** is best suited to boost barista commitment?",
         options: [
-          "Floating shares on the London Stock Exchange for baristas",
-          "Giving baristas responsibility to create 'Barista's Special' seasonal drinks and publicly praising customer favourites",
-          "Cutting winter heating in the staff room",
-          "Switching baristas to pure piece-rate per espresso shot poured",
+          "Floating shares on the London Stock Exchange to launch a public employee share-option scheme",
+          "Giving baristas responsibility to design seasonal drinks and publicly praising customer favourites",
+          "Cutting winter heating and break facilities in the staff room to save utility overheads",
+          "Switching every barista onto pure piece-rate wages paid strictly per espresso shot poured",
         ],
         answerIndex: 1,
         hints: [
@@ -816,10 +816,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why do many fast-growing tech startups hit a 'coordination crisis' if the founder keeps using a **laissez-faire** style once headcount grows from 8 co-founders to 180 mixed-experience staff?",
         options: [
-          "New junior hires lack the implicit shared vision of the original 8 experts, leading to duplicated work, missed deadlines and confusion without clear structure",
-          "Laissez-faire forces the founder to personally approve every stationery order",
-          "Government law bans laissez-faire leadership above 50 employees",
-          "Laissez-faire automatically turns the firm into a tall autocratic hierarchy",
+          "New junior hires lack the founders' shared vision, causing duplicated work, missed deadlines and confusion without structure",
+          "Laissez-faire management forces the founder to personally sign off every routine stationery and software order",
+          "Statutory employment legislation prohibits laissez-faire leadership once a company exceeds 50 full-time staff",
+          "Laissez-faire delegation automatically converts the startup into a tall, centralised autocratic hierarchy",
         ],
         answerIndex: 0,
         hints: [
@@ -895,10 +895,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In an Edexcel 4BS1 **9-mark 'Justify'** question asking whether a 300-employee hotel group should adopt **centralised** or **decentralised** decision-making, what must a Grade 9 answer include to reach Level 3?",
         options: [
-          "Definitions of every motivation theorist without mentioning hotels",
-          "Equal undecided weight to both options, ending 'either option could work nicely'",
-          "Contextualised chains of reasoning applied to the hotel group, a counter-argument/drawback of the chosen option, and a decisive 'it depends on' judgement",
-          "Bullet-point one-word lists with zero connectives",
+          "Detailed textbook definitions of every motivation theorist written without mentioning the hotel group",
+          "Equal undecided weight given to both options, concluding that 'either option could work nicely'",
+          "Contextualised chains for the hotel group, a counter-argument/drawback, and a decisive 'it depends on' verdict",
+          "Short bullet-point one-word lists summarising advantages with zero logical connectives or context",
         ],
         answerIndex: 2,
         hints: [

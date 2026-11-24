@@ -150,10 +150,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why can a small Paper 1 start-up thrive inside a **niche market** (such as custom left-handed ergonomic guitars) despite lacking economies of scale?",
         options: [
-          "Niche markets guarantee millions of daily mass-market unit sales",
-          "Specialised unmet needs face little direct competition, allowing premium prices and wider Gross Profit Margins",
-          "Niche markets never require any market research or quality checks",
-          "Large multinationals are legally banned from entering niche segments",
+          "Niche markets automatically guarantee millions of high-volume daily mass-market unit sales",
+          "Specialised unmet needs face little direct competition, allowing premium prices and higher GPM",
+          "Niche market start-ups never require any customer market research or product quality checks",
+          "Large multinational competitors are legally prohibited from entering specialised niche segments",
         ],
         answerIndex: 1,
         hints: [
@@ -192,10 +192,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A Yorkshire jacket maker switches from selling through **wholesalers and department stores** to selling **100% direct to consumers via its own website**. What is a major advantage AND drawback of this Place shift?",
         options: [
-          "Advantage: wholesales break bulk for free; Drawback: zero access to customer emails",
-          "Advantage: eliminates all parcel delivery costs; Drawback: retail margin drops to zero",
-          "Advantage: keeps the full retail profit margin and customer data; Drawback: loses physical try-on footfall and must handle individual parcel returns",
-          "Advantage: guarantees zero website cybersecurity costs; Drawback: forces Job production",
+          "Advantage: external wholesalers break bulk free of charge; Drawback: zero direct access to customer email data",
+          "Advantage: eliminates all individual parcel courier costs; Drawback: the maker's own retail margin drops to zero",
+          "Advantage: keeps full retail margin and customer data; Drawback: loses try-on footfall and must handle parcel returns",
+          "Advantage: guarantees zero website hosting or cybersecurity costs; Drawback: forces slow bespoke Job production",
         ],
         answerIndex: 2,
         hints: [
@@ -487,10 +487,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Under **Total Quality Management (TQM)**, what does the concept of **internal customers** mean?",
         options: [
-          "Employees receive a 20% staff discount when buying finished products",
-          "Every worker or department treats the next stage on the production chain as a valued customer and refuses to pass on defective work",
-          "Only senior directors are allowed to speak to external retail buyers",
-          "Defective goods are sold cheaply inside the staff canteen",
+          "Factory employees receive a 20% staff discount when buying the company's finished retail products",
+          "Each stage treats the next department on the line as a customer and refuses to pass on defective work",
+          "Only senior board directors are permitted to speak directly with external wholesale and retail buyers",
+          "Defective batches caught at final inspection are sold off cheaply inside the factory staff canteen",
         ],
         answerIndex: 1,
         hints: [
@@ -566,10 +566,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does a manufacturer switching to **Just-in-Time (JIT)** almost always need to replace end-of-line **Quality Control** with **Total Quality Management (TQM)** at the same time?",
         options: [
-          "Because TQM legally requires holding massive warehouses of spare stock",
-          "Because with zero buffer stock under JIT, discovering a batch of faulty parts only at the end of the line halts customer deliveries immediately",
-          "Because JIT only works under Job production for single handmade items",
-          "Because end-of-line Quality Control makes Labour Productivity infinitely high",
+          "Because Total Quality Management legally requires holding large emergency warehouses of spare buffer stock",
+          "With zero buffer stock under JIT, catching faulty parts only at the end of the line halts deliveries immediately",
+          "Because Just-in-Time inventory scheduling only operates under bespoke Job production for single handmade items",
+          "Because traditional end-of-line Quality Control inspection automatically makes Labour Productivity infinitely high",
         ],
         answerIndex: 1,
         hints: [
@@ -587,10 +587,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why can large PLCs borrow £50 million at **4.8% interest**, whereas a local sole trader pays **11.5% interest** on a £20,000 loan — and what is this called?",
         options: [
-          "Financial economy of scale — PLCs hold diversified revenues and substantial Non-Current Assets as collateral, lowering lender risk",
-          "Technical economy of scale — PLCs own faster computers",
-          "External economy of scale — central banks set lower base rates for sole traders",
-          "Purchasing economy of scale — banks sell raw materials in bulk",
+          "Financial economy of scale — PLCs offer diversified revenues and large assets as collateral, lowering lender risk",
+          "Technical economy of scale — large PLCs own faster factory robotics and automated office computers",
+          "External economy of scale — central banks set lower base interest rates specifically for sole traders",
+          "Purchasing economy of scale — commercial banks sell raw materials to listed PLCs in bulk discounts",
         ],
         answerIndex: 0,
         hints: [
@@ -608,10 +608,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A skincare start-up has a **Question Mark (Problem Child)** serum: **2% market share** in an anti-ageing segment growing at **28% per year**. What is the core strategic dilemma facing its directors?",
         options: [
-          "Whether to 'milk' its huge current cash surplus without spending anything",
-          "How to survive a shrinking, dying market with negative growth",
-          "Whether to raise prices using illegal predatory pricing",
-          "Whether to invest heavy cash into promotion and distribution to turn it into a Star, or withdraw before burning scarce cash reserves",
+          "Whether to 'milk' its huge existing net cash surplus without spending anything on promotion",
+          "How to manage a controlled exit from a shrinking, dying market suffering negative sales growth",
+          "Whether to raise retail bottle prices using illegal below-cost predatory pricing against rivals",
+          "Whether to invest heavy cash to turn it into a Star, or withdraw before burning scarce reserves",
         ],
         answerIndex: 3,
         hints: [
@@ -635,10 +635,10 @@ export const mcqPapers: Paper[] = [
         question:
           "An ice-cream van owner interviews **only 12 personal friends** to decide whether to invest £45,000 in vegan sorbet machines. What is the main flaw in this primary research?",
         options: [
-          "Friends represent secondary desk data rather than primary data",
-          "Small sample size and severe sampling bias make the findings unrepresentative of real paying customers",
-          "Primary research is illegal for unincorporated sole traders",
-          "Vegan sorbet belongs to the primary agricultural sector",
+          "Personal friends count as secondary desk data rather than original primary field data",
+          "Small sample size and severe sampling bias make results unrepresentative of paying buyers",
+          "Collecting primary customer research is legally barred for unincorporated sole traders",
+          "Artisan vegan sorbet belongs strictly to the primary agricultural extraction sector",
         ],
         answerIndex: 1,
         hints: [
@@ -698,10 +698,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does effective **branding and a clear Unique Selling Point (USP)** change a firm's **Price Elasticity of Demand (PED)**?",
         options: [
-          "It makes demand much more price elastic (`|PED|` rises above 5)",
-          "It forces the business to adopt penetration pricing permanently",
-          "It reduces market share to zero",
-          "It makes demand more price inelastic (`|PED|` moves closer to 0), allowing higher Gross Profit Margins",
+          "It makes consumer demand much more price elastic (`|PED|` rises sharply above 5)",
+          "It forces the business to adopt low-margin penetration pricing permanently across ranges",
+          "It drives total market share towards zero by limiting potential substitute buyers",
+          "It makes demand more price inelastic (`|PED|` nears 0), supporting wider Gross Profit Margins",
         ],
         answerIndex: 3,
         hints: [
@@ -740,10 +740,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A greeting-card printer invests £800,000 in robotic folding and packing lines (**switching from labour-intensive to capital-intensive** operations). Which short-term risk MUST directors plan for?",
         options: [
-          "Higher long-run variable labour cost per card",
-          "Heavy initial cash outflow / gearing strain, potential staff redundancy resistance, and lower flexibility for bespoke handmade cards",
-          "Inability to ever achieve technical economies of scale",
-          "Guaranteed elimination of all fixed depreciation and maintenance costs",
+          "Significantly higher long-run variable manual labour costs incurred per printed card",
+          "Heavy upfront cash outflow, staff redundancy resistance, and lower custom-card flexibility",
+          "Complete inability to achieve technical internal economies of scale at higher output",
+          "Guaranteed elimination of all fixed factory depreciation and robotic maintenance costs",
         ],
         answerIndex: 1,
         hints: [
@@ -803,10 +803,10 @@ export const mcqPapers: Paper[] = [
         question:
           "During the **Development** and **Introduction** stages of the Product Life Cycle, why is **Net Cash Flow** typically **negative** even for a product that later becomes a blockbuster?",
         options: [
-          "Sales volume is already at its all-time peak during Development",
-          "Heavy R&D, tooling and launch promotion outflows occur before high repeat customer sales inflows build up",
-          "Corporation tax is charged at 100% during Development",
-          "Competitors force illegal predatory pricing during Development",
+          "Unit sales volume has already reached its all-time revenue peak during Development",
+          "Heavy R&D, tooling and launch promotion outflows precede strong repeat sales inflows",
+          "Government corporation tax is levied at a mandatory 100% rate during Development",
+          "Established competitors legally enforce predatory pricing throughout Development",
         ],
         answerIndex: 1,
         hints: [
@@ -861,10 +861,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How do independent **Paper 1 coffee shops** survive on the same high street as global chains like Costa and Starbucks that enjoy massive **purchasing and marketing economies of scale**?",
         options: [
-          "By undercutting global chains on raw coffee-bean bulk import prices",
-          "By differentiating through personal barista relationships, locally roasted speciality blends, agility and cosy artisan ambience",
-          "By outspending global chains on national prime-time TV campaigns",
-          "By suffering deliberate diseconomies of scale",
+          "By undercutting global coffee chains on bulk wholesale raw coffee-bean import contracts",
+          "By differentiating via personal barista service, locally roasted blends, agility and cosy ambience",
+          "By outspending multinational coffee chains on prime-time national television advertising",
+          "By deliberately building tall hierarchies to incur organisational diseconomies of scale",
         ],
         answerIndex: 1,
         hints: [
@@ -903,10 +903,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A heritage British luggage brand (`£1,200` handmade leather suitcases, sold only in Harrods and flagship boutiques) is bought by a new CEO who proposes **slashing prices to £299**, switching to **synthetic PVC flow production**, and stocking **supermarket aisles**. What is the sharpest Grade 9 evaluation?",
         options: [
-          "The plan is guaranteed to succeed because all 4Ps remain luxury-aligned",
-          "While Flow production cuts unit cost, mass supermarket Place and £299 pricing destroy brand exclusivity — alienating loyal price-inelastic buyers while entering a crowded price-elastic market against giant rivals",
-          "Switching from Job to Flow production always increases Average Unit Cost",
-          "Luxury suitcases are Dogs in the Boston Matrix so price cuts have zero brand impact",
+          "The plan is guaranteed to succeed because all 4Ps remain consistently aligned around luxury positioning",
+          "Flow production cuts unit cost, but supermarket Place and £299 pricing destroy exclusivity — alienating inelastic fans for a crowded elastic market",
+          "Switching luggage assembly from handmade Job to automated Flow production always increases Average Unit Cost",
+          "Heritage luxury suitcases sit as Dogs in the Boston Matrix, so deep price cuts carry zero brand-equity risk",
         ],
         answerIndex: 1,
         hints: [

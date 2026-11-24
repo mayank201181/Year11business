@@ -118,10 +118,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which item belongs in a **Person Specification** rather than a **Job Description**?",
         options: [
-          "Job title: Senior Bookkeeper",
-          "Reports directly to the Finance Director",
-          "Annual salary: £34,000 for 37.5 hours per week",
-          "Essential: AAT Level 3 accounting qualification and 2 years of payroll experience",
+          "Job title: Senior Bookkeeper based at the Bristol head office",
+          "Line management: Reports directly to the company Finance Director",
+          "Contract terms: £34,000 annual salary for 37.5 hours per week",
+          "Essential: AAT Level 3 accounting qualification and 2 years payroll experience",
         ],
         answerIndex: 3,
         explanation:
@@ -181,10 +181,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which of the following is a genuine **drawback of internal recruitment** when filling a Store Manager vacancy?",
         options: [
-          "It costs thousands of pounds in external headhunter fees",
-          "The promoted deputy already understands the store's EPOS computer system",
-          "Promoting an internal deputy creates a knock-on deputy vacancy that still needs to be filled and brings no fresh outside ideas",
-          "Existing staff feel demotivated when they see colleagues win promotions",
+          "It always costs thousands of pounds in external national advertising and headhunter fees",
+          "The promoted deputy already understands the store's EPOS till system and loyal regulars",
+          "Promoting an internal deputy creates a knock-on vacancy to backfill and brings no fresh outside ideas",
+          "Existing shop-floor staff feel demotivated whenever they see loyal colleagues win promotions",
         ],
         answerIndex: 2,
         explanation:
@@ -286,10 +286,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A job advert stating *'Wanted: Sales Assistant — only men aged under 25 may apply'* breaches which area of **employment legislation**?",
         options: [
-          "Import tariff customs regulations",
-          "Equal opportunities / anti-discrimination legislation (gender and age)",
-          "Central bank monetary policy rules",
-          "Patent and copyright law",
+          "Import tariff and customs border regulations",
+          "Equal opportunities / anti-discrimination law (gender and age)",
+          "Central bank monetary policy and base-rate rules",
+          "Intellectual property, patent and copyright law",
         ],
         answerIndex: 1,
         explanation:
@@ -307,10 +307,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How can strict compliance with **Health and Safety legislation** financially **benefit** a 45-employee roofing contractor over a 3-year period?",
         options: [
-          "It eliminates the need to buy scaffolding, harnesses or hard hats",
-          "Fewer falls and injuries reduce sick-pay absences, insurance premiums, legal fines and site shutdown delays",
-          "It allows the firm to pay roofers below the National Minimum Wage",
-          "It guarantees a 50% government location grant every month",
+          "It eliminates the contractor's need to buy safety scaffolding, harnesses or hard hats",
+          "Fewer falls cut sick-pay absences, insurance premiums, legal fines and site shutdowns",
+          "It legally allows the roofing firm to pay site staff below the National Minimum Wage",
+          "It guarantees a 50% government regional location grant paid into the bank every month",
         ],
         answerIndex: 1,
         explanation:
@@ -493,10 +493,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In a 6-layer retail PLC, store assistants complain that customer sizing complaints sent to Supervisors never reach Head Office buyers, while Head Office pricing updates arrive at tills three days late. Which structural reform directly fixes BOTH vertical communication delays?",
         options: [
-          "Adding two new Deputy Regional Director tiers to check every memo",
-          "Delayering middle hierarchy tiers and connecting stores directly to Head Office via a two-way retail intranet",
-          "Replacing all store emails with postal letters",
-          "Switching from limited liability to unlimited liability",
+          "Adding two new Deputy Regional Director tiers to proofread and forward every store memo",
+          "Delayering middle tiers and linking stores directly to Head Office via a two-way intranet",
+          "Replacing all store till emails and intranet updates with weekly paper postal letters",
+          "Converting the retail PLC from limited liability into an unincorporated partnership",
         ],
         answerIndex: 1,
         explanation:
@@ -514,10 +514,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why do large retail chains (`>250` staff) usually prefer standardised **application forms** over free-format **CVs** when recruiting 500 seasonal store assistants?",
         options: [
-          "Standardised forms collect identical comparable fields from all applicants, speeding up fair shortlisting against the Person Specification",
-          "Application forms make external advertising free of charge",
-          "CVs are illegal under UK consumer protection legislation",
-          "Application forms guarantee zero staff turnover forever",
+          "Uniform fields across all applicants speed up fair shortlisting against the Person Specification",
+          "Standardised online application forms automatically make external job-board adverts free of charge",
+          "Accepting free-format candidate CVs is prohibited under UK consumer and employment legislation",
+          "Requiring structured application forms guarantees zero seasonal staff turnover across all branches",
         ],
         answerIndex: 0,
         explanation:
@@ -557,10 +557,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A fashion e-commerce brand leaves 400 angry customer comments about late winter coats **unanswered** on its public TikTok and Instagram posts (`failed external communication`). What is the sharpest commercial risk?",
         options: [
-          "Visible unanswered complaints deter thousands of prospective online buyers, raising customer-acquisition costs and cutting conversion rates",
-          "The central bank immediately raises national interest rates",
-          "Public complaints automatically convert the brand into a partnership",
-          "Suppliers cut fabric prices to reward slow replies",
+          "Visible unanswered complaints deter prospective buyers, raising acquisition costs and cutting conversion",
+          "The central bank immediately responds to viral retail complaints by raising national interest rates",
+          "Unanswered public social-media complaints legally force the fashion company into a partnership",
+          "Overseas fabric suppliers automatically discount wholesale cloth prices to reward slow customer replies",
         ],
         answerIndex: 0,
         explanation:
@@ -578,10 +578,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Under **unfair dismissal** employment law, what could happen to a business that sacks a permanent employee on the spot because a manager disliked their football team, with zero performance misconduct or warnings?",
         options: [
-          "The business faces an employment tribunal claim, financial compensation payouts, legal fees and reputational damage",
-          "The business receives a tax rebate for cutting wage costs quickly",
-          "Only public corporations are covered by unfair dismissal laws",
-          "Unfair dismissal laws apply only to suppliers, never to employees",
+          "An employment tribunal claim, compensation payouts, legal fees and reputational damage",
+          "A government corporation-tax rebate for lowering monthly fixed payroll overheads quickly",
+          "Nothing, because statutory unfair dismissal laws apply solely to state-owned public corporations",
+          "Nothing, because unfair dismissal laws protect external suppliers rather than permanent staff",
         ],
         answerIndex: 0,
         explanation:
@@ -599,10 +599,10 @@ export const mcqPapers: Paper[] = [
         question:
           "On a noisy bottling factory floor where staff wear ear defenders and speak three different native languages, which medium communicates **emergency machine-stop procedures** with fewest barriers?",
         options: [
-          "A loudspeaker tannoy announcement read fast in idiomatic English",
-          "A 14-page dense legal PDF emailed to office computers",
-          "Universal colour-coded visual pictograms + translated laminated cards right beside the stop button, practised in a physical drill",
-          "An informal rumour passed around the canteen",
+          "A brief loudspeaker tannoy announcement read out rapidly in idiomatic English across the hall",
+          "A 14-page dense legal safety PDF emailed exclusively to management office desktop computers",
+          "Colour-coded visual pictograms + translated cards beside the stop button, backed by a live drill",
+          "An informal word-of-mouth safety reminder passed casually between shift teams in the canteen",
         ],
         answerIndex: 2,
         explanation:
@@ -690,10 +690,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Boutique Hotel `SeaView Ltd` (28 staff) switched 70% of its front-desk and restaurant team onto **zero-hours contracts** to cut winter wage bills by **£18,000/year**. Within eight months, TripAdvisor ratings plunged from 4.8★ to 3.4★, annual staff turnover hit **65%**, and annual room revenue dropped by **£55,000** (`lost contribution = £42,000`). What is the net annual profit effect of the switch (ignoring extra recruitment costs)?",
         options: [
-          "Annual operating profit rises by £18,000",
-          "Annual operating profit rises by £24,000",
-          "Annual operating profit falls by £37,000",
-          "Annual operating profit falls by £24,000 (even before counting higher recruitment & induction expenses!)",
+          "Annual operating profit rises by £18,000 thanks to lower winter wages",
+          "Annual operating profit rises by £24,000 after counting lost room contribution",
+          "Annual operating profit falls by £37,000 after deducting gross lost revenue",
+          "Annual operating profit falls by £24,000 (before extra recruitment costs)",
         ],
         answerIndex: 3,
         explanation:
@@ -712,10 +712,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does encouraging **upward communication** (regular staff feedback forums and suggestion schemes) link directly to **Herzberg's motivators** and **Lean Kaizen**?",
         options: [
-          "Upward communication replaces the legal requirement to pay the National Minimum Wage",
-          "Upward communication increases the number of middle-management layers in a tall hierarchy",
-          "Upward communication means customers never contact the business",
-          "Listening to frontline workers' ideas gives them recognition and responsibility (boosting morale & retention) while uncovering practical shop-floor efficiency improvements",
+          "Upward communication legally replaces the employer's duty to pay the statutory National Minimum Wage",
+          "Upward communication deliberately adds extra middle-management tiers inside a tall corporate hierarchy",
+          "Upward communication stops retail customers from ever needing to contact the business directly",
+          "Listening to frontline ideas gives recognition and responsibility while uncovering shop-floor efficiency gains",
         ],
         answerIndex: 3,
         explanation:
@@ -733,10 +733,10 @@ export const mcqPapers: Paper[] = [
         question:
           "When the statutory **National Minimum Wage** increases by **10%**, why might `AutoWash Plc` (automated car-wash tunnels employing 2 technicians per site) suffer a tiny **0.8%** rise in total costs, whereas `HandValet Ltd` (18 manual car cleaners per site) suffers an **8.5%** jump in total costs?",
         options: [
-          "PLCs are legally exempt from paying the National Minimum Wage",
-          "Minimum-wage rises apply only to firms with fewer than 50 employees",
-          "AutoWash Plc is capital-intensive (wages are ~8% of total costs), whereas HandValet Ltd is labour-intensive on minimum-wage pay (wages are ~85% of total costs)",
-          "Capital-intensive firms employ zero machines and 100% manual workers",
+          "Public Limited Companies listed on a stock exchange are legally exempt from paying the National Minimum Wage",
+          "Statutory National Minimum Wage rises apply strictly to Paper 1 small businesses with fewer than 50 staff",
+          "AutoWash is capital-intensive (wages ~8% of costs), while HandValet is labour-intensive on minimum pay (~85% of costs)",
+          "Capital-intensive service firms employ zero automated machinery and rely 100% on manual minimum-wage staff",
         ],
         answerIndex: 2,
         explanation:
@@ -755,10 +755,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is 'wage differential pressure' when the National Minimum Wage rises from £10.50 to £11.50/hr at a supermarket where Team Leaders currently earn £12.00/hr?",
         options: [
-          "Team Leaders ask to have their hourly pay cut to £10.50/hr",
-          "Supermarket shelf-stackers must repay £1.00/hr in corporation tax",
-          "Job Descriptions become illegal for Team Leaders",
-          "Team Leaders demand a pay rise too (e.g. to £13.20/hr) to preserve the reward gap for their extra supervisory responsibility, amplifying total wage-bill inflation",
+          "Experienced Team Leaders voluntarily ask management to cut their hourly wage back down to £10.50/hr",
+          "Entry-level supermarket shelf-stackers must repay the £1.00/hr statutory rise directly in corporation tax",
+          "Written Job Descriptions become legally unenforceable for supervisory Team Leaders once minimum pay rises",
+          "Team Leaders demand a rise too (e.g. £13.20/hr) to keep their supervisory reward gap, lifting total wages",
         ],
         answerIndex: 3,
         explanation:
@@ -776,10 +776,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A UK engineering firm acquires a family component supplier in Osaka, Japan. During video calls, British managers mistake polite Japanese nods and *'That may be difficult'* as agreement to a Friday deadline, causing a missed shipment. Which barrier occurred and what fixes it?",
         options: [
-          "IT hardware failure — fixed by buying louder microphones",
-          "Cultural communication differences — fixed by cross-cultural awareness training and written milestone confirmations with explicit two-way sign-off",
-          "Excessively flat hierarchy — fixed by adding four layers of supervisors",
-          "Consumer boycott — fixed by raising export tariffs",
+          "IT hardware failure — solved by buying louder video-conference microphones for the UK office",
+          "Cultural norms — solved by cross-cultural training and written milestones with explicit two-way sign-off",
+          "Excessively flat hierarchy — solved by adding four new middle-management layers of supervisors",
+          "Overseas consumer boycott — solved by lobbying the government to raise bilateral export tariffs",
         ],
         answerIndex: 1,
         explanation:
@@ -797,10 +797,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why might a rapidly growing tech firm use **freelance contractors** for a 4-month website redesign rather than recruiting two permanent full-time web designers?",
         options: [
-          "Freelancers bring specialist design skills immediately for the 4-month project with zero long-term salary, holiday pay or redundancy commitment once the site launches",
-          "Freelancers charge £0 per hour under UK employment law",
-          "Permanent full-time staff are forbidden from using computers",
-          "Freelancers automatically own 51% of the company's voting shares",
+          "Freelancers bring specialist skills for the 4-month project with no long-term salary or redundancy tie-in",
+          "Self-employed freelance web contractors legally charge £0 per hour under UK employment legislation",
+          "Permanent full-time tech staff are legally barred from working on external-facing company websites",
+          "Hiring freelance designers automatically transfers 51% of the startup's voting shares to the contractors",
         ],
         answerIndex: 0,
         explanation:
@@ -835,10 +835,10 @@ export const mcqPapers: Paper[] = [
         question:
           "When is **one-way downward communication** genuinely MORE appropriate than a lengthy two-way consultative team discussion?",
         options: [
-          "During an employee's annual career development appraisal",
-          "When brainstorming creative ideas for a new youth clothing range",
-          "When resolving a sensitive grievance between two partners",
-          "During an immediate building fire evacuation or urgent food-contamination recall where instant uniform compliance saves lives",
+          "During an employee's annual personal career-development and training review appraisal",
+          "When brainstorming creative design concepts for a brand-new seasonal youth clothing range",
+          "When mediating a sensitive workplace grievance between two long-standing shift colleagues",
+          "During an immediate fire evacuation or urgent product recall where instant compliance saves lives",
         ],
         answerIndex: 3,
         explanation:
@@ -856,10 +856,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How can an employer legally reduce the financial risk of paying **£5,000** for an employee's **off-the-job** professional qualification, only for that employee to resign a week after passing?",
         options: [
-          "Include a proportionate training-cost clawback agreement (requiring repayment on a sliding scale if they voluntarily leave within 12–24 months) alongside career progression",
-          "Confiscate the employee's passport for five years",
-          "Pay the employee half the National Minimum Wage during the course",
-          "Refuse to give the employee an employment contract",
+          "Use a sliding-scale training clawback clause (if they resign within 12–24 months) plus clear career progression",
+          "Legally confiscate and lock away the newly qualified employee's personal passport for five years",
+          "Pay the trainee only half the statutory National Minimum Wage throughout the entire qualification course",
+          "Refuse to issue the newly qualified employee a written employment contract or statutory holiday pay",
         ],
         answerIndex: 0,
         explanation:
@@ -877,10 +877,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A bakery wheelchair-accessible ramp costs **£2,400** to install so the business complies with disability **anti-discrimination law** both for job applicants and customers. Beyond avoiding legal fines, what commercial upside can this bring?",
         options: [
-          "Widens the recruitment pool to skilled disabled bakers AND welcomes wheelchair-using customers and parents with prams, lifting footfall and brand reputation",
-          "Exempts the bakery from food-hygiene inspections",
-          "Guarantees raw flour prices fall by 20%",
-          "Turns the bakery into a stock-exchange PLC",
+          "Widens hiring to disabled bakers AND welcomes wheelchair users and prams, lifting footfall and reputation",
+          "Automatically exempts the bakery from local council food-hygiene inspections for the next five years",
+          "Guarantees wholesale organic flour and butter suppliers cut their ingredient prices by 20% permanently",
+          "Automatically converts the independent small bakery into a publicly traded Stock Exchange PLC",
         ],
         answerIndex: 0,
         explanation:
@@ -898,10 +898,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why can **informal 'grapevine' communication** damage productivity during a rumoured company merger if directors stay silent?",
         options: [
-          "Exaggerated redundancy rumours spread anxiety, distracting staff from work and prompting top performers to resign preemptively before facts are announced",
-          "Informal corridor conversations cost £50 per minute in telecom bills",
-          "Grapevine talk automatically triggers corporation tax rises",
-          "Informal communication is impossible in firms with fewer than 250 staff",
+          "Exaggerated redundancy rumours fuel anxiety, distracting staff and prompting top performers to quit early",
+          "Informal staffroom corridor conversations directly cost the company £50 per minute in telecom bills",
+          "Workplace grapevine rumours automatically trigger higher government corporation tax rates on merger profits",
+          "Informal communication channels cannot legally exist inside small businesses with fewer than 250 staff",
         ],
         answerIndex: 0,
         explanation:
@@ -919,10 +919,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In an Edexcel 4BS1 **12-mark 'Evaluate whether Oakwood Dental (14 staff) should use on-the-job or off-the-job training for its new digital 3D tooth-scanner'**, which **AJIM** judgement hits top Level 3 evaluation?",
         options: [
-          "Both training methods have pros and cons so Oakwood Dental should flip a coin",
+          "Both training methods carry genuine advantages and cost drawbacks, so Oakwood Dental should simply flip a coin to pick one",
           "Use purely on-the-job shadowing from Day 1, even though zero dentists at Oakwood have ever used the brand-new 3D scanner before",
-          "Send 1–2 lead dentists on manufacturer OFF-THE-JOB certification first (since zero in-house skill exists yet), who then cascade ON-THE-JOB shadowing to the remaining 12 staff — balancing clinical accuracy against small-practice budget and lost chair time",
-          "Avoid all training so rivals never poach Oakwood's dentists",
+          "Train 1–2 lead dentists off-the-job first (since zero in-house skill exists), who then cascade on-the-job shadowing to the rest — balancing accuracy and cost",
+          "Avoid paying for any scanner training whatsoever so competing local dental practices can never poach Oakwood's newly certified dentists",
         ],
         answerIndex: 2,
         explanation:

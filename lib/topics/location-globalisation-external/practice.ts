@@ -1221,10 +1221,10 @@ export const practice: TopicPractice = {
       question:
         "A machine costs **£400,000** and is forecast to generate **£28,000 per year** in extra annual operating profit (`expected ROCE = 7.0%`). When central-bank hikes push bank business loan interest rates from **4.5% to 8.2%**, why does a rational finance director cancel the debt-funded machine purchase?",
         options: [
-          "Because the 8.2% annual cost of borrowing (£32,800/yr interest) now exceeds the 7.0% (£28,000/yr) operating return, reducing Profit Before Tax by £4,800 every year",
-          "Because machines cannot legally be bought when interest rates exceed 5%",
-          "Because higher interest rates reduce annual depreciation to zero",
-          "Because a 7.0% ROCE is higher than an 8.2% loan interest rate",
+          "The 8.2% borrowing cost (£32,800/yr interest) now exceeds the 7.0% (£28,000/yr) return, cutting pre-tax profit by £4,800/yr",
+          "Commercial law prohibits manufacturing companies from buying factory machinery whenever bank loan rates exceed 5.0%",
+          "Higher central-bank interest rates automatically reduce annual factory machinery depreciation charges to zero",
+          "An expected 7.0% ROCE exceeds the 8.2% bank loan interest rate, creating excessive taxable company profits",
         ],
         answerIndex: 0,
         explanation:

@@ -6,7 +6,7 @@ import { useStore } from "@/lib/store";
 type Tab = "welcome" | "login" | "signup";
 
 export function AuthGate({ onClose }: { onClose?: () => void }) {
-  const { login, signup, startGuest, closeAuthModal, cloudAvailable } = useStore();
+  const { login, signup, startGuest, closeAuthModal, accountsAvailable } = useStore();
   const dismiss = onClose ?? closeAuthModal;
   const [tab, setTab] = useState<Tab>("welcome");
   const [name, setName] = useState("");
@@ -66,7 +66,7 @@ export function AuthGate({ onClose }: { onClose?: () => void }) {
 
         {tab === "welcome" ? (
           <div className="mt-6 space-y-2.5">
-            {cloudAvailable ? (
+            {accountsAvailable ? (
               <>
                 <button type="button" className="btn btn-primary w-full" onClick={() => setTab("login")}>
                   Sign in to family account

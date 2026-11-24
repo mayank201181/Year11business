@@ -171,10 +171,10 @@ export const mcqPapers: Paper[] = [
         question:
           "The central bank raises its base **interest rate** from 3% to 6%. Which type of business is most likely to suffer the **sharpest fall** in customer demand?",
         options: [
-          "A luxury kitchen showroom whose customers finance £25,000 refurbishments using home-equity loans and credit",
-          "A local pharmacy selling essential prescription medicines",
-          "A budget discount grocer selling £0.85 own-brand tinned tomatoes",
-          "A municipal water utility supplying tap water",
+          "A luxury kitchen showroom whose customers finance £25,000 refurbishments using loans and credit",
+          "A neighbourhood pharmacy dispensing essential repeat NHS and private prescription medicines",
+          "A budget discount grocer selling £0.85 own-brand tinned tomatoes and basic household staples",
+          "A regulated regional municipal water utility supplying piped domestic tap water to homes",
         ],
         answerIndex: 0,
         explanation:
@@ -192,10 +192,10 @@ export const mcqPapers: Paper[] = [
         question:
           "The government announces an £8 billion public spending programme to electrify regional rail freight lines and upgrade motorway junctions. How does this fiscal spending most directly benefit domestic manufacturers?",
         options: [
-          "It eliminates corporation tax for all sole traders permanently",
-          "It cuts transport congestion and unit distribution costs while creating orders for engineering and construction suppliers",
-          "It forces the domestic currency to depreciate by 50%",
-          "It bans foreign multinationals from selling online",
+          "It permanently eliminates corporation tax and national insurance obligations for all UK sole traders",
+          "It cuts freight congestion and unit distribution costs while creating orders for engineering suppliers",
+          "It forces the domestic currency to depreciate by 50% automatically across international foreign-exchange markets",
+          "It legally prohibits foreign multinational manufacturers from selling consumer products through UK online portals",
         ],
         answerIndex: 1,
         explanation:
@@ -245,10 +245,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does **competition law** protect consumers and small businesses in a market?",
         options: [
-          "By guaranteeing every start-up a 15% Operating Profit Margin",
-          "By prohibiting rival firms from forming price-fixing cartels and blocking abusive mergers that create monopolies",
-          "By setting the foreign exchange rate at £1 = $1.50",
-          "By requiring all workers to join an autocratic trade union",
+          "By guaranteeing every newly registered small business a minimum 15% Operating Profit Margin each year",
+          "By banning rival firms from price-fixing cartels and blocking anti-competitive mergers that create monopolies",
+          "By fixing the domestic foreign exchange rate permanently at £1 = $1.50 to stabilise export pricing",
+          "By requiring every private-sector employee to join a national autocratic industry trade union",
         ],
         answerIndex: 1,
         explanation:
@@ -266,10 +266,10 @@ export const mcqPapers: Paper[] = [
         question:
           "An animal-welfare **pressure group** launches a viral TikTok campaign urging shoppers to stop buying eggs from `MegaFarm Plc` until it ends caged hens. What tactic is the pressure group using?",
         options: [
-          "Monetary base-rate tightening",
-          "A consumer boycott aimed at damaging MegaFarm Plc's sales and brand reputation",
-          "Foreign direct investment repatriation",
-          "Internal job rotation",
+          "Monetary policy base-rate tightening by the central bank",
+          "A consumer boycott targeting MegaFarm Plc's sales and brand image",
+          "Foreign direct investment profit repatriation to overseas parent firms",
+          "Internal job rotation across supermarket shelf-stacking teams",
         ],
         answerIndex: 1,
         explanation:
@@ -287,10 +287,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why do heavy **bulk-reducing** manufacturers (such as timber sawmills or sugar-beet refineries) typically locate close to forests, farms or ports rather than inside city centres?",
         options: [
-          "Raw logs and sugar beet are heavy and expensive to transport, so processing them near the source slashes freight costs",
-          "Sawmills rely on spontaneous high-street window shoppers walking past",
-          "City-centre land is cheaper per square metre than rural industrial land",
-          "Sawmills require zero electricity or road access",
+          "Heavy raw logs and beet cost far more to haul than processed output, so locating near sources slashes freight costs",
+          "Timber sawmills depend heavily on spontaneous high-street pedestrians walking past city shop windows",
+          "Prime city-centre retail land is significantly cheaper per square metre than rural industrial plots",
+          "Bulk-reducing timber mills require zero electricity supply, motorway links or heavy-lorry road access",
         ],
         answerIndex: 0,
         explanation:
@@ -568,10 +568,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How can strict **consumer protection legislation** (requiring accurate food-allergen labelling and 2-year electronics warranties) benefit a reputable domestic manufacturer in the long run?",
         options: [
-          "It eliminates all quality-testing and packaging expenses immediately",
-          "It builds consumer confidence and prevents rogue rivals from undercutting reputable firms with unsafe or mislabelled goods",
-          "It allows the manufacturer to form a legal price-fixing cartel",
-          "It guarantees zero corporation tax on domestic sales",
+          "It immediately eliminates all laboratory quality-testing, warranty and packaging expenses for UK factories",
+          "It builds shopper confidence and stops rogue rivals undercutting reputable firms with unsafe, mislabelled goods",
+          "It legally allows domestic manufacturers to coordinate prices through an industry-wide price-fixing cartel",
+          "It exempts compliant domestic manufacturers from paying corporation tax and VAT on all UK sales",
         ],
         answerIndex: 1,
         explanation:
@@ -589,10 +589,10 @@ export const mcqPapers: Paper[] = [
         question:
           "How does **globalisation** pose BOTH an opportunity and a threat to a 35-employee Scottish cashmere knitwear firm (`GlenKnit Ltd`)?",
         options: [
-          "Opportunity to sell high-margin jumpers via e-commerce to wealthy buyers in Tokyo and New York, alongside the threat of low-cost imported knitwear undercutting it at home",
-          "Opportunity to become a state-owned public corporation, alongside the threat of unlimited liability",
-          "Opportunity to ban all UK imports via private quotas, alongside the threat of local council rates",
-          "Globalisation affects only Paper 2 firms with over 250 employees and never touches SMEs",
+          "Opportunity to sell high-margin jumpers online in Tokyo and New York, plus the threat of cheap imported knitwear at home",
+          "Opportunity to convert into a state-owned public corporation, plus the threat of unlimited personal liability for staff",
+          "Opportunity to impose private import quotas blocking all UK rivals, plus the threat of higher local council rates",
+          "Globalisation affects only multinational Paper 2 PLCs over 250 staff and never impacts small UK exporters",
         ],
         answerIndex: 0,
         explanation:
@@ -638,10 +638,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Central bank base rates jump from **2.0% to 6.0%**. Compare `Firm DebtHeavy` (luxury motorhomes sold on finance; £8m variable-rate bank loan) with `Firm CashKing` (budget bicycle repair parts; £0 debt and £3m cash held in an instant-access business savings account). Which synoptic evaluation is accurate?",
         options: [
-          "Both firms suffer identical percentage falls in net profit",
-          "Firm DebtHeavy suffers a double squeeze (falling credit-reliant motorhome sales + £320k extra annual loan interest), whereas Firm CashKing earns £120k extra interest income and gains customers repairing bikes instead of buying cars",
-          "Firm CashKing pays £120k extra loan interest while Firm DebtHeavy sees motorhome credit demand surge",
-          "Interest-rate rises affect only banks and never alter non-financial firms' income statements",
+          "Both businesses suffer identical percentage falls in net profit because higher rates hit every firm identically",
+          "DebtHeavy suffers a double squeeze (credit-sale drop + £320k loan interest), while CashKing gains £120k deposit interest and bike-repair demand",
+          "CashKing must pay £120k extra bank loan interest while DebtHeavy sees credit-funded luxury motorhome orders surge",
+          "Central-bank interest-rate rises affect commercial banks alone and never alter non-financial firms' income statements",
         ],
         answerIndex: 1,
         explanation:
@@ -660,10 +660,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A student writes in an exam: *'When the exchange rate changes from £1 = $1.45 to £1 = $1.18, the pound has got stronger because 1.18 is closer to 1.00.'* What is wrong with this reasoning?",
         options: [
-          "Nothing — moving closer to 1.00 always means currency appreciation",
-          "£1 = $1.18 means the US dollar has been abolished",
-          "A fall from $1.45 to $1.18 is an import quota rather than an exchange rate",
-          "£1 now buys FEWER dollars ($1.18 instead of $1.45), meaning the pound has **depreciated (weakened — WPIDEC)**, making imports dearer and exports cheaper",
+          "Nothing is wrong — moving numerically closer to 1.00 always signifies a domestic currency appreciation under SPICED",
+          "A rate of £1 = $1.18 proves the US dollar has been pegged permanently to sterling and cannot float further",
+          "A drop from $1.45 to $1.18 represents a customs import quota rather than a foreign-exchange rate fluctuation",
+          "£1 buys fewer dollars ($1.18 vs $1.45), so the pound has **depreciated (WPIDEC)** — making imports dearer and exports cheaper",
         ],
         answerIndex: 3,
         explanation:
@@ -703,10 +703,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In a 12-mark Paper 2 essay asking *'Evaluate whether the Indonesian government should offer a 5-year corporation tax holiday to attract a multinational battery gigafactory'*, which **AJIM** conclusion earns top-band AO4 marks?",
         options: [
-          "Tax holidays have pros and cons so the Indonesian government cannot decide either way",
-          "Reject all foreign multinationals permanently because every MNC destroys small businesses",
-          "Grant the tax holiday because skilled engineering jobs, export earnings and local supplier multiplier effects outweigh lost short-term corporate tax — PROVIDED the deal legally binds the MNC to local component quotas, clean waste treatment and minimum stay clauses",
-          "Offer the tax holiday because Indonesia is a sole trader with unlimited liability",
+          "Tax holidays bring both economic advantages and fiscal drawbacks, so the Indonesian government cannot realistically decide either way",
+          "Reject all foreign multinationals permanently because every overseas gigafactory automatically wipes out domestic Indonesian SMEs",
+          "Grant the tax holiday for skilled jobs, exports and local supplier multipliers — PROVIDED the contract enforces local sourcing, clean waste and minimum stay rules",
+          "Offer the tax holiday immediately because the Indonesian central government trades as an unincorporated sole trader with unlimited liability",
         ],
         answerIndex: 2,
         explanation:
@@ -724,10 +724,10 @@ export const mcqPapers: Paper[] = [
         question:
           "A regional government offers a **£50,000 start-up grant** to firms opening in a remote former mining valley with 11% unemployment. Why might a **biotech gene-sequencing start-up** still refuse to locate there?",
         options: [
-          "Government grants must be repaid at 40% interest every month",
-          "Biotech firms require high-street pedestrian footfall from tourists",
-          "A £50,000 one-off grant cannot compensate if the local labour pool lacks PhD molecular biologists and laboratory infrastructure",
-          "Unemployed workers are legally barred from working in private limited companies",
+          "Government regional grants must always be repaid with 40% compound interest every month",
+          "Gene-sequencing biotech labs rely heavily on walk-in high-street pedestrian tourist footfall",
+          "A £50,000 one-off grant cannot offset a local labour pool lacking PhD biologists and lab facilities",
+          "Unemployed former industrial workers are legally barred from employment in private limited companies",
         ],
         answerIndex: 2,
         explanation:
@@ -745,10 +745,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why do giant established multinationals sometimes **welcome** stricter national environmental packaging regulations even though re-tooling their lines costs £10 million?",
         options: [
-          "Environmental regulations abolish all employee wages in factories",
-          "Fines for breaking environmental laws are paid by customers at the till",
-          "Stricter laws force consumers to boycott compliant products",
-          "Large MNCs can spread the £10m compliance fixed cost across millions of units (economies of scale), whereas under-capitalised small rivals struggle to afford compliance — raising barriers to entry",
+          "Stricter environmental packaging rules legally abolish all minimum-wage labour costs across factories",
+          "Regulatory fines for breaching environmental packaging laws are paid directly by shoppers at the till",
+          "Tougher packaging standards force supermarket consumers to boycott compliant multinational brands",
+          "Large MNCs spread £10m compliance fixed costs across millions of units via scale, raising entry barriers for smaller rivals",
         ],
         answerIndex: 3,
         explanation:
@@ -804,10 +804,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Rapid advances in generative AI and self-service checkouts (**Technological** factor in PESTLE) create which strategic trade-off for a 10,000-employee retail bank?",
         options: [
-          "Zero upfront software investment vs higher long-run branch rent bills",
-          "Unlimited liability for shareholders vs lower ATM electricity bills",
-          "High short-run capital expenditure and branch redundancy payouts vs lower long-run unit operating costs and 24/7 digital customer speed",
-          "Higher import tariffs on mobile apps vs primary-sector industrialisation",
+          "Zero upfront software capital investment traded against sharply higher long-run high-street branch rent bills",
+          "Unlimited personal liability for PLC shareholders traded against slightly lower branch ATM electricity bills",
+          "High short-run capex and branch redundancy payouts traded against lower long-run unit costs and 24/7 digital speed",
+          "Higher customs import tariffs on mobile banking apps traded against rapid primary-sector industrialisation",
         ],
         answerIndex: 2,
         explanation:
@@ -825,10 +825,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Domestic toy maker `PlayWood Ltd`'s **home government** imposes a **25% tighter import quota** on foreign plastic toys entering `PlayWood`'s home market. How does this protectionist quota affect `PlayWood Ltd` in the short run?",
         options: [
-          "PlayWood Ltd must pay a 25% customs tax on every wooden toy it sells domestically",
-          "Foreign rivals flood the domestic market with unlimited cheap toys",
-          "PlayWood Ltd's domestic factory is nationalised",
-          "PlayWood Ltd faces less foreign competition as imported plastic toys become scarcer, allowing PlayWood to win higher domestic sales and market share",
+          "PlayWood Ltd must pay a 25% customs tariff on every wooden toy it produces and sells domestically",
+          "Overseas toy rivals immediately flood PlayWood's home market with unlimited cut-price plastic imports",
+          "PlayWood Ltd's domestic wooden-toy workshop is automatically nationalised into a public corporation",
+          "PlayWood Ltd faces less foreign competition as imported plastic toys shrink, winning higher home sales and share",
         ],
         answerIndex: 3,
         explanation:
@@ -867,10 +867,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why might a Paper 1 12-employee engineering workshop with **zero bank loans** still lose 30% of its orders six months after the central bank raises interest rates?",
         options: [
-          "Zero-debt companies are fined by the central bank when rates rise",
-          "Its B2B factory customers postpone debt-financed machinery purchases when borrowing costs rise and consumer demand cools",
-          "Higher interest rates force sole traders to pay corporation tax twice",
-          "Higher interest rates automatically make exports cheaper under WPIDEC",
+          "Debt-free engineering companies are charged penalty fines by the central bank whenever base rates rise",
+          "Its B2B factory clients postpone debt-funded machinery orders as borrowing costs climb and demand cools",
+          "Higher base interest rates automatically force unincorporated sole traders to pay corporation tax twice",
+          "Higher domestic interest rates automatically weaken the currency and make exports cheaper under WPIDEC",
         ],
         answerIndex: 1,
         explanation:
@@ -888,10 +888,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is the primary commercial reason five independent antique shops choose to locate side-by-side on the same historic lane (**clustering**) despite competing for similar buyers?",
         options: [
-          "The lane becomes a known 'destination magnet' attracting far more specialist collectors than any lone shop on a quiet street could draw",
-          "Landlords charge £0 rent whenever five rivals sit on one street",
-          "Clustering legally merges the five sole traders into one PLC",
-          "Antique furniture is a bulk-reducing primary extraction industry",
+          "The lane becomes a destination hub attracting far more specialist collectors than any lone shop could draw",
+          "Commercial landlords legally charge £0 shop rent whenever five competing retailers open on one street",
+          "Physical clustering automatically merges the five rival sole traders into a single stock-listed PLC",
+          "Selling antique furniture is a bulk-reducing primary extraction industry tied to raw timber forests",
         ],
         answerIndex: 0,
         explanation:

@@ -62,10 +62,10 @@ export const practice: TopicPractice = {
       question:
         "Why does **two-way communication** typically lead to higher staff morale and fewer mistakes than one-way communication?",
       options: [
-        "Because employees can ask clarifying questions (feedback loop) and feel their frontline views are respected",
-        "Because two-way communication never takes any management time",
-        "Because two-way communication bans all written records",
-        "Because two-way communication uses complex technical jargon",
+        "Employees can ask clarifying questions (feedback loop) and feel their frontline views are respected",
+        "Two-way communication eliminates consultation delays and never uses any senior management time",
+        "Two-way communication legally removes the need to keep written policies or shift records",
+        "Two-way communication relies on specialised technical jargon that shortens staff briefings",
       ],
       answerIndex: 0,
       explanation:
@@ -1217,10 +1217,10 @@ export const practice: TopicPractice = {
       question:
         "In a tight labour market with **3.2% national unemployment**, `TechForge Ltd` insists on **12 essential criteria** on its Person Specification (including *'PhD + 8 years Rust + fluent German'*) for a £38,000 junior backend role, receiving **zero qualified applicants** after two months. What is the HR diagnosis?",
         options: [
-          "Over-inflating 'Essential' criteria on the Person Specification relative to the £38,000 pay band created an artificial skills shortage — move nice-to-have traits to 'Desirable' and offer training",
-          "TechForge Ltd put too many items on its Deed of Partnership",
-          "Low national unemployment makes external job boards free of charge",
-          "Moving criteria from Essential to Desirable violates Health and Safety law",
+          "Inflated 'Essential' Person Spec criteria for £38k pay caused an artificial shortage — shift extras to 'Desirable' and train",
+          "TechForge Ltd accidentally listed too many candidate skills inside its legal Deed of Partnership instead of its Job Description",
+          "Low 3.2% national unemployment makes external recruitment agencies and specialist tech job boards completely free of charge",
+          "Reclassifying optional candidate attributes from Essential to Desirable directly violates statutory Health and Safety law",
         ],
         answerIndex: 0,
         explanation:

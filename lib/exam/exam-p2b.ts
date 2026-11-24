@@ -130,10 +130,10 @@ export const paper: ExamPaper = {
       question:
         "The government cuts the headline rate of **Corporation Tax** (a direct tax on company profits) from 25% to 19%.\n\nWhat is the most direct positive impact on **4,100-employee HelioGrid Renewables Plc**?",
       options: [
-        "Customers pay less Value Added Tax at supermarket checkouts",
-        "HelioGrid retains a larger share of post-tax profit, boosting internal funds available to reinvest in turbine R&D or pay dividends",
-        "Central bank mortgage interest rates automatically drop to zero",
-        "Foreign import quotas on steel are abolished worldwide",
+        "Retail shoppers immediately pay lower Value Added Tax at domestic supermarket checkouts",
+        "HelioGrid keeps more post-tax profit, lifting internal funds for turbine R&D or dividends",
+        "Central bank commercial loan and household mortgage interest rates automatically fall to zero",
+        "Foreign government import quotas on rolled wind-turbine steel are abolished worldwide",
       ],
       answerIndex: 1,
       hints: [
@@ -184,10 +184,10 @@ export const paper: ExamPaper = {
       question:
         "**UrbanStyle Apparel Plc** (22,000 employees) discovers through an independent audit that a subcontracted overseas garment factory has been paying workers below local statutory minimums. UrbanStyle immediately funds wage remediation, publishes a full supplier map and switches to audited Living-Wage factories, raising garment Cost of Sales by 9%.\n\nWhich statement best captures the **ethical vs financial trade-off** for a large listed PLC?",
       options: [
-        "Ethical sourcing guarantees that Cost of Sales falls to zero within one week",
-        "Large PLCs are legally exempt from reputational damage or consumer boycotts",
-        "Publishing supplier maps violates competition law in all OECD countries",
-        "Short-term gross margins tighten due to +9% unit costs, but long-term brand equity, investor ESG support and protection from viral boycotts are safeguarded",
+        "Audited ethical sourcing guarantees that garment Cost of Sales drops to zero within one week",
+        "Large stock-listed PLCs are legally shielded from reputational damage or online shopper boycotts",
+        "Publishing audited factory supplier maps violates anti-cartel competition law in all OECD states",
+        "Short-term margins tighten from +9% unit costs, but brand equity, ESG investors and boycott protection stay intact",
       ],
       answerIndex: 3,
       hints: [
@@ -253,10 +253,10 @@ export const paper: ExamPaper = {
       question:
         "**AeroLink Aviation Plc** (19,500 employees) trains cabin crew inside a full-motion emergency-evacuation cabin simulator at an aviation academy away from live passenger flights.\n\nWhy is **off-the-job simulator training** essential here rather than learning purely on-the-job during real passenger flights?",
       options: [
-        "Off-the-job aviation simulators are completely free to build and operate",
-        "Cabin crew are legally forbidden from speaking to experienced senior pursers on aircraft",
-        "High-risk emergencies (cabin smoke or water ditching) can be practised safely without endangering paying passengers or disrupting live flight schedules",
-        "Simulator training guarantees zero cabin crew ever resign for rival airlines",
+        "Off-the-job aviation evacuation simulators are completely free for airlines to build and operate",
+        "Junior cabin crew are legally barred from speaking to experienced senior pursers on live aircraft",
+        "High-risk emergencies (smoke or ditching) can be practised safely without endangering passengers or flights",
+        "Off-the-job simulator training legally guarantees zero cabin crew ever resign to join rival airlines",
       ],
       answerIndex: 2,
       hints: [
@@ -421,10 +421,10 @@ export const paper: ExamPaper = {
       question:
         "**ParcelSwift Logistics Plc** employs 3,600 staff organised into four specialist head-office divisions: **Human Resources, Finance, Marketing, and Operations**.\n\nWhat is the main advantage of organising a large PLC into **functional departments**?",
       options: [
-        "Each department works in total secrecy to prevent company-wide goals",
-        "Specialists (such as chartered accountants or logistics engineers) pool expertise, raising departmental efficiency and clear career progression",
+        "Each specialist division operates in total isolation to avoid sharing company-wide objectives",
+        "Specialists (e.g. accountants or engineers) pool expertise, raising efficiency and career paths",
         "Functional departments eliminate all layers of hierarchy so 3,600 staff report to nobody",
-        "Every van driver simultaneously writes audited PLC tax returns",
+        "Every regional parcel van driver simultaneously prepares audited PLC corporation-tax returns",
       ],
       answerIndex: 1,
       hints: [
@@ -490,10 +490,10 @@ export const paper: ExamPaper = {
       question:
         "**NutraVibe Beverages Plc** (6,400 employees) holds £95 million in **retained profit** from previous years and uses £60 million of it to automate a new canning plant in Germany.\n\nAlthough retained profit requires **zero interest payments** and **no share dilution**, what is a key drawback or trade-off of using retained profit for a listed PLC?",
       options: [
-        "Retained profit must be repaid to the central bank within 90 days",
-        "Using internal retained profit automatically increases the company's gearing ratio above 80%",
-        "Opportunity cost — funds reinvested cannot be paid out as immediate shareholder dividends or earn interest elsewhere, which may displease income-focused investors",
-        "Private partnerships are the only legal structure permitted to retain profits",
+        "Retained profit legally counts as short-term credit repayable to the central bank within 90 days",
+        "Reinvesting internal retained profit automatically pushes the PLC's gearing ratio above 80%",
+        "Opportunity cost — reinvested funds cannot pay immediate shareholder dividends or earn interest elsewhere",
+        "Unincorporated private partnerships are the only legal business structure allowed to retain profit",
       ],
       answerIndex: 2,
       hints: [
@@ -643,10 +643,10 @@ export const paper: ExamPaper = {
       question:
         "**UrbanStyle Apparel Plc** (22,000 employees) buys £45 million of autumn denim inventory in July (paid in cash in August) and sells all of it to shoppers for £82 million in October.\n\nHow do **August's net cash flow** and **annual profit** compare on this transaction?",
       options: [
-        "August suffers £82 million of accounting loss and +£45 million cash inflow",
-        "August suffers a £45 million cash outflow (hurting short-term liquidity), whereas the overall transaction generates £37 million of gross profit across the autumn",
-        "Cash flow and profit are always identical in every calendar month",
-        "Buying inventory is neither a cash outflow nor a Cost of Sales",
+        "August records an £82 million accounting loss alongside a +£45 million net cash inflow",
+        "August has a £45m cash outflow (tightening liquidity), while autumn earns £37m gross profit",
+        "Monthly net cash flow and monthly gross profit are always identical in every calendar month",
+        "Purchasing seasonal denim inventory counts as neither a cash outflow nor a Cost of Sales",
       ],
       answerIndex: 1,
       hints: [
@@ -778,10 +778,10 @@ export const paper: ExamPaper = {
       question:
         "Institutional investors reviewing **AeroLink Aviation Plc's** annual report note that management sold three aircraft on 29 December and repurchased two on 4 January so that year-end cash balances on 31 December looked unusually strong.\n\nWhat limitation of published financial accounts does this illustrate?",
       options: [
-        "Window dressing — legally timing year-end transactions to flatter the balance-sheet snapshot on reporting day",
-        "Using primary focus-group sampling bias instead of census data",
-        "Confusing job rotation with piece-rate remuneration",
-        "Applying price skimming to mature commodities",
+        "Window dressing — timing year-end transactions to flatter the reporting-day balance sheet",
+        "Sampling bias — relying on primary focus-group opinions instead of official census data",
+        "Job rotation — confusing multi-skilled task switching with piece-rate pay structures",
+        "Price skimming — launching mature mass-market commodities at artificially high prices",
       ],
       answerIndex: 0,
       hints: [
@@ -859,10 +859,10 @@ export const paper: ExamPaper = {
       question:
         "Market research shows that **AeroLink Aviation Plc's** Tuesday-morning London–Frankfurt **corporate business-class flights** have **price inelastic demand**, whereas Saturday budget beach flights to Spain have **price elastic demand**.\n\nTo maximise total revenue across both routes, what pricing action makes the most economic sense?",
       options: [
-        "Slash Tuesday corporate business-class fares by 40% and double Saturday beach fares",
-        "Set identical fixed cost-plus fares on every seat regardless of route or day",
-        "Cancel all business-class flights because inelastic demand means zero passengers fly",
-        "Raise fares on price-inelastic Tuesday corporate business flights (where % drop in bookings is smaller than % price rise) while keeping Saturday beach fares competitive",
+        "Slash Tuesday corporate business-class fares by 40% while doubling Saturday beach holiday fares",
+        "Set identical fixed cost-plus fares across every aircraft seat regardless of route or weekday",
+        "Cancel all Tuesday business-class flights because inelastic demand means zero passengers travel",
+        "Raise fares on price-inelastic Tuesday corporate flights while keeping Saturday beach fares competitive",
       ],
       answerIndex: 3,
       hints: [

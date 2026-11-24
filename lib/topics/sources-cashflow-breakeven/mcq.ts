@@ -236,10 +236,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why is **retained profit** NOT completely 'free' even though no bank interest is charged?",
         options: [
-          "Companies must pay 50% extra corporation tax on retained profit",
-          "Retained profit is repayable on demand to suppliers within 14 days",
-          "Retained profit dilutes the founder's shareholding to external venture capitalists",
-          "Using retained profit carries an opportunity cost — funds reinvested cannot be paid as dividends to shareholders or earn interest in a savings account",
+          "Incorporated companies must pay a 50% extra corporation-tax surcharge on retained profits kept in reserves",
+          "Retained profit legally counts as short-term trade debt repayable on demand to suppliers within 14 days",
+          "Reinvesting retained profit automatically dilutes the founder's shareholding to external venture capitalists",
+          "It carries an opportunity cost — reinvested funds cannot pay shareholder dividends or earn bank deposit interest",
         ],
         answerIndex: 3,
         hints: [
@@ -278,10 +278,10 @@ export const mcqPapers: Paper[] = [
         question:
           "What is a fundamental **limitation** of relying on a 6-month cash-flow forecast for a beach-resort ice-cream parlour?",
         options: [
-          "Cash-flow forecasts include depreciation and ignore bank balances",
-          "Inflows and outflows are only estimates — an unseasonably cold, wet August or sudden energy-bill spike can invalidate the forecast",
-          "Banks refuse to read cash-flow forecasts when assessing loan applications",
-          "Cash-flow forecasts cannot show negative figures",
+          "Cash-flow forecasts include non-cash depreciation charges while ignoring actual monthly bank balances",
+          "Figures are estimates — an unseasonably wet August or sudden energy-bill spike can invalidate the forecast",
+          "High-street commercial banks refuse to examine cash-flow forecasts when assessing small-business loans",
+          "Cash-flow forecast tables cannot legally display negative closing balances or temporary bank overdrafts",
         ],
         answerIndex: 1,
         hints: [
@@ -551,10 +551,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which cost at a delivery company is best classified as a **semi-variable cost**?",
         options: [
-          "Cardboard parcel tape used per box",
-          "Annual warehouse fire-insurance premium",
-          "Piece-rate £0.50 paid per parcel sorted",
-          "Van telephone & telematics contract charging £25/month fixed line rental plus £0.08 per mile tracked",
+          "Cardboard parcel tape and labels consumed directly per box packed",
+          "Annual fixed warehouse buildings and fire-insurance policy premium",
+          "Pure piece-rate wage of £0.50 paid strictly per parcel sorted",
+          "Van telematics contract charging £25/month fixed rental plus £0.08/mile",
         ],
         answerIndex: 3,
         hints: [
@@ -594,10 +594,10 @@ export const mcqPapers: Paper[] = [
         question:
           "On a standard break-even chart, where does the **Total Cost (TC)** line begin at **zero output**?",
         options: [
-          "At the origin (0, £0)",
+          "At the chart origin where output and cost are both zero (0, £0)",
           "On the vertical axis at the level of Fixed Costs (0, £FC)",
-          "At the Break-Even Point",
-          "Below zero in the negative quadrant",
+          "Halfway across the horizontal axis at the Break-Even Point",
+          "Below the horizontal axis in the negative cost quadrant",
         ],
         answerIndex: 1,
         hints: [
@@ -692,10 +692,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Which of the following is a valid **AO4 evaluation limitation** of break-even analysis in an Edexcel 4BS1 9-mark or 12-mark essay?",
         options: [
-          "Break-even charts make it impossible to see Fixed Costs visually",
-          "Break-even assumes every single unit produced is sold at one fixed price, ignoring unsold perishable wastage and bulk-buying cost curves",
-          "Banks dislike seeing break-even calculations in startup business plans",
-          "Break-even analysis only works for public sector hospitals",
+          "Break-even charts make it mathematically impossible to plot or inspect Fixed Costs visually on the graph",
+          "It assumes every unit produced sells at one fixed price, ignoring unsold perishable wastage and bulk-buying discounts",
+          "Commercial bank managers refuse to accept break-even calculations inside new small-business startup plans",
+          "Break-even contribution analysis can only be applied to non-profit public-sector hospitals and charities",
         ],
         answerIndex: 1,
         hints: [
@@ -797,10 +797,10 @@ export const mcqPapers: Paper[] = [
         question:
           "Why does switching warehouse workers from **fixed annual salaries** to **piece-rate pay per parcel** lower a courier firm's **break-even output** during quiet months (assuming total cost at peak is similar)?",
         options: [
-          "Piece-rate converts fixed salary overheads into variable costs, reducing Fixed Costs in the numerator of the break-even formula",
-          "Piece-rate increases Fixed Costs by 100%",
-          "Piece-rate makes Selling Price infinite",
-          "Fixed salaries are already counted as zero in break-even charts",
+          "Piece-rate shifts fixed salary overheads into variable costs, reducing Fixed Costs in the break-even numerator",
+          "Piece-rate wages automatically double monthly Fixed Costs by 100% during quiet trading periods",
+          "Paying workers per parcel mathematically makes the courier's Selling Price per parcel infinite",
+          "Fixed annual warehouse salaries are already recorded as zero on standard break-even charts",
         ],
         answerIndex: 0,
         hints: [
@@ -860,10 +860,10 @@ export const mcqPapers: Paper[] = [
         question:
           "If global cocoa shortages push a chocolate maker's **Variable Cost per bar** up from **£0.90 to £1.30** (while Fixed Costs and £2.50 Selling Price remain unchanged), how does the **Total Cost (TC)** line move on its break-even chart?",
         options: [
-          "TC shifts parallel upwards to a higher vertical intercept",
-          "TC starts at the same vertical intercept (0, £FC) but pivots steeper upwards, raising Break-Even Output",
-          "TC pivots flatter downwards, lowering Break-Even Output",
-          "TC drops to the origin (0, £0)",
+          "TC shifts parallel upwards to a higher vertical intercept without changing its slope",
+          "TC stays anchored at (0, £FC) but pivots steeper upwards, raising Break-Even Output",
+          "TC stays anchored at (0, £FC) but pivots flatter downwards, lowering Break-Even Output",
+          "TC drops straight down to start at the origin (0, £0) with zero fixed overheads",
         ],
         answerIndex: 1,
         hints: [
@@ -881,10 +881,10 @@ export const mcqPapers: Paper[] = [
         question:
           "In an Edexcel 4BS1 **12-mark 'Evaluate'** question asking whether a rapidly expanding food wholesaler suffering negative monthly cash balances should use **debt factoring** or a **bank overdraft**, what distinguishes a **Grade 9 (Level 3)** conclusion?",
         options: [
-          "Defining inflows and outflows without mentioning the wholesaler's invoices or profit margins",
-          "Recommending issuing PLC shares on the Stock Exchange to pay next Friday's electricity bill",
-          "Weighing factoring's permanent 10–15% margin sacrifice on invoices against an overdraft's variable interest and 'repayable-on-demand' risk, then judging which fits the wholesaler's gross profit margin and debtor reliability",
-          "Stating that because the wholesaler is expanding, its cash balance must actually be positive",
+          "Defining cash inflows and outflows in general terms without mentioning the wholesaler's invoices or thin margins",
+          "Recommending issuing PLC shares on the Stock Exchange as a quick way to pay next Friday's electricity bill",
+          "Weighing factoring's 10–15% invoice fee against an overdraft's variable interest and recall risk, judged by gross margin and debtors",
+          "Claiming that because the food wholesaler's sales are expanding rapidly, its bank balance must actually be positive",
         ],
         answerIndex: 2,
         hints: [

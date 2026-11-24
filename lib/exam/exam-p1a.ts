@@ -804,9 +804,9 @@ export const paper: ExamPaper = {
         "**Wye Valley Creamery Ltd** (28 employees) reports a **Return on Capital Employed (ROCE)** of **14.5%** for the year, up from 11.2% last year. Over the same period, UK bank savings interest rates stood at **4.5%**.\n\nWhich interpretation of this ROCE figure is **most accurate**?",
       options: [
         "For every £100 of sales revenue, the creamery kept £14.50 after paying corporation tax",
-        "The creamery generated £14.50 of operating profit per £100 of long-term capital invested, outperforming risk-free bank deposits by 10 percentage points",
-        "The creamery holds £14.50 of liquid cash for every £1 of short-term current liabilities",
-        "The creamery is guaranteed never to experience a short-term cash-flow deficit",
+        "The creamery earned £14.50 operating profit per £100 capital invested, beating 4.5% bank deposits by 10 points",
+        "The creamery holds £14.50 of liquid cash reserves for every £1 of short-term current liabilities",
+        "The creamery is financially guaranteed never to experience a short-term seasonal cash-flow deficit",
       ],
       answerIndex: 1,
       hints: [
