@@ -7,65 +7,60 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling untangle both financial statements and every 4BS1 ratio."
 )
 
-D_SOCI = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<text x="260" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">STATEMENT OF COMPREHENSIVE INCOME (£)</text>
-<rect x="24" y="36" width="472" height="28" rx="6" fill="#1e3a8a"/>
-<text x="38" y="55" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Revenue ( £100,000 ) − Cost of Sales ( £60,000 )</text>
-<text x="482" y="55" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="end">GP = £40,000</text>
-<rect x="24" y="72" width="472" height="28" rx="6" fill="#065f46"/>
-<text x="38" y="91" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Gross Profit ( £40,000 ) − Expenses / Overheads ( £25,000 )</text>
-<text x="482" y="91" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac" text-anchor="end">OP = £15,000</text>
-<rect x="24" y="108" width="472" height="28" rx="6" fill="#581c87"/>
-<text x="38" y="127" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Operating Profit − Interest &amp; Tax ( £4,000 )</text>
-<text x="482" y="127" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e9d5ff" text-anchor="end">Net = £11,000</text>
-<rect x="24" y="148" width="472" height="48" rx="8" fill="#1e293b"/>
-<text x="260" y="168" font-family="sans-serif" font-size="12" fill="#fde047" text-anchor="middle">BALANCE SHEET: Working Capital = Current Assets − Current Liabilities</text>
-<text x="260" y="187" font-family="sans-serif" font-size="12" fill="#7dd3fc" text-anchor="middle">Capital Employed = Total Equity + Non-Current Liabilities</text>
+D_SOCI = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<text x="350" y="40" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fde047" text-anchor="middle">INCOME STATEMENT (£)</text>
+<rect x="16" y="54" width="668" height="52" rx="8" fill="#1e3a8a"/>
+<text x="32" y="90" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff">Rev 100k − CoS 60k</text>
+<text x="668" y="90" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="end">GP = £40k</text>
+<rect x="16" y="116" width="668" height="52" rx="8" fill="#065f46"/>
+<text x="32" y="152" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff">GP 40k − Overheads 25k</text>
+<text x="668" y="152" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="end">OP = £15k</text>
+<rect x="16" y="178" width="668" height="52" rx="8" fill="#581c87"/>
+<text x="32" y="214" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff">OP 15k − Int &amp; Tax 4k</text>
+<text x="668" y="214" font-family="sans-serif" font-size="28" font-weight="bold" fill="#e9d5ff" text-anchor="end">Net = £11k</text>
+<rect x="16" y="242" width="668" height="64" rx="10" fill="#1e293b"/>
+<text x="350" y="284" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">Working Cap = CA − CL · Cap Emp = Eq+NCL</text>
 </svg>"""
 
-D_PROF = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<rect x="14" y="14" width="240" height="122" rx="10" fill="#1e3a8a" stroke="#38bdf8" stroke-width="2"/>
-<rect x="266" y="14" width="240" height="122" rx="10" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
-<text x="134" y="38" font-family="sans-serif" font-size="13" font-weight="bold" fill="#7dd3fc" text-anchor="middle">GROSS PROFIT MARGIN</text>
-<text x="134" y="64" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">(GP ÷ REVENUE) × 100</text>
-<text x="134" y="92" font-family="sans-serif" font-size="14" font-weight="bold" fill="#86efac" text-anchor="middle">40k ÷ 100k × 100 = 40%</text>
-<text x="134" y="118" font-family="sans-serif" font-size="11" fill="#bae6fd" text-anchor="middle">OPM = (OP ÷ Revenue) × 100 = 15%</text>
-<text x="386" y="38" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fed7aa" text-anchor="middle">MARKUP (Careful!)</text>
-<text x="386" y="64" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">(GP ÷ COST OF SALES) × 100</text>
-<text x="386" y="92" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">40k ÷ 60k × 100 = 66.7%</text>
-<text x="386" y="118" font-family="sans-serif" font-size="11" fill="#fca5a5" text-anchor="middle">Divides by COST, not Revenue!</text>
-<rect x="14" y="146" width="492" height="50" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<text x="260" y="168" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac" text-anchor="middle">ROCE = (Operating Profit ÷ Capital Employed) × 100</text>
-<text x="260" y="188" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">£15,000 ÷ £75,000 × 100 = 20% (Compare vs bank interest rate!)</text>
+D_PROF = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="186" rx="12" fill="#1e3a8a" stroke="#38bdf8" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="186" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="3"/>
+<text x="178" y="54" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="middle">GPM (÷ REVENUE)</text>
+<text x="178" y="100" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">40k ÷ 100k = 40%</text>
+<text x="178" y="152" font-family="sans-serif" font-size="28" fill="#bae6fd" text-anchor="middle">OPM = OP÷Rev = 15%</text>
+<text x="522" y="54" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fed7aa" text-anchor="middle">MARKUP (÷ COST)</text>
+<text x="522" y="100" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">40k ÷ 60k = 66.7%</text>
+<text x="522" y="152" font-family="sans-serif" font-size="28" fill="#fca5a5" text-anchor="middle">Divides by CoS!</text>
+<rect x="14" y="214" width="672" height="92" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<text x="350" y="252" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="middle">ROCE = (OP ÷ Capital Employed) × 100</text>
+<text x="350" y="290" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">£15k ÷ £75k = 20% (vs bank interest)</text>
 </svg>"""
 
-D_LIQ = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<text x="260" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">LIQUIDITY RATIOS (Express as X : 1)</text>
-<rect x="14" y="38" width="240" height="150" rx="10" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
-<rect x="266" y="38" width="240" height="150" rx="10" fill="#451a03" stroke="#f59e0b" stroke-width="2"/>
-<text x="134" y="62" font-family="sans-serif" font-size="13" font-weight="bold" fill="#93c5fd" text-anchor="middle">CURRENT RATIO</text>
-<text x="134" y="86" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Current Assets ÷ Current Liab.</text>
-<text x="134" y="114" font-family="sans-serif" font-size="14" font-weight="bold" fill="#86efac" text-anchor="middle">£30k ÷ £20k = 1.5 : 1</text>
-<text x="134" y="142" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Ideal guide: 1.5 : 1 to 2 : 1</text>
-<text x="134" y="166" font-family="sans-serif" font-size="11" fill="#7dd3fc" text-anchor="middle">Too high (5:1) = idle cash/stock!</text>
-<text x="386" y="62" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fcd34d" text-anchor="middle">ACID-TEST RATIO</text>
-<text x="386" y="86" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">(CA − Inventory) ÷ Current Liab.</text>
-<text x="386" y="114" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fca5a5" text-anchor="middle">(30k − 14k) ÷ 20k = 0.8 : 1</text>
-<text x="386" y="142" font-family="sans-serif" font-size="11" fill="#fde68a" text-anchor="middle">Ideal guide: ~ 1 : 1</text>
-<text x="386" y="166" font-family="sans-serif" font-size="11" fill="#fca5a5" text-anchor="middle">Inventory is LEAST liquid asset!</text>
+D_LIQ = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<text x="350" y="42" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fde047" text-anchor="middle">LIQUIDITY RATIOS (X : 1)</text>
+<rect x="14" y="60" width="328" height="246" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="3"/>
+<rect x="358" y="60" width="328" height="246" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="3"/>
+<text x="178" y="102" font-family="sans-serif" font-size="28" font-weight="bold" fill="#93c5fd" text-anchor="middle">CURRENT RATIO</text>
+<text x="178" y="148" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">CA ÷ CL</text>
+<text x="178" y="198" font-family="sans-serif" font-size="29" font-weight="bold" fill="#86efac" text-anchor="middle">30k ÷ 20k = 1.5 : 1</text>
+<text x="178" y="248" font-family="sans-serif" font-size="28" fill="#cbd5e1" text-anchor="middle">Ideal: 1.5–2 : 1</text>
+<text x="522" y="102" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fcd34d" text-anchor="middle">ACID-TEST RATIO</text>
+<text x="522" y="148" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">(CA − Stock) ÷ CL</text>
+<text x="522" y="198" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fca5a5" text-anchor="middle">16k ÷ 20k = 0.8 : 1</text>
+<text x="522" y="248" font-family="sans-serif" font-size="28" fill="#fde68a" text-anchor="middle">Ideal: ~ 1 : 1</text>
 </svg>"""
 
-D_TRAP6 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER RATIO &amp; ACCOUNTS TRAPS</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 1: Mixing up GPM (÷ Revenue) with Markup (÷ Cost of Sales)!</text>
-<text x="28" y="106" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 2: Forgetting to subtract INVENTORY in Acid-Test Ratio!</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#86efac">✓ UNITS: Profitability &amp; ROCE use % · Liquidity uses : 1 (never swap!).</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ Accounts limits: Historical data, window dressing &amp; no staff morale!</text>
+D_TRAP6 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">RATIO &amp; ACCOUNTS TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Don't swap GPM (÷Rev) &amp; Markup (÷CoS)</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Subtract INVENTORY in Acid-Test!</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#86efac">✓ Profit/ROCE = % · Liquidity = : 1</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ Limits: Historic · Window dressing</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

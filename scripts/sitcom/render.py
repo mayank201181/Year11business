@@ -90,14 +90,14 @@ async def main():
                             FFMPEG, "-y", "-loglevel", "error",
                             "-f", "image2pipe", "-framerate", str(fps), "-c:v", "mjpeg", "-i", "-",
                             "-vf", "scale=in_range=full:out_range=tv,format=yuv420p",
-                            "-c:v", "libx264", "-preset", "ultrafast", "-threads", "2", "-crf", "26",
+                            "-c:v", "libx264", "-preset", "veryfast", "-threads", "2", "-crf", "25",
                             "-pix_fmt", "yuv420p", "-color_range", "tv", "-tune", "animation", seg,
                         ],
                         stdin=subprocess.PIPE,
                     )
                     assert ff.stdin is not None
-                    # Render cartoon animation on 2s (12 drawings/s held 2 frames = exact 24fps stream)
-                    step = 2 if fps >= 24 else 1
+                    # Render every frame at full native fps (true 24 fps for smooth pans & motion)
+                    step = 1
                     batch_frames = 32
                     for i in range(a, b, batch_frames):
                         end_f = min(b, i + batch_frames)

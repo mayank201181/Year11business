@@ -7,82 +7,65 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling unite Marketing and Operations for the Season Finale!"
 )
 
-D_BOSTON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215">
-<rect width="520" height="215" rx="12" fill="#0f172a"/>
-<text x="145" y="22" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">BOSTON MATRIX</text>
-<rect x="14" y="32" width="128" height="78" rx="8" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
-<rect x="148" y="32" width="128" height="78" rx="8" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
-<rect x="14" y="116" width="128" height="78" rx="8" fill="#065f46" stroke="#34d399" stroke-width="2"/>
-<rect x="148" y="116" width="128" height="78" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
-<text x="78" y="54" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047" text-anchor="middle">★ STAR</text>
-<text x="78" y="74" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">High Share · High Growth</text>
-<text x="78" y="92" font-family="sans-serif" font-size="10" fill="#bae6fd" text-anchor="middle">(Invest heavily!)</text>
-<text x="212" y="54" font-family="sans-serif" font-size="12" font-weight="bold" fill="#e9d5ff" text-anchor="middle">? QUESTION MARK</text>
-<text x="212" y="74" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">Low Share · High Growth</text>
-<text x="212" y="92" font-family="sans-serif" font-size="10" fill="#f3e8ff" text-anchor="middle">(Needs cash or drop)</text>
-<text x="78" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac" text-anchor="middle">£ CASH COW</text>
-<text x="78" y="158" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">High Share · Low Growth</text>
-<text x="78" y="176" font-family="sans-serif" font-size="10" fill="#a7f3d0" text-anchor="middle">(Milks cash for Stars!)</text>
-<text x="212" y="138" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5" text-anchor="middle">✗ DOG</text>
-<text x="212" y="158" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">Low Share · Low Growth</text>
-<text x="212" y="176" font-family="sans-serif" font-size="10" fill="#fecaca" text-anchor="middle">(Phase out / divest)</text>
-<rect x="292" y="32" width="214" height="162" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
-<text x="399" y="52" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="middle">PRODUCT LIFE CYCLE</text>
-<path d="M308 170 Q335 168 355 125 Q385 65 425 75 Q455 82 485 135" stroke="#34d399" stroke-width="3" fill="none"/>
-<path d="M445 88 Q470 62 496 68" stroke="#fde047" stroke-width="2.5" stroke-dasharray="5 3" fill="none"/>
-<text x="468" y="58" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fde047" text-anchor="middle">Extension!</text>
-<text x="399" y="186" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">Dev → Intro → Growth → Maturity → Decline</text>
+D_BOSTON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="114" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="114" rx="10" fill="#581c87" stroke="#c084fc" stroke-width="3"/>
+<rect x="14" y="140" width="328" height="114" rx="10" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+<rect x="358" y="140" width="328" height="114" rx="10" fill="#7f1d1d" stroke="#f87171" stroke-width="3"/>
+<text x="178" y="58" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fde047" text-anchor="middle">★ STAR (Invest)</text>
+<text x="178" y="102" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">High Share · Growth</text>
+<text x="522" y="58" font-family="sans-serif" font-size="30" font-weight="bold" fill="#e9d5ff" text-anchor="middle">? QUESTION MARK</text>
+<text x="522" y="102" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">Low Share · Growth</text>
+<text x="178" y="184" font-family="sans-serif" font-size="30" font-weight="bold" fill="#86efac" text-anchor="middle">£ CASH COW (Milk)</text>
+<text x="178" y="228" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">High Share · Mature</text>
+<text x="522" y="184" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fca5a5" text-anchor="middle">✗ DOG (Divest)</text>
+<text x="522" y="228" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">Low Share · Low Gr.</text>
+<rect x="14" y="264" width="672" height="44" rx="8" fill="#1e293b"/>
+<text x="350" y="296" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="middle">PLC: Intro → Growth → Maturity → Decline</text>
 </svg>"""
 
-D_PROD = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<rect x="12" y="14" width="156" height="122" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
-<rect x="182" y="14" width="156" height="122" rx="8" fill="#065f46" stroke="#34d399" stroke-width="2"/>
-<rect x="352" y="14" width="156" height="122" rx="8" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
-<text x="90" y="36" font-family="sans-serif" font-size="13" font-weight="bold" fill="#c7d2fe" text-anchor="middle">JOB</text>
-<text x="22" y="60" font-family="sans-serif" font-size="11" fill="#fff">• One-off bespoke item</text>
-<text x="22" y="82" font-family="sans-serif" font-size="11" fill="#fff">• Skilled labour, high price</text>
-<text x="22" y="104" font-family="sans-serif" font-size="11" fill="#fca5a5">• High unit cost, slow</text>
-<text x="260" y="36" font-family="sans-serif" font-size="13" font-weight="bold" fill="#a7f3d0" text-anchor="middle">BATCH</text>
-<text x="192" y="60" font-family="sans-serif" font-size="11" fill="#fff">• Identical groups/flavours</text>
-<text x="192" y="82" font-family="sans-serif" font-size="11" fill="#fff">• Flexible menu variety</text>
-<text x="192" y="104" font-family="sans-serif" font-size="11" fill="#fde68a">• Machine reset delays</text>
-<text x="430" y="36" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fed7aa" text-anchor="middle">FLOW (Mass)</text>
-<text x="362" y="60" font-family="sans-serif" font-size="11" fill="#fff">• Continuous 24/7 line</text>
-<text x="362" y="82" font-family="sans-serif" font-size="11" fill="#86efac">• Lowest unit cost (EoS)</text>
-<text x="362" y="104" font-family="sans-serif" font-size="11" fill="#fca5a5">• High capex, inflexible</text>
-<rect x="12" y="146" width="496" height="46" rx="8" fill="#1e293b"/>
-<text x="260" y="166" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047" text-anchor="middle">LEAN: JIT = zero buffer stock (saves storage vs halt risk!) · KAIZEN = continuous small steps</text>
-<text x="260" y="184" font-family="sans-serif" font-size="11" fill="#7dd3fc" text-anchor="middle">Labour Productivity = Total Output ÷ Number of Workers</text>
+D_PROD = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="16" y="14" width="668" height="68" rx="10" fill="#312e81" stroke="#818cf8" stroke-width="3"/>
+<text x="34" y="58" font-family="sans-serif" font-size="29" font-weight="bold" fill="#c7d2fe">JOB</text>
+<text x="664" y="58" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="end">One-off bespoke · High unit cost</text>
+<rect x="16" y="92" width="668" height="68" rx="10" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+<text x="34" y="136" font-family="sans-serif" font-size="29" font-weight="bold" fill="#a7f3d0">BATCH</text>
+<text x="664" y="136" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="end">Identical groups · Reset delays</text>
+<rect x="16" y="170" width="668" height="68" rx="10" fill="#7c2d12" stroke="#fb923c" stroke-width="3"/>
+<text x="34" y="214" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fed7aa">FLOW</text>
+<text x="664" y="214" font-family="sans-serif" font-size="28" fill="#86efac" text-anchor="end">24/7 line · Lowest cost (EoS)</text>
+<rect x="16" y="250" width="668" height="56" rx="10" fill="#1e293b"/>
+<text x="350" y="288" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">JIT: zero buffer · Kaizen: continuous steps</text>
 </svg>"""
 
-D_EOS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<line x1="48" y1="165" x2="290" y2="165" stroke="#94a3b8" stroke-width="2"/>
-<line x1="48" y1="165" x2="48" y2="24" stroke="#94a3b8" stroke-width="2"/>
-<path d="M64 46 Q165 162 276 52" stroke="#38bdf8" stroke-width="3.5" fill="none"/>
-<circle cx="170" cy="106" r="5" fill="#fde047"/>
-<text x="105" y="42" font-family="sans-serif" font-size="11" font-weight="bold" fill="#86efac">Economies ↓</text>
-<text x="232" y="42" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fca5a5">Diseconomies ↑</text>
-<text x="170" y="128" font-family="sans-serif" font-size="11" fill="#fde047" text-anchor="middle">Min Unit Cost</text>
-<text x="170" y="184" font-family="sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Output Scale → ( Purchasing · Technical · Financial )</text>
-<rect x="306" y="22" width="200" height="166" rx="8" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
-<text x="406" y="44" font-family="sans-serif" font-size="12" font-weight="bold" fill="#c7d2fe" text-anchor="middle">QUALITY MANAGEMENT</text>
-<text x="316" y="70" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fca5a5">Quality Control (QC):</text>
-<text x="316" y="88" font-family="sans-serif" font-size="11" fill="#fff">Inspect at END → high scrap</text>
-<text x="316" y="120" font-family="sans-serif" font-size="11" font-weight="bold" fill="#86efac">Quality Assurance / TQM:</text>
-<text x="316" y="138" font-family="sans-serif" font-size="11" fill="#fff">Every worker checks EVERY</text>
-<text x="316" y="156" font-family="sans-serif" font-size="11" fill="#fff">stage → zero-defect culture!</text>
+D_EOS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<line x1="40" y1="216" x2="348" y2="216" stroke="#94a3b8" stroke-width="3"/>
+<line x1="40" y1="216" x2="40" y2="26" stroke="#94a3b8" stroke-width="3"/>
+<path d="M58 64 Q194 212 334 68" stroke="#38bdf8" stroke-width="5" fill="none"/>
+<circle cx="196" cy="140" r="8" fill="#fde047"/>
+<text x="112" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="middle">EoS ↓</text>
+<text x="278" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5" text-anchor="middle">Dis-EoS ↑</text>
+<text x="196" y="182" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">Min Cost</text>
+<text x="194" y="258" font-family="sans-serif" font-size="28" fill="#cbd5e1" text-anchor="middle">Output Scale →</text>
+<rect x="366" y="18" width="320" height="284" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="3"/>
+<text x="526" y="60" font-family="sans-serif" font-size="29" font-weight="bold" fill="#c7d2fe" text-anchor="middle">QUALITY</text>
+<text x="384" y="114" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">QC (Control):</text>
+<text x="384" y="152" font-family="sans-serif" font-size="28" fill="#fff">Check at END</text>
+<text x="384" y="216" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">QA / TQM:</text>
+<text x="384" y="254" font-family="sans-serif" font-size="28" fill="#fff">Check ALL stages</text>
 </svg>"""
 
-D_TRAP7 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER MARKETING &amp; OPERATIONS TRAPS</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 1: Mismatched 4Ps (e.g. luxury skimming price in a discount bin)!</text>
-<text x="28" y="106" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 2: Praising JIT without checking if overseas suppliers face delays!</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#86efac">✓ TRAP 3: QC inspects at the END; QA &amp; TQM prevent defects at EVERY stage.</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ PED rule: Price ELASTIC → cut price · Price INELASTIC → raise price!</text>
+D_TRAP7 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">MARKETING &amp; OPS TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Keep all 4Ps consistent (Price/Place)!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#fda4af">✗ JIT fails if overseas supply delays!</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#86efac">✓ QC = end inspect · QA/TQM = prevent</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ Elastic → cut P · Inelastic → raise P</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

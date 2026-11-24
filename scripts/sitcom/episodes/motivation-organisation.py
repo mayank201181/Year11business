@@ -7,67 +7,65 @@ EP = dict(
             "Ledger and Examiner Sterling sort Maslow, Herzberg, spans of control and leadership."
 )
 
-D_MASLOW = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" rx="12" fill="#0f172a"/>
-<polygon points="260,16 320,52 200,52" fill="#a855f7"/>
-<polygon points="196,56 324,56 360,92 160,92" fill="#ec4899"/>
-<polygon points="156,96 364,96 400,132 120,132" fill="#3b82f6"/>
-<polygon points="116,136 404,136 440,172 80,172" fill="#10b981"/>
-<polygon points="76,176 444,176 480,210 40,210" fill="#f59e0b"/>
-<text x="260" y="42" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">5. Self-Actualisation</text>
-<text x="260" y="79" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">4. Esteem (awards, promotion, status)</text>
-<text x="260" y="119" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3. Love &amp; Social (teamwork, belonging)</text>
-<text x="260" y="159" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">2. Safety (job contracts, H&amp;S, pension)</text>
-<text x="260" y="198" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1. Physiological (living wage, rest breaks, water)</text>
+D_MASLOW = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="140" y="14" width="420" height="52" rx="10" fill="#a855f7"/>
+<rect x="108" y="74" width="484" height="52" rx="10" fill="#ec4899"/>
+<rect x="76" y="134" width="548" height="52" rx="10" fill="#3b82f6"/>
+<rect x="44" y="194" width="612" height="52" rx="10" fill="#10b981"/>
+<rect x="16" y="254" width="668" height="52" rx="10" fill="#f59e0b"/>
+<text x="350" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">5. Self-Actualisation</text>
+<text x="350" y="110" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">4. Esteem (praise, promotion)</text>
+<text x="350" y="170" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">3. Social (teams, belonging)</text>
+<text x="350" y="230" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fff" text-anchor="middle">2. Safety (contracts, H&amp;S)</text>
+<text x="350" y="290" font-family="sans-serif" font-size="28" font-weight="bold" fill="#0f172a" text-anchor="middle">1. Physiological (living wage, rest)</text>
 </svg>"""
 
-D_HERZ = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<text x="260" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">HERZBERG TWO-FACTOR THEORY</text>
-<rect x="14" y="38" width="240" height="152" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<rect x="266" y="38" width="240" height="152" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<text x="134" y="60" font-family="sans-serif" font-size="13" font-weight="bold" fill="#7dd3fc" text-anchor="middle">HYGIENE FACTORS</text>
-<text x="134" y="78" font-family="sans-serif" font-size="11" fill="#fca5a5" text-anchor="middle">ONLY prevent dissatisfaction!</text>
-<text x="26" y="104" font-family="sans-serif" font-size="12" fill="#fff">• Fair basic pay &amp; job security</text>
-<text x="26" y="128" font-family="sans-serif" font-size="12" fill="#fff">• Safe, clean working conditions</text>
-<text x="26" y="152" font-family="sans-serif" font-size="12" fill="#fff">• Company policy &amp; supervision</text>
-<text x="26" y="176" font-family="sans-serif" font-size="11" fill="#cbd5e1">(Fixing these ≠ true motivation)</text>
-<text x="386" y="60" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac" text-anchor="middle">MOTIVATORS</text>
-<text x="386" y="78" font-family="sans-serif" font-size="11" fill="#a7f3d0" text-anchor="middle">Create genuine satisfaction!</text>
-<text x="278" y="104" font-family="sans-serif" font-size="12" fill="#fff">• Sense of achievement</text>
-<text x="278" y="128" font-family="sans-serif" font-size="12" fill="#fff">• Recognition &amp; praise</text>
-<text x="278" y="152" font-family="sans-serif" font-size="12" fill="#fff">• Job enrichment &amp; responsibility</text>
-<text x="278" y="176" font-family="sans-serif" font-size="12" fill="#fde047">• Promotion &amp; personal growth</text>
+D_HERZ = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<text x="350" y="40" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fde047" text-anchor="middle">HERZBERG TWO-FACTOR THEORY</text>
+<rect x="14" y="58" width="328" height="248" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<rect x="358" y="58" width="328" height="248" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<text x="178" y="98" font-family="sans-serif" font-size="29" font-weight="bold" fill="#7dd3fc" text-anchor="middle">HYGIENE</text>
+<text x="178" y="136" font-family="sans-serif" font-size="28" fill="#fca5a5" text-anchor="middle">Stops unhappiness</text>
+<text x="30" y="188" font-family="sans-serif" font-size="28" fill="#fff">• Basic pay &amp; H&amp;S</text>
+<text x="30" y="236" font-family="sans-serif" font-size="28" fill="#fff">• Policy &amp; security</text>
+<text x="30" y="284" font-family="sans-serif" font-size="28" fill="#cbd5e1">≠ True motivation</text>
+<text x="522" y="98" font-family="sans-serif" font-size="29" font-weight="bold" fill="#86efac" text-anchor="middle">MOTIVATORS</text>
+<text x="522" y="136" font-family="sans-serif" font-size="28" fill="#a7f3d0" text-anchor="middle">Drives satisfaction</text>
+<text x="374" y="188" font-family="sans-serif" font-size="28" fill="#fff">• Achievement</text>
+<text x="374" y="236" font-family="sans-serif" font-size="28" fill="#fff">• Praise &amp; growth</text>
+<text x="374" y="284" font-family="sans-serif" font-size="28" fill="#fde047">• Job enrichment</text>
 </svg>"""
 
-D_ORG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<rect x="14" y="16" width="240" height="174" rx="10" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
-<rect x="266" y="16" width="240" height="174" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
-<text x="134" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c7d2fe" text-anchor="middle">TALL HIERARCHY</text>
-<rect x="104" y="50" width="60" height="18" rx="4" fill="#818cf8"/>
-<rect x="70" y="78" width="54" height="16" rx="4" fill="#6366f1"/><rect x="144" y="78" width="54" height="16" rx="4" fill="#6366f1"/>
-<rect x="70" y="104" width="54" height="16" rx="4" fill="#4f46e5"/><rect x="144" y="104" width="54" height="16" rx="4" fill="#4f46e5"/>
-<text x="26" y="142" font-family="sans-serif" font-size="11" fill="#fff">• Many layers · NARROW span (2)</text>
-<text x="26" y="160" font-family="sans-serif" font-size="11" fill="#fca5a5">• Slow distorted communication</text>
-<text x="26" y="178" font-size="11" font-family="sans-serif" fill="#86efac">• Close supervision &amp; promotions</text>
-<text x="386" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#86efac" text-anchor="middle">FLAT HIERARCHY</text>
-<rect x="356" y="56" width="60" height="20" rx="4" fill="#4ade80"/>
-<rect x="280" y="96" width="44" height="18" rx="4" fill="#22c55e"/><rect x="334" y="96" width="44" height="18" rx="4" fill="#22c55e"/>
-<rect x="388" y="96" width="44" height="18" rx="4" fill="#22c55e"/><rect x="442" y="96" width="44" height="18" rx="4" fill="#22c55e"/>
-<text x="278" y="142" font-family="sans-serif" font-size="11" fill="#fff">• Few layers · WIDE span (4+)</text>
-<text x="278" y="160" font-family="sans-serif" font-size="11" fill="#86efac">• Fast direct comm + delegation</text>
-<text x="278" y="178" font-family="sans-serif" font-size="11" fill="#fca5a5">• Managers risk overload!</text>
+D_ORG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="3"/>
+<text x="178" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#c7d2fe" text-anchor="middle">TALL</text>
+<rect x="143" y="70" width="70" height="22" rx="5" fill="#818cf8"/>
+<rect x="92" y="104" width="66" height="20" rx="5" fill="#6366f1"/><rect x="198" y="104" width="66" height="20" rx="5" fill="#6366f1"/>
+<rect x="92" y="136" width="66" height="20" rx="5" fill="#4f46e5"/><rect x="198" y="136" width="66" height="20" rx="5" fill="#4f46e5"/>
+<text x="30" y="198" font-family="sans-serif" font-size="28" fill="#fff">• Narrow span</text>
+<text x="30" y="244" font-family="sans-serif" font-size="28" fill="#fca5a5">✗ Slow comm</text>
+<text x="30" y="290" font-family="sans-serif" font-size="28" fill="#86efac">✓ Close control</text>
+<text x="522" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#86efac" text-anchor="middle">FLAT</text>
+<rect x="487" y="76" width="70" height="24" rx="5" fill="#4ade80"/>
+<rect x="380" y="124" width="58" height="22" rx="5" fill="#22c55e"/><rect x="454" y="124" width="58" height="22" rx="5" fill="#22c55e"/>
+<rect x="528" y="124" width="58" height="22" rx="5" fill="#22c55e"/><rect x="602" y="124" width="58" height="22" rx="5" fill="#22c55e"/>
+<text x="374" y="198" font-family="sans-serif" font-size="28" fill="#fff">• Wide span</text>
+<text x="374" y="244" font-family="sans-serif" font-size="28" fill="#86efac">✓ Fast + delegate</text>
+<text x="374" y="290" font-family="sans-serif" font-size="28" fill="#fca5a5">✗ Boss overload</text>
 </svg>"""
 
-D_TRAP4 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER 9 &amp; 12-MARK PEOPLE TRAPS</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 1: Saying Herzberg's hygiene factors (pay/safety) MOTIVATE staff!</text>
-<text x="28" y="104" font-family="sans-serif" font-size="13" fill="#86efac">✓ Exact phrase: Hygiene factors PREVENT DISSATISFACTION; Motivators motivate.</text>
-<text x="28" y="132" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 2: Saying delegation passes ultimate RESPONSIBILITY to subordinates!</text>
-<text x="28" y="158" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ Delegation passes AUTHORITY down; ultimate RESPONSIBILITY stays with the boss!</text>
+D_TRAP4 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">9 &amp; 12-MARK PEOPLE TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Hygiene factors do NOT motivate!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#86efac">✓ Hygiene prevents dissatisfaction only.</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Delegation never passes blame!</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ Passes authority; boss keeps duty!</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

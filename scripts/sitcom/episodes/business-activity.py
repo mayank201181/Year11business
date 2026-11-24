@@ -7,68 +7,60 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling rescue Mum's sofa by teaching objectives, stakeholders, liability, franchises and sectors."
 )
 
-D_STAKE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<rect x="16" y="38" width="232" height="126" rx="10" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
-<rect x="272" y="38" width="232" height="126" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<text x="132" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#a5b4fc" text-anchor="middle">INTERNAL STAKEHOLDERS</text>
-<text x="388" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#6ee7b7" text-anchor="middle">EXTERNAL STAKEHOLDERS</text>
-<text x="30" y="66" font-family="sans-serif" font-size="13" fill="#fff">• Owners / Shareholders (profit)</text>
-<text x="30" y="94" font-family="sans-serif" font-size="13" fill="#fff">• Managers (bonuses, growth)</text>
-<text x="30" y="122" font-family="sans-serif" font-size="13" fill="#fff">• Employees (pay, job security)</text>
-<text x="286" y="64" font-family="sans-serif" font-size="13" fill="#fff">• Customers (low price, quality)</text>
-<text x="286" y="88" font-family="sans-serif" font-size="13" fill="#fff">• Suppliers (prompt payment)</text>
-<text x="286" y="112" font-family="sans-serif" font-size="13" fill="#fff">• Banks · Government · Local area</text>
-<rect x="46" y="172" width="428" height="28" rx="6" fill="#7f1d1d"/>
-<text x="260" y="191" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fecaca" text-anchor="middle">CONFLICT: Higher wages ↑ costs → Lower dividends or higher prices</text>
+D_STAKE = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="222" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="222" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<text x="178" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#a5b4fc" text-anchor="middle">INTERNAL</text>
+<text x="32" y="102" font-family="sans-serif" font-size="28" fill="#fff">• Owners (profit)</text>
+<text x="32" y="148" font-family="sans-serif" font-size="28" fill="#fff">• Managers (growth)</text>
+<text x="32" y="194" font-family="sans-serif" font-size="28" fill="#fff">• Staff (pay &amp; jobs)</text>
+<text x="522" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#6ee7b7" text-anchor="middle">EXTERNAL</text>
+<text x="376" y="102" font-family="sans-serif" font-size="28" fill="#fff">• Customers (value)</text>
+<text x="376" y="148" font-family="sans-serif" font-size="28" fill="#fff">• Suppliers &amp; Banks</text>
+<text x="376" y="194" font-family="sans-serif" font-size="28" fill="#fff">• Govt &amp; Local Area</text>
+<rect x="14" y="250" width="672" height="56" rx="10" fill="#7f1d1d"/>
+<text x="350" y="288" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fecaca" text-anchor="middle">CONFLICT: Wages ↑ → Dividends ↓ / Prices ↑</text>
 </svg>"""
 
-D_OWN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" rx="12" fill="#0f172a"/>
-<rect x="14" y="16" width="240" height="188" rx="10" fill="#451a03" stroke="#f59e0b" stroke-width="2"/>
-<rect x="266" y="16" width="240" height="188" rx="10" fill="#172554" stroke="#38bdf8" stroke-width="2"/>
-<text x="134" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fcd34d" text-anchor="middle">UNINCORPORATED</text>
-<text x="134" y="60" font-family="sans-serif" font-size="12" fill="#fde68a" text-anchor="middle">Sole Trader · Partnership</text>
-<text x="28" y="90" font-family="sans-serif" font-size="13" fill="#fff">• NO separate legal identity</text>
-<text x="28" y="116" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fca5a5">• UNLIMITED LIABILITY</text>
-<text x="28" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1">• Personal house &amp; car at risk!</text>
-<text x="28" y="166" font-family="sans-serif" font-size="12" fill="#cbd5e1">• Fast setup, accounts private</text>
-<text x="386" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7dd3fc" text-anchor="middle">INCORPORATED</text>
-<text x="386" y="60" font-family="sans-serif" font-size="12" fill="#bae6fd" text-anchor="middle">Private (Ltd) · Public (Plc)</text>
-<text x="280" y="90" font-family="sans-serif" font-size="13" fill="#fff">• Separate legal identity</text>
-<text x="280" y="116" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac">• LIMITED LIABILITY</text>
-<text x="280" y="140" font-family="sans-serif" font-size="12" fill="#cbd5e1">• Only lose share investment</text>
-<text x="280" y="166" font-family="sans-serif" font-size="12" fill="#fde047">• Ltd: invited · Plc: Stock Exch.</text>
+D_OWN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#172554" stroke="#38bdf8" stroke-width="3"/>
+<text x="178" y="56" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fcd34d" text-anchor="middle">UNINCORPORATED</text>
+<text x="178" y="96" font-family="sans-serif" font-size="28" fill="#fde68a" text-anchor="middle">Sole · Partnership</text>
+<text x="32" y="150" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">✗ Unlimited liability</text>
+<text x="32" y="200" font-family="sans-serif" font-size="28" fill="#fff">• Same legal ID</text>
+<text x="32" y="250" font-family="sans-serif" font-size="28" fill="#cbd5e1">• Home/car at risk!</text>
+<text x="522" y="56" font-family="sans-serif" font-size="29" font-weight="bold" fill="#7dd3fc" text-anchor="middle">INCORPORATED</text>
+<text x="522" y="96" font-family="sans-serif" font-size="28" fill="#bae6fd" text-anchor="middle">Ltd · Plc</text>
+<text x="376" y="150" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">✓ Limited liability</text>
+<text x="376" y="200" font-family="sans-serif" font-size="28" fill="#fff">• Separate legal ID</text>
+<text x="376" y="250" font-family="sans-serif" font-size="28" fill="#fde047">• Plc: Stock Market</text>
 </svg>"""
 
-D_SECTORS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 190">
-<rect width="520" height="190" rx="12" fill="#0f172a"/>
-<rect x="16" y="24" width="152" height="118" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
-<rect x="184" y="24" width="152" height="118" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
-<rect x="352" y="24" width="152" height="118" rx="10" fill="#4c1d95" stroke="#c084fc" stroke-width="2"/>
-<text x="92" y="50" font-family="sans-serif" font-size="14" font-weight="bold" fill="#86efac" text-anchor="middle">1. PRIMARY</text>
-<text x="92" y="76" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Extract raw materials</text>
-<text x="92" y="102" font-family="sans-serif" font-size="12" fill="#dcfce7" text-anchor="middle">Farming bananas,</text>
-<text x="92" y="120" font-family="sans-serif" font-size="12" fill="#dcfce7" text-anchor="middle">mining, fishing</text>
-<text x="260" y="50" font-family="sans-serif" font-size="14" font-weight="bold" fill="#93c5fd" text-anchor="middle">2. SECONDARY</text>
-<text x="260" y="76" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Manufacture &amp; build</text>
-<text x="260" y="102" font-family="sans-serif" font-size="12" fill="#dbeafe" text-anchor="middle">Banana-chip factory,</text>
-<text x="260" y="120" font-family="sans-serif" font-size="12" fill="#dbeafe" text-anchor="middle">construction</text>
-<text x="428" y="50" font-family="sans-serif" font-size="14" font-weight="bold" fill="#e9d5ff" text-anchor="middle">3. TERTIARY</text>
-<text x="428" y="76" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Provide services</text>
-<text x="428" y="102" font-family="sans-serif" font-size="12" fill="#f3e8ff" text-anchor="middle">Smoothie cafe, retail,</text>
-<text x="428" y="120" font-family="sans-serif" font-size="12" fill="#f3e8ff" text-anchor="middle">banking, delivery</text>
-<text x="260" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">Developing → Primary high · Industrialising → Secondary · Developed → Tertiary</text>
+D_SECTORS = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="16" y="16" width="668" height="72" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="3"/>
+<text x="34" y="62" font-family="sans-serif" font-size="29" font-weight="bold" fill="#86efac">1. PRIMARY</text>
+<text x="664" y="62" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="end">Extract: farming, mining</text>
+<rect x="16" y="102" width="668" height="72" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+<text x="34" y="148" font-family="sans-serif" font-size="29" font-weight="bold" fill="#93c5fd">2. SECONDARY</text>
+<text x="664" y="148" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="end">Make: factories, building</text>
+<rect x="16" y="188" width="668" height="72" rx="10" fill="#4c1d95" stroke="#c084fc" stroke-width="3"/>
+<text x="34" y="234" font-family="sans-serif" font-size="29" font-weight="bold" fill="#e9d5ff">3. TERTIARY</text>
+<text x="664" y="234" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="end">Services: retail, banking</text>
+<text x="350" y="300" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">Developing → Primary · Developed → Tertiary</text>
 </svg>"""
 
-D_TRAP1 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 190">
-<rect width="520" height="190" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="16" width="488" height="40" rx="8" fill="#be185d"/>
-<text x="260" y="41" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER 9 &amp; 12-MARK CHECKLIST (4BS1)</text>
-<text x="28" y="82" font-family="sans-serif" font-size="13" fill="#fda4af">✗ NEVER tell a tiny sole trader to float as a PLC on the Stock Exchange!</text>
-<text x="28" y="108" font-family="sans-serif" font-size="13" fill="#86efac">✓ DO suggest Partnership or Private Limited Company (Ltd) for limited liability.</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#7dd3fc">✓ AO2 CONTEXT: Name the product, staff count &amp; figures in EVERY point.</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ AJIM Conclusion: Answer · Justify · It depends on · Most important factor</text>
+D_TRAP1 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">4BS1 9 &amp; 12-MARK CHECKLIST</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Don't tell tiny sole traders to go PLC!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#86efac">✓ Suggest Ltd for limited liability.</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#7dd3fc">✓ AO2: Cite product, staff &amp; £ data.</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ AJIM: Answer · Justify · It depends · Most</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

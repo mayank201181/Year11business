@@ -7,77 +7,67 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling master finance sources, cash-flow forecasts and break-even."
 )
 
-D_FIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 205">
-<rect width="520" height="205" rx="12" fill="#0f172a"/>
-<rect x="12" y="16" width="156" height="174" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<rect x="182" y="16" width="156" height="174" rx="10" fill="#451a03" stroke="#f59e0b" stroke-width="2"/>
-<rect x="352" y="16" width="156" height="174" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
-<text x="90" y="38" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac" text-anchor="middle">INTERNAL</text>
-<text x="22" y="64" font-family="sans-serif" font-size="11" fill="#fff">• Retained profit (0% int.)</text>
-<text x="22" y="88" font-family="sans-serif" font-size="11" fill="#fff">• Owner personal savings</text>
-<text x="22" y="112" font-family="sans-serif" font-size="11" fill="#fff">• Selling surplus assets</text>
-<text x="22" y="148" font-family="sans-serif" font-size="11" fill="#a7f3d0">✓ No interest or control</text>
-<text x="22" y="168" font-family="sans-serif" font-size="11" fill="#fca5a5">✗ Limited amount</text>
-<text x="260" y="38" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fcd34d" text-anchor="middle">SHORT EXTERNAL</text>
-<text x="192" y="64" font-family="sans-serif" font-size="11" fill="#fff">• Bank overdraft</text>
-<text x="192" y="88" font-family="sans-serif" font-size="11" fill="#fff">• Trade credit (30–60d)</text>
-<text x="192" y="112" font-family="sans-serif" font-size="11" fill="#fff">• Debt factoring</text>
-<text x="192" y="148" font-family="sans-serif" font-size="11" fill="#fde68a">For working capital</text>
-<text x="192" y="168" font-family="sans-serif" font-size="11" fill="#fde68a">(stock &amp; cash dips)</text>
-<text x="430" y="38" font-family="sans-serif" font-size="13" font-weight="bold" fill="#93c5fd" text-anchor="middle">LONG EXTERNAL</text>
-<text x="362" y="64" font-family="sans-serif" font-size="11" fill="#fff">• Bank loan / Mortgage</text>
-<text x="362" y="88" font-family="sans-serif" font-size="11" fill="#fff">• Leasing / Hire purchase</text>
-<text x="362" y="112" font-family="sans-serif" font-size="11" fill="#fff">• Share capital / VC</text>
-<text x="362" y="134" font-family="sans-serif" font-size="11" fill="#fff">• Crowdfunding / Grants</text>
-<text x="362" y="168" font-family="sans-serif" font-size="11" fill="#bae6fd">For Capital Expenditure!</text>
+D_FIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="16" y="16" width="668" height="86" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<text x="34" y="54" font-family="sans-serif" font-size="29" font-weight="bold" fill="#86efac">INTERNAL</text>
+<text x="664" y="54" font-family="sans-serif" font-size="28" fill="#a7f3d0" text-anchor="end">0% interest · Limited</text>
+<text x="34" y="90" font-family="sans-serif" font-size="28" fill="#fff">Retained profit · Savings · Asset sales</text>
+<rect x="16" y="116" width="668" height="86" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="3"/>
+<text x="34" y="154" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fcd34d">SHORT EXTERNAL</text>
+<text x="664" y="154" font-family="sans-serif" font-size="28" fill="#fde68a" text-anchor="end">Working capital</text>
+<text x="34" y="190" font-family="sans-serif" font-size="28" fill="#fff">Overdraft · Trade credit · Factoring</text>
+<rect x="16" y="216" width="668" height="86" rx="12" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+<text x="34" y="254" font-family="sans-serif" font-size="29" font-weight="bold" fill="#93c5fd">LONG EXTERNAL</text>
+<text x="664" y="254" font-family="sans-serif" font-size="28" fill="#bae6fd" text-anchor="end">Capex (5+ yrs)</text>
+<text x="34" y="290" font-family="sans-serif" font-size="28" fill="#fff">Loan · Mortgage · Leasing · Shares · VC</text>
 </svg>"""
 
-D_CF = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<text x="260" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">CASH-FLOW FORECAST (£) — BRACKETS = NEGATIVE!</text>
-<rect x="20" y="36" width="480" height="128" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
-<text x="34" y="58" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">ROW</text>
-<text x="280" y="58" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="middle">JAN</text>
-<text x="410" y="58" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="middle">FEB</text>
-<text x="34" y="82" font-family="sans-serif" font-size="12" fill="#fff">Cash Inflows − Outflows = NCF</text>
-<text x="280" y="82" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5" text-anchor="middle">(1,500)</text>
-<text x="410" y="82" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac" text-anchor="middle">2,200</text>
-<text x="34" y="112" font-family="sans-serif" font-size="12" fill="#cbd5e1">Opening Balance (prev. Closing)</text>
-<text x="280" y="112" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">1,000</text>
-<text x="410" y="112" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5" text-anchor="middle">(500)</text>
-<text x="34" y="142" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047">Closing Balance (Open + NCF)</text>
-<text x="280" y="142" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5" text-anchor="middle">(500)</text>
-<text x="410" y="142" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac" text-anchor="middle">1,700</text>
-<text x="260" y="190" font-family="sans-serif" font-size="12" fill="#86efac" text-anchor="middle">Fix deficit: Overdraft · Chase receivables · Longer trade credit · Lease</text>
+D_CF = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<text x="350" y="42" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fde047" text-anchor="middle">CASH-FLOW (£) · (BRACKETS) = NEGATIVE</text>
+<rect x="16" y="58" width="668" height="196" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+<text x="36" y="96" font-family="sans-serif" font-size="28" font-weight="bold" fill="#94a3b8">ROW</text>
+<text x="455" y="96" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="middle">JAN</text>
+<text x="605" y="96" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="middle">FEB</text>
+<text x="36" y="144" font-family="sans-serif" font-size="28" fill="#fff">Net Cash Flow (NCF)</text>
+<text x="455" y="144" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5" text-anchor="middle">(1,500)</text>
+<text x="605" y="144" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="middle">2,200</text>
+<text x="36" y="190" font-family="sans-serif" font-size="28" fill="#cbd5e1">Opening Balance</text>
+<text x="455" y="190" font-family="sans-serif" font-size="28" fill="#fff" text-anchor="middle">1,000</text>
+<text x="605" y="190" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5" text-anchor="middle">(500)</text>
+<text x="36" y="236" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">Closing (Open+NCF)</text>
+<text x="455" y="236" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5" text-anchor="middle">(500)</text>
+<text x="605" y="236" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="middle">1,700</text>
+<text x="350" y="298" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac" text-anchor="middle">Fix: Overdraft · Chase debtors · Lease</text>
 </svg>"""
 
-D_BEP = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" rx="12" fill="#0f172a"/>
-<line x1="60" y1="185" x2="480" y2="185" stroke="#94a3b8" stroke-width="2"/>
-<line x1="60" y1="185" x2="60" y2="20" stroke="#94a3b8" stroke-width="2"/>
-<line x1="60" y1="135" x2="460" y2="135" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4"/>
-<line x1="60" y1="135" x2="460" y2="45" stroke="#f87171" stroke-width="3"/>
-<line x1="60" y1="185" x2="460" y2="25" stroke="#34d399" stroke-width="3"/>
-<circle cx="282" cy="85" r="6" fill="#fde047"/>
-<line x1="282" y1="85" x2="282" y2="185" stroke="#fde047" stroke-width="2" stroke-dasharray="4 4"/>
-<line x1="380" y1="57" x2="380" y2="185" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
-<text x="466" y="139" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fcd34d">FC</text>
-<text x="466" y="48" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fca5a5">TC</text>
-<text x="466" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#86efac">TR</text>
-<text x="282" y="72" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047" text-anchor="middle">BEP = 800</text>
-<text x="331" y="206" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="middle">MoS = 300 (1,100 − 800)</text>
-<text x="150" y="40" font-family="sans-serif" font-size="12" fill="#e2e8f0">BEP = FC ÷ (SP − VC)</text>
-<text x="150" y="58" font-family="sans-serif" font-size="12" fill="#fde047">2,400 ÷ (5 − 2) = 800</text>
+D_BEP = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<line x1="56" y1="252" x2="626" y2="252" stroke="#94a3b8" stroke-width="3"/>
+<line x1="56" y1="252" x2="56" y2="24" stroke="#94a3b8" stroke-width="3"/>
+<line x1="56" y1="186" x2="604" y2="186" stroke="#f59e0b" stroke-width="4" stroke-dasharray="10 6"/>
+<line x1="56" y1="186" x2="604" y2="68" stroke="#f87171" stroke-width="4.5"/>
+<line x1="56" y1="252" x2="604" y2="34" stroke="#34d399" stroke-width="4.5"/>
+<circle cx="356" cy="120" r="9" fill="#fde047"/>
+<line x1="356" y1="120" x2="356" y2="252" stroke="#fde047" stroke-width="3" stroke-dasharray="6 6"/>
+<line x1="490" y1="80" x2="490" y2="252" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 6"/>
+<text x="616" y="196" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fcd34d">FC</text>
+<text x="616" y="84" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">TC</text>
+<text x="616" y="46" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">TR</text>
+<text x="76" y="54" font-family="sans-serif" font-size="28" font-weight="bold" fill="#e2e8f0">BEP = FC ÷ (SP−VC)</text>
+<text x="76" y="92" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">2,400 ÷ 3 = 800</text>
+<text x="350" y="298" font-family="sans-serif" font-size="28" font-weight="bold" fill="#7dd3fc" text-anchor="middle">BEP = 800 · MoS = 300 (1,100 − 800)</text>
 </svg>"""
 
-D_TRAP5 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER PAPER 1 &amp; 2 FINANCE TRAPS</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ TRAP 1: Saying 'taking a bank loan increases profit' — NO, it boosts CASH!</text>
-<text x="28" y="106" font-family="sans-serif" font-size="13" fill="#86efac">✓ TRAP 2: Brackets (500) = −500! So Opening (500) + NCF (300) = (800)!</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#7dd3fc">✓ TRAP 3: Divide Fixed Costs by CONTRIBUTION (SP − VC), never Selling Price!</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ Match finance horizon: Overdraft → cash dip · Loan/Lease → 5-year van!</text>
+D_TRAP5 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">PAPER 1 &amp; 2 FINANCE TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Loans boost CASH, NOT profit!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#86efac">✓ (500) = −500 · (500)+(300) = (800)</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#7dd3fc">✓ BEP ÷ Contribution (SP−VC), not SP</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ Match term: Overdraft=dip · Loan=van</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

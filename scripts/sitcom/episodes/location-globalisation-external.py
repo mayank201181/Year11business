@@ -7,65 +7,61 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling untangle location, MNCs, SPICED, interest rates and PESTLE."
 )
 
-D_MNC = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<text x="260" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fde047" text-anchor="middle">MNC IMPACT ON HOST COUNTRY (FDI)</text>
-<rect x="16" y="40" width="236" height="154" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<rect x="268" y="40" width="236" height="154" rx="10" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
-<text x="134" y="64" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac" text-anchor="middle">BENEFITS (+)</text>
-<text x="30" y="92" font-family="sans-serif" font-size="12" fill="#fff">• Creates local jobs &amp; incomes</text>
-<text x="30" y="118" font-family="sans-serif" font-size="12" fill="#fff">• Pays host Corporation Tax</text>
-<text x="30" y="144" font-family="sans-serif" font-size="12" fill="#fff">• New technology &amp; staff training</text>
-<text x="30" y="170" font-family="sans-serif" font-size="12" fill="#fff">• Better roads &amp; local suppliers</text>
-<text x="386" y="64" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fca5a5" text-anchor="middle">DRAWBACKS (−)</text>
-<text x="282" y="92" font-family="sans-serif" font-size="12" fill="#fff">• Profit repatriation to home HQ</text>
-<text x="282" y="118" font-family="sans-serif" font-size="12" fill="#fff">• Squeezes small local rivals</text>
-<text x="282" y="144" font-family="sans-serif" font-size="12" fill="#fff">• Low-skilled wages / sweatshops</text>
-<text x="282" y="170" font-family="sans-serif" font-size="12" fill="#fff">• Pollution &amp; resource depletion</text>
+D_MNC = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<text x="350" y="42" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fde047" text-anchor="middle">MNC IMPACT ON HOST COUNTRY</text>
+<rect x="14" y="60" width="328" height="244" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<rect x="358" y="60" width="328" height="244" rx="12" fill="#7f1d1d" stroke="#f87171" stroke-width="3"/>
+<text x="178" y="102" font-family="sans-serif" font-size="29" font-weight="bold" fill="#86efac" text-anchor="middle">BENEFITS (+)</text>
+<text x="32" y="152" font-family="sans-serif" font-size="28" fill="#fff">• Local jobs &amp; pay</text>
+<text x="32" y="200" font-family="sans-serif" font-size="28" fill="#fff">• Corporation Tax</text>
+<text x="32" y="248" font-family="sans-serif" font-size="28" fill="#fff">• Tech &amp; training</text>
+<text x="522" y="102" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fca5a5" text-anchor="middle">DRAWBACKS (−)</text>
+<text x="376" y="152" font-family="sans-serif" font-size="28" fill="#fff">• Profit sent home</text>
+<text x="376" y="200" font-family="sans-serif" font-size="28" fill="#fff">• Hurts local firms</text>
+<text x="376" y="248" font-family="sans-serif" font-size="28" fill="#fff">• Low pay / pollution</text>
 </svg>"""
 
-D_SPICED = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
-<rect width="520" height="220" rx="12" fill="#0f172a"/>
-<rect x="14" y="16" width="240" height="150" rx="10" fill="#1e3a8a" stroke="#38bdf8" stroke-width="2"/>
-<rect x="266" y="16" width="240" height="150" rx="10" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
-<text x="134" y="42" font-family="sans-serif" font-size="15" font-weight="bold" fill="#7dd3fc" text-anchor="middle">SPICED (Appreciation ↑)</text>
-<text x="134" y="64" font-family="sans-serif" font-size="12" fill="#bae6fd" text-anchor="middle">£1 = $1.20 → £1 = $1.50</text>
-<text x="28" y="94" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac">• Imports CHEAPER (raw costs ↓)</text>
-<text x="28" y="122" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fca5a5">• Exports DEARER (sales abroad ↓)</text>
-<text x="28" y="148" font-family="sans-serif" font-size="12" fill="#e2e8f0">$600 crate: £500 → £400!</text>
-<text x="386" y="42" font-family="sans-serif" font-size="15" font-weight="bold" fill="#e9d5ff" text-anchor="middle">WPIDEC (Depreciation ↓)</text>
-<text x="386" y="64" font-family="sans-serif" font-size="12" fill="#f3e8ff" text-anchor="middle">£1 = $1.50 → £1 = $1.00</text>
-<text x="280" y="94" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fca5a5">• Imports DEARER (raw costs ↑)</text>
-<text x="280" y="122" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86efac">• Exports CHEAPER (sales abroad ↑)</text>
-<text x="280" y="148" font-family="sans-serif" font-size="12" fill="#e2e8f0">$600 crate: £400 → £600!</text>
-<rect x="24" y="176" width="472" height="30" rx="6" fill="#1e293b"/>
-<text x="260" y="196" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047" text-anchor="middle">Convert £ → Foreign: MULTIPLY by rate · Foreign → £: DIVIDE by rate</text>
+D_SPICED = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="226" rx="12" fill="#1e3a8a" stroke="#38bdf8" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="226" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="3"/>
+<text x="178" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#7dd3fc" text-anchor="middle">SPICED (£ UP ↑)</text>
+<text x="178" y="94" font-family="sans-serif" font-size="28" fill="#bae6fd" text-anchor="middle">£1=$1.20 → $1.50</text>
+<text x="30" y="144" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">✓ Imports CHEAPER</text>
+<text x="30" y="192" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">✗ Exports DEARER</text>
+<text x="522" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#e9d5ff" text-anchor="middle">WPIDEC (£ DOWN ↓)</text>
+<text x="522" y="94" font-family="sans-serif" font-size="28" fill="#f3e8ff" text-anchor="middle">£1=$1.50 → $1.00</text>
+<text x="374" y="144" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">✗ Imports DEARER</text>
+<text x="374" y="192" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">✓ Exports CHEAPER</text>
+<rect x="14" y="252" width="672" height="54" rx="10" fill="#1e293b"/>
+<text x="350" y="288" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">£ → Foreign: MULTIPLY · Foreign → £: DIVIDE</text>
 </svg>"""
 
-D_RATES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 190">
-<rect width="520" height="190" rx="12" fill="#0f172a"/>
-<rect x="170" y="14" width="180" height="36" rx="8" fill="#dc2626"/>
-<text x="260" y="37" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">INTEREST RATES RISE ↑</text>
-<rect x="16" y="72" width="234" height="102" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
-<rect x="270" y="72" width="234" height="102" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-<text x="133" y="96" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fcd34d" text-anchor="middle">CONSUMERS</text>
-<text x="28" y="120" font-family="sans-serif" font-size="12" fill="#fff">• Mortgage &amp; credit payments ↑</text>
-<text x="28" y="142" font-family="sans-serif" font-size="12" fill="#fff">• Reward for saving in banks ↑</text>
-<text x="28" y="162" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5">→ Luxury spending FALLS ↓</text>
-<text x="387" y="96" font-family="sans-serif" font-size="13" font-weight="bold" fill="#7dd3fc" text-anchor="middle">BUSINESSES</text>
-<text x="282" y="120" font-family="sans-serif" font-size="12" fill="#fff">• Overdraft &amp; loan interest ↑</text>
-<text x="282" y="142" font-family="sans-serif" font-size="12" fill="#fff">• Higher overheads, lower profit</text>
-<text x="282" y="162" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fca5a5">→ Delay expansion &amp; machinery</text>
+D_RATES = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="140" y="14" width="420" height="52" rx="10" fill="#dc2626"/>
+<text x="350" y="50" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">INTEREST RATES RISE ↑</text>
+<rect x="14" y="82" width="328" height="222" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+<rect x="358" y="82" width="328" height="222" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+<text x="178" y="124" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fcd34d" text-anchor="middle">CONSUMERS</text>
+<text x="30" y="172" font-family="sans-serif" font-size="28" fill="#fff">• Loans cost more</text>
+<text x="30" y="218" font-family="sans-serif" font-size="28" fill="#fff">• Saving pays more</text>
+<text x="30" y="268" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">→ Luxury sales ↓</text>
+<text x="522" y="124" font-family="sans-serif" font-size="29" font-weight="bold" fill="#7dd3fc" text-anchor="middle">BUSINESSES</text>
+<text x="374" y="172" font-family="sans-serif" font-size="28" fill="#fff">• Debt interest ↑</text>
+<text x="374" y="218" font-family="sans-serif" font-size="28" fill="#fff">• Profit squeezed</text>
+<text x="374" y="268" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fca5a5">→ Delay expansion</text>
 </svg>"""
 
-D_TRAP2 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER 12-MARK EXTERNAL SHOCK TRAP</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ NEVER write 'a strong pound is bad for every business'!</text>
-<text x="28" y="106" font-family="sans-serif" font-size="13" fill="#86efac">✓ Check AO2: Does the firm IMPORT materials, EXPORT goods, or BOTH?</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#7dd3fc">✓ Check PED: Luxury branded exports suffer LESS than price-elastic goods.</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ Interest rates hurt debt-heavy luxury firms, NOT debt-free budget grocers!</text>
+D_TRAP2 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">12-MARK EXTERNAL SHOCK TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Strong £ is NOT bad for every firm!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#86efac">✓ Check AO2: Importer, exporter, or both?</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#7dd3fc">✓ Inelastic luxury exports suffer LESS.</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ High rates hurt debt-heavy luxury firms.</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------

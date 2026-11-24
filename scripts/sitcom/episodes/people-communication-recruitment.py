@@ -7,73 +7,62 @@ EP = dict(
             "Vani, Ledger and Examiner Sterling rescue HR before an employment tribunal arrives."
 )
 
-D_COMM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210">
-<rect width="520" height="210" rx="12" fill="#0f172a"/>
-<rect x="14" y="16" width="240" height="178" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
-<rect x="266" y="16" width="240" height="178" rx="10" fill="#451a03" stroke="#f59e0b" stroke-width="2"/>
-<text x="134" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#93c5fd" text-anchor="middle">COMMUNICATION FLOWS</text>
-<text x="28" y="70" font-family="sans-serif" font-size="12" fill="#fff">• Downward: Manager → Staff</text>
-<text x="28" y="96" font-family="sans-serif" font-size="12" fill="#fff">• Upward: Staff feedback → Boss</text>
-<text x="28" y="122" font-family="sans-serif" font-size="12" fill="#fff">• Horizontal: Sales ↔ Finance</text>
-<text x="28" y="152" font-family="sans-serif" font-size="12" fill="#86efac">• Internal (staff) vs External</text>
-<text x="28" y="174" font-family="sans-serif" font-size="12" fill="#86efac">• Formal vs Informal channels</text>
-<text x="386" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fcd34d" text-anchor="middle">BARRIERS &amp; FIXES</text>
-<text x="280" y="70" font-family="sans-serif" font-size="12" fill="#fca5a5">✗ Jargon &amp; info overload</text>
-<text x="280" y="94" font-family="sans-serif" font-size="12" fill="#fca5a5">✗ Tall hierarchy distortion</text>
-<text x="280" y="118" font-family="sans-serif" font-size="12" fill="#fca5a5">✗ Time zones &amp; tech failure</text>
-<text x="280" y="150" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac">✓ Plain language + feedback</text>
-<text x="280" y="174" font-family="sans-serif" font-size="12" font-weight="bold" fill="#86efac">✓ Flatter direct channels</text>
+D_COMM = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="292" rx="12" fill="#1e3a8a" stroke="#60a5fa" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="292" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="3"/>
+<text x="178" y="56" font-family="sans-serif" font-size="29" font-weight="bold" fill="#93c5fd" text-anchor="middle">COMM FLOWS</text>
+<text x="30" y="108" font-family="sans-serif" font-size="28" fill="#fff">• Down: Boss → Staff</text>
+<text x="30" y="156" font-family="sans-serif" font-size="28" fill="#fff">• Up: Staff → Boss</text>
+<text x="30" y="204" font-family="sans-serif" font-size="28" fill="#fff">• Across: Depts ↔</text>
+<text x="30" y="254" font-family="sans-serif" font-size="28" fill="#86efac">• Internal / External</text>
+<text x="522" y="56" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fcd34d" text-anchor="middle">BARRIERS &amp; FIX</text>
+<text x="374" y="108" font-family="sans-serif" font-size="28" fill="#fca5a5">✗ Jargon &amp; overload</text>
+<text x="374" y="156" font-family="sans-serif" font-size="28" fill="#fca5a5">✗ Tall chain noise</text>
+<text x="374" y="204" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">✓ Plain + feedback</text>
+<text x="374" y="254" font-family="sans-serif" font-size="28" font-weight="bold" fill="#86efac">✓ Flatter channels</text>
 </svg>"""
 
-D_RECRUIT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215">
-<rect width="520" height="215" rx="12" fill="#0f172a"/>
-<rect x="14" y="14" width="240" height="126" rx="10" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
-<rect x="266" y="14" width="240" height="126" rx="10" fill="#064e3b" stroke="#34d399" stroke-width="2"/>
-<text x="134" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#a5b4fc" text-anchor="middle">JOB DESCRIPTION</text>
-<text x="134" y="56" font-family="sans-serif" font-size="11" fill="#c7d2fe" text-anchor="middle">About the ROLE (tasks &amp; pay)</text>
-<text x="26" y="82" font-family="sans-serif" font-size="12" fill="#fff">• Job title, hours &amp; location</text>
-<text x="26" y="104" font-family="sans-serif" font-size="12" fill="#fff">• Main duties &amp; responsibilities</text>
-<text x="26" y="126" font-family="sans-serif" font-size="12" fill="#fff">• Pay rate &amp; who you report to</text>
-<text x="386" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#6ee7b7" text-anchor="middle">PERSON SPECIFICATION</text>
-<text x="386" y="56" font-family="sans-serif" font-size="11" fill="#a7f3d0" text-anchor="middle">About the CANDIDATE (qualities)</text>
-<text x="278" y="82" font-family="sans-serif" font-size="12" fill="#fff">• Essential qualifications</text>
-<text x="278" y="104" font-family="sans-serif" font-size="12" fill="#fff">• Previous experience &amp; skills</text>
-<text x="278" y="126" font-family="sans-serif" font-size="12" fill="#fff">• Desirable personal traits</text>
-<rect x="14" y="150" width="492" height="52" rx="8" fill="#1e293b"/>
-<text x="260" y="171" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fde047" text-anchor="middle">INTERNAL: Cheaper, faster, motivates staff, knows culture (vs no fresh ideas)</text>
-<text x="260" y="191" font-family="sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc" text-anchor="middle">EXTERNAL: Wider talent pool &amp; new ideas (vs costly ads &amp; longer induction)</text>
+D_RECRUIT = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="14" y="14" width="328" height="218" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="3"/>
+<rect x="358" y="14" width="328" height="218" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="3"/>
+<text x="178" y="54" font-family="sans-serif" font-size="29" font-weight="bold" fill="#a5b4fc" text-anchor="middle">JOB DESCRIPTION</text>
+<text x="178" y="92" font-family="sans-serif" font-size="28" fill="#c7d2fe" text-anchor="middle">About the ROLE</text>
+<text x="32" y="144" font-family="sans-serif" font-size="28" fill="#fff">• Title, hours, pay</text>
+<text x="32" y="192" font-family="sans-serif" font-size="28" fill="#fff">• Main duties</text>
+<text x="522" y="54" font-family="sans-serif" font-size="29" font-weight="bold" fill="#6ee7b7" text-anchor="middle">PERSON SPEC</text>
+<text x="522" y="92" font-family="sans-serif" font-size="28" fill="#a7f3d0" text-anchor="middle">About CANDIDATE</text>
+<text x="376" y="144" font-family="sans-serif" font-size="28" fill="#fff">• Qualifications</text>
+<text x="376" y="192" font-family="sans-serif" font-size="28" fill="#fff">• Skills &amp; traits</text>
+<rect x="14" y="246" width="672" height="60" rx="10" fill="#1e293b"/>
+<text x="350" y="286" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047" text-anchor="middle">Internal: cheap/fast · External: fresh ideas</text>
 </svg>"""
 
-D_TRAIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 195">
-<rect width="520" height="195" rx="12" fill="#0f172a"/>
-<rect x="14" y="18" width="154" height="160" rx="10" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
-<rect x="183" y="18" width="154" height="160" rx="10" fill="#065f46" stroke="#34d399" stroke-width="2"/>
-<rect x="352" y="18" width="154" height="160" rx="10" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
-<text x="91" y="42" font-family="sans-serif" font-size="13" font-weight="bold" fill="#c7d2fe" text-anchor="middle">1. INDUCTION</text>
-<text x="24" y="68" font-family="sans-serif" font-size="11" fill="#fff">• Day-1 welcome tour</text>
-<text x="24" y="90" font-family="sans-serif" font-size="11" fill="#fff">• Health &amp; Safety rules</text>
-<text x="24" y="112" font-family="sans-serif" font-size="11" fill="#fff">• IT &amp; company culture</text>
-<text x="24" y="142" font-family="sans-serif" font-size="11" fill="#86efac">✓ Cuts early quitting</text>
-<text x="260" y="42" font-family="sans-serif" font-size="13" font-weight="bold" fill="#a7f3d0" text-anchor="middle">2. ON-THE-JOB</text>
-<text x="193" y="68" font-family="sans-serif" font-size="11" fill="#fff">• Shadowing a mentor</text>
-<text x="193" y="90" font-family="sans-serif" font-size="11" fill="#fff">• Low cost, still works</text>
-<text x="193" y="112" font-family="sans-serif" font-size="11" fill="#fff">• Tailored to firm</text>
-<text x="193" y="142" font-family="sans-serif" font-size="11" fill="#fca5a5">✗ Copies bad habits</text>
-<text x="429" y="42" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fed7aa" text-anchor="middle">3. OFF-THE-JOB</text>
-<text x="362" y="68" font-family="sans-serif" font-size="11" fill="#fff">• External college/pro</text>
-<text x="362" y="90" font-family="sans-serif" font-size="11" fill="#fff">• Specialist new skills</text>
-<text x="362" y="112" font-family="sans-serif" font-size="11" fill="#fff">• Formal qualification</text>
-<text x="362" y="142" font-family="sans-serif" font-size="11" fill="#fca5a5">✗ High fee + may leave!</text>
+D_TRAIN = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#0f172a"/>
+<rect x="16" y="16" width="668" height="86" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="3"/>
+<text x="34" y="54" font-family="sans-serif" font-size="29" font-weight="bold" fill="#c7d2fe">1. INDUCTION</text>
+<text x="664" y="54" font-family="sans-serif" font-size="28" fill="#86efac" text-anchor="end">✓ Cuts quitting</text>
+<text x="34" y="90" font-family="sans-serif" font-size="28" fill="#fff">Day-1 tour, H&amp;S rules, IT &amp; culture</text>
+<rect x="16" y="116" width="668" height="86" rx="12" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+<text x="34" y="154" font-family="sans-serif" font-size="29" font-weight="bold" fill="#a7f3d0">2. ON-THE-JOB</text>
+<text x="664" y="154" font-family="sans-serif" font-size="28" fill="#fca5a5" text-anchor="end">✗ Bad habits</text>
+<text x="34" y="190" font-family="sans-serif" font-size="28" fill="#fff">Mentor shadowing · Low cost, tailored</text>
+<rect x="16" y="216" width="668" height="86" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="3"/>
+<text x="34" y="254" font-family="sans-serif" font-size="29" font-weight="bold" fill="#fed7aa">3. OFF-THE-JOB</text>
+<text x="664" y="254" font-family="sans-serif" font-size="28" fill="#fca5a5" text-anchor="end">✗ Cost + leave</text>
+<text x="34" y="290" font-family="sans-serif" font-size="28" fill="#fff">External specialist · Formal qual.</text>
 </svg>"""
 
-D_TRAP3 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 185">
-<rect width="520" height="185" rx="12" fill="#1e1b4b"/>
-<rect x="16" y="14" width="488" height="38" rx="8" fill="#be185d"/>
-<text x="260" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">EXAMINER 9-MARK HR &amp; TRAINING TRAP</text>
-<text x="28" y="78" font-family="sans-serif" font-size="13" fill="#fda4af">✗ NEVER swap Job Description (duties) with Person Spec (qualifications)!</text>
-<text x="28" y="106" font-family="sans-serif" font-size="13" fill="#86efac">✓ Match training to skill level: Till staff → On-the-job · Pilot/IT → Off-the-job.</text>
-<text x="28" y="134" font-family="sans-serif" font-size="13" fill="#7dd3fc">✓ Employment Law trade-off: Higher wage/safety cost vs fewer fines &amp; better staff.</text>
-<text x="28" y="162" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde047">✓ Always link poor communication to waste, re-work &amp; lost repeat customers!</text>
+D_TRAP3 = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="700" height="320">
+<rect width="700" height="320" rx="14" fill="#1e1b4b"/>
+<rect x="16" y="16" width="668" height="56" rx="10" fill="#be185d"/>
+<text x="350" y="54" font-family="sans-serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">9-MARK HR &amp; TRAINING TRAPS</text>
+<text x="28" y="116" font-family="sans-serif" font-size="28" fill="#fda4af">✗ Don't swap Job Desc &amp; Person Spec!</text>
+<text x="28" y="170" font-family="sans-serif" font-size="28" fill="#86efac">✓ Till → On-the-job · IT → Off-the-job</text>
+<text x="28" y="224" font-family="sans-serif" font-size="28" fill="#7dd3fc">✓ Laws: wage cost ↑ vs fines ↓ &amp; staff ↑</text>
+<text x="28" y="280" font-family="sans-serif" font-size="28" font-weight="bold" fill="#fde047">✓ Poor comm → waste &amp; lost customers</text>
 </svg>"""
 
 # ---------------- COLD OPEN ----------------
