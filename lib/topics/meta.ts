@@ -32,6 +32,10 @@ export interface TopicMeta {
   /** Optional second strand when a combined syllabus unit spans two strands. */
   secondaryStrand?: Strand;
   icon: string;
+  /** Which IGCSE year normally teaches this topic (Year 10 vs Year 11). */
+  courseYear: 10 | 11;
+  /** Teaching order used when ?year=10 is active (1..N). */
+  courseOrder: number;
   /** Which Edexcel 4BS1 specification units this topic covers. */
   curriculum: string;
   sections: SectionPlan[];
@@ -46,6 +50,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Objectives, Stakeholders & Business Ownership",
     strand: "Activity & External",
     icon: "🏢",
+    courseYear: 10,
+    courseOrder: 1,
     curriculum: "Edexcel 4BS1 Topics 1.1–1.3 & 1.8 — Business Objectives, Stakeholders, Types of Organisations, Classification of Businesses & Business Success/Failure",
     sections: [
       {
@@ -80,6 +86,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Location, Globalisation, Policy & External Factors",
     strand: "Activity & External",
     icon: "🌐",
+    courseYear: 10,
+    courseOrder: 2,
     curriculum: "Edexcel 4BS1 Topics 1.4–1.7 — Location Decisions, Globalisation & MNCs, Exchange Rates, Government Policy & PESTLE External Factors",
     sections: [
       {
@@ -116,6 +124,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Communication, Recruitment, Selection & Training",
     strand: "People",
     icon: "🤝",
+    courseYear: 10,
+    courseOrder: 3,
     curriculum: "Edexcel 4BS1 Topics 2.1–2.3 — Internal & External Communication, Recruitment & Selection Process, Training & Employment Law",
     sections: [
       {
@@ -145,6 +155,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Motivation Theories, Rewards & Organisational Structures",
     strand: "People",
     icon: "🏗️",
+    courseYear: 10,
+    courseOrder: 4,
     curriculum: "Edexcel 4BS1 Topics 2.4–2.5 — Motivation Theories (Maslow, Herzberg, Taylor), Financial & Non-Financial Methods, Hierarchies & Leadership",
     sections: [
       {
@@ -181,6 +193,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Sources of Finance, Cash Flow & Break-Even Analysis",
     strand: "Finance",
     icon: "💷",
+    courseYear: 11,
+    courseOrder: 5,
     curriculum: "Edexcel 4BS1 Topics 3.1–3.3 — Internal & External Finance, Cash-Flow Forecasting, Costs, Revenue & Break-Even Analysis",
     sections: [
       {
@@ -215,6 +229,8 @@ export const TOPIC_META: TopicMeta[] = [
     title: "Financial Documents & Ratio Analysis",
     strand: "Finance",
     icon: "📊",
+    courseYear: 11,
+    courseOrder: 6,
     curriculum: "Edexcel 4BS1 Topics 3.4–3.5 — Statement of Comprehensive Income, Statement of Financial Position, Profitability & Liquidity Ratios",
     sections: [
       {
@@ -252,6 +268,8 @@ export const TOPIC_META: TopicMeta[] = [
     strand: "Marketing",
     secondaryStrand: "Operations",
     icon: "🚀",
+    courseYear: 11,
+    courseOrder: 7,
     curriculum: "Edexcel 4BS1 Topics 4.1–4.3 & 5.1–5.4 — Market Research, Segmentation, The 4Ps Marketing Mix, Production Methods, Lean/JIT, Economies of Scale & Quality",
     sections: [
       {
